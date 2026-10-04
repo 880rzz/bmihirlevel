@@ -26,11 +26,30 @@ jobs:
       - name: Verify image dimensions
         run: |
           python - <<'PY'
-          from PIL import Image
+          import struct
           p='assets/og/2026-10-01.jpg'
-          im=Image.open(p)
-          assert im.size == (1200, 630), f"Unexpected OG dimensions: {im.size}"
-          print("Verified", im.size)
+          with open(p,'rb') as f:
+              data=f.read()
+          i=2
+          size=None
+          while i < len(data)-9:
+              if data[i] != 0xFF:
+                  i += 1
+                  continue
+              marker=data[i+1]
+              if marker in (0xC0,0xC1,0xC2,0xC3,0xC5,0xC6,0xC7,0xC9,0xCA,0xCB,0xCD,0xCE,0xCF):
+                  h,w=struct.unpack('>HH', data[i+5:i+9])
+                  size=(w,h)
+                  break
+              if marker in (0xD8,0xD9):
+                  i += 2
+                  continue
+              if i+4 > len(data):
+                  break
+              seglen=struct.unpack('>H', data[i+2:i+4])[0]
+              i += 2 + seglen
+          assert size == (1200, 630), f"Unexpected OG dimensions: {size}"
+          print("Verified", size)
           PY
 
       - name: Update OG metadata
