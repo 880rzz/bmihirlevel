@@ -1,32 +1,28 @@
-# BMI hírlevél
+# BMI hírlevél — 2026/27 · 7. hét · 7. kiadás
 
-A Bécsi Magyar Iskola HTML-hírlevele (Wix-be beilleszthető, reszponzív megjelenítés).
+A Wix-hírlevélben használható reszponzív HTML-forrás: `index.html`.
 
-## Aktuális kiadás
-- 2026/27-es tanév, **7. hét, 7. hírlevél** – 2026. október 18.
-- Fő fájl: `index.html`; mobilon a navigáció egymás alá rendeződik, e-mail-kompatibilis inline stílusokkal.
-- BMI események: Csináljuk a forradalmat!, Ruhacsere Party, Bécsi Magyar Télapó.
-- Mikulás: a szervező által közölt adat szerint a rendelkezésre álló jegyek közel fele elkelt az első héten.
-- Új rovat: **Bécsi programajánló** (5 ellenőrzött időpontú esemény).
-- Új menühivatkozások: https://programvalaszto.magyariskola.at/ és https://tanarok.magyariskola.at/
-- A BMI Szülői Közösség és Kisbarát kereső blokk megmaradt.
-- Leiratkozás: marketing@kozpontiszovetseg.at
-- GA4: G-CZ2K1KVYX2, csak explicit hozzájárulás után (`analytics-consent.js`).
+## Tartalom
+- Iskolai események: Csináljuk a forradalmat!, Ruhacsere Party, Bécsi Magyar Télapó.
+- Télapó: az első héten a rendelkezésre álló jegyek közel fele elkelt (szerkesztőségi adat).
+- Bécsi programajánló **16 eseménnyel, négy kategóriában**: magyar programok, gyerekek és családok, Halloween, felnőttek és nagyobb fiatalok.
+- Két elérhető önálló BMI-felület: https://programvalaszto.magyariskola.at/ és https://tanarok.magyariskola.at/.
+- Megmaradt: Szülői Közösség, Kisbarát kereső, leiratkozás: marketing@kozpontiszovetseg.at; explicit beleegyezéshez kötött GA4 script.
 
-## Archivált korábbi kezdőfájlok
-- **`archive/2026-10-18-pre-week07.html`**: az átírás előtti eredeti `index.html` teljes, változatlan másolata, benne a Táltos dob videójával, leírásával és hivatkozásával. A novemberi Táltos dob kiadáshoz őrizendő.
-- `archive/2026-10-01.html`: október 1-jei előző kiadás.
-- `assets/og/2026-10-01.jpg`: előző kiadás képe. Az aktuális oldalon szándékosan nincs megtévesztő, régi címes OG-kép.
+## Esemény- és forrásnapló
+- `data/programajanlo-2026-10-18.json` tartalmazza a kategóriákat, az események szervezői URL-jeit, az ellenőrzési dátumot és a DORAPP rekordazonosítóit.
+- Az ausztriai magyar események forrása a [DORAPP](https://github.com/880rzz/DORAPP) `data/events.json` fájl.
+- A Halloween, bécsi családi és nemzetközi kulturális programok forrása a város vagy az esemény szervezője.
+- A magyar vonatkozás nem igazolja automatikusan a program magyar nyelvét; a belépő, a korhatár és a szabad férőhely kiküldés előtt újból ellenőrizendő.
 
-## Bécsi ajánló hivatalos forrásai, ellenőrizve 2026.10.18.
-- Viennale – nemzetközi filmfesztivál – 2026. október 22. – november 3.: https://www.viennale.at/en/
-- KinderKunstFest – művészet gyerekeknek – 2026. október 24. – november 1.: https://echoevent.at/kinderkunstfest/programm/
-- Adventi vásár a Schönbrunn-kastélynál – 2026. november 6. – 2027. január 6.: https://www.wien.info/de/sehen-erleben/familien/highlights/advent-fuer-kinder-338342
-- Vienna Comic Con – 2026. november 21–22.: https://viecc.com/info/
-- Buch Wien – gyermek- és ifjúsági könyvprogramok – 2026. november 25–29.: https://www.buchwien.at/kinder-jugendbuch/
+## Archívumok — ne módosítsd
+- **`archive/2026-10-18-pre-week07.html`**: a 7. hírlevél előtti régi kezdőfájl, a Táltos dob videójával. A novemberi Táltos dob hírlevélhez őrizendő.
+- `archive/2026-10-18-week07-before-categories.html`: a 7. hét első kiadásának változatlan másolata a kategóriás bővítés előtt.
+- `archive/2026-10-01.html`: korábbi kiadás.
+- `assets/og/2026-10-01.jpg`: korábbi kiadás OG-képe.
 
-## Technikai szerződés
-- 620 px széles, táblázatos hírlevél-layout; teljes szélességű mobilnézet.
-- Navigáció JS nélkül, 44 px magas érintési célpontokkal; belső horgonyok levelezőkliens-függők, a repo-linkek abszolút URL-t használnak.
-- Az Ősztündér és Táltos dob ne szerepeljen az aktuális indexben, de a korábbi archívumot ne módosítsuk.
-- Küldés előtt újra ellenőrizni kell a külső programok elérhetőségét és időpontját.
+## Reszponzivitás és ellenőrzés
+- Maximális levélszélesség 620 px, mobil CSS és inline levélstílusok.
+- Kategóriaugrások hagyományos HTML-horgonyokkal; a külső oldalak abszolút URL-ek. A támogatás levelezőkliens-függő.
+- Az Ősztündér és a Táltos dob nem szerepel az aktuális kezdőlapon.
+- Dátum, részvételi feltétel, regisztráció és elérhetőség ellenőrzendő kiküldés előtt.
