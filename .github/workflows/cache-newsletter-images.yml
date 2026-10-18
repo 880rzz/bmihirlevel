@@ -1,0 +1,30 @@
+name: Prepare newsletter images in GitHub
+on:
+  push:
+    branches: [main]
+    paths:
+      - scripts/cache_newsletter_images.py
+      - .github/workflows/cache-newsletter-images.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  images:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install 'Pillow>=10,<12' 'requests>=2.31,<3'
+      - run: python scripts/cache_newsletter_images.py
+      - run: python scripts/use_local_newsletter_images.py
+      - name: Push generated images to a review branch
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git checkout -b generated/newsletter-image-assets-${{ github.run_id }}
+          git add assets/events/ data/event-image-assets.json data/programajanlo-2026-10-18.json index.html de/index.html en/index.html exports/
+          git commit -m 'Generate self-hosted newsletter image assets'
+          git push origin HEAD

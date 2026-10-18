@@ -82,3 +82,17 @@ A háromkategóriás kezdőlap változatlan. A `#program-iskola` blokk az archiv
 - Most minden eseménynek van vizuális eleme: **16 külső ajánló (14 archív/illusztratív/aktuális fotó + 2 jelképes), 3 BMI eredeti eseménykép**. A korábbi 14/16 és két kép nélküli sor a korábbi végrehajtási szakasz állapotát jelölte.
 - Mind a 19 eseményképnél 5 px sarokkerekítés érvényes; a kör alakú BMI-fejléclogót nem téglalaposítottuk.
 - A sajtóképek és U4 márkajel szerzői jogi/használati státuszának ellenőrzése továbbra is kötelező. A Wix CDN-válaszok és az éles oldal teljesítménye az ellenőrző eszközből nem volt igazolható.
+
+## GitHub-képtárolás: gyökérok és helyreállítás (2026-10-18)
+
+**Azonosított hiba:** a 16 külső eseménykép URL-je Wix-médiatranszformációra mutatott, miközben a médiabetöltések korábban `PENDING` állapotúak voltak, és a produkciós képfájlok létezése nem volt igazolva. A CSS minden képet 300 px szélességre korlátozott, ezért a programkártya szabad terét sem töltötték ki.
+
+**Azonnali elrendezési javítás:** a 6 HTML-kiadásban az összes eseménykép `width:100%;max-width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:5px` beállítást kapott. Az eredeti 3 BMI eseményképet nem vágjuk meg.
+
+**Helyben tárolás átállása – két fázisban, hogy ne szülessenek 404-es linkek:**
+1. `scripts/cache_newsletter_images.py` és `.github/workflows/cache-newsletter-images.yml` a GitHub Actions gépén letölti a 19 eredetit (elsőként a felhasználó BMI Wix médiatárából, másodsorban a dokumentált külső forrásokból), validálja és generálja a `640 px` széles, `JPEG` (Wix e-mailhez) és `WebP` (webre) változatokat.
+2. A megbízhatatlan letöltés helyére nem egy hibás kép kerül, hanem feliratozott, helyben generált eseménykártya. Az eredmény `data/event-image-assets.json` fájlban ellenőrizhető: `photo` vagy `labelled_fallback`, bájtméret és SHA-256.
+3. `scripts/use_local_newsletter_images.py` csak a képfájlok sikeres létrejötte után állítja a 6 HTML-t és a központi nyilvántartást a `/assets/events/` GitHub-fájlokra.
+4. A workflow **külön `generated/newsletter-image-assets-...` review branchre** ment. Ezt ellenőrizni és PR-ként egyesíteni kell a `main` ágba. A mostani PR kizárólag a megjelenítést javítja és bevezeti a migrációs eszközt; **a GitHub-képtárolás nem tekinthető késznek, amíg a generált fájlokat nem látjuk a main ágon.**
+
+A képek harmadik féltől származó újraközlési jogai továbbra is külön szerkesztői ellenőrzést igényelnek; a saját Wix médiatárba másolás nem jelent automatikus felhasználási engedélyt.
