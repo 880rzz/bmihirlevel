@@ -30,14 +30,19 @@ def audit():
         # Ensure the deployed site contains the actual requested editorial design.
         if 'class="category-buttons"' not in html:raise ValueError(route+": compact category buttons not deployed")
         expected_features=9 if route=="/" else 3
-        expected_events=48 if route=="/" else 16
+        expected_events=51 if route=="/" else 17
         if html.count('class="feature-cell"')!=expected_features:raise ValueError(route+": category cards missing")
         if html.count('class="editorial-event"')!=expected_events:raise ValueError(route+": editorial event cards missing")
         if "font-size:48px" not in html or "BlinkMacSystemFont" not in html:raise ValueError(route+": Apple-inspired typography not deployed")
         if "background:#007C83" not in html:raise ValueError(route+": turquoise action system not deployed")
-        expected_school=9 if route=="/" else 3
+        expected_school=6 if route=="/" else 2
         if html.count('class="mobile-padding school-event-image"')!=expected_school:raise ValueError(route+": unified school cards missing")
         if html.count("aspect-ratio:1/1")<expected_school:raise ValueError(route+": square school images missing")
+        expected_telapo=3 if route=="/" else 1
+        if html.count('data-event="bmi-telapo"')!=expected_telapo:raise ValueError(route+": St Nicholas event not moved to children section")
+        expected_title={" / ":"Bécsi Programajánló"}.get(route) if False else None
+        titles={"/":"Bécsi Programajánló","/de/":"Wiener Programmtipps","/en/":"Vienna Event Guide"}
+        if titles[route] not in html:raise ValueError(route+": Vienna guide title not deployed")
         if "#C82932" in html or "#B82029" in html:raise ValueError(route+": old burgundy accent remains")
         if re.search(r'<img\b[^>]*src="https://static\.wixstatic\.com/',html):raise ValueError(route+": unresolved Wix source")
         pages.append({"route":route,"htmlBytes":len(html)})
