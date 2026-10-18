@@ -73,7 +73,8 @@ def main():
         im=(ImageOps.contain(im.convert("RGB"),(1104,1400),method=Image.Resampling.LANCZOS) if event.get("image",{}).get("kind")=="first_party" else ImageOps.fit(im.convert("RGB"),SIZE,method=Image.Resampling.LANCZOS))
         kind=event.get("image",{}).get("kind")
         if kind=="first_party": rights="first-party"
-        elif kind=="official_event_artwork": rights="official event artwork supplied by user"\n        elif kind=="organizer_event_artwork": rights="official organiser event artwork"
+        elif kind=="official_event_artwork": rights="official event artwork supplied by user"
+        elif kind=="organizer_event_artwork": rights="official organiser event artwork"
         elif kind=="generated_poster": rights="generated for BMI newsletter; not official organiser artwork"
         else: rights="third-party rights review"
         records[event["id"]]={"status":status,"sourceUrl":url,"errors":errors,"files":{},"photoRights":rights,"sourceKind":kind}
