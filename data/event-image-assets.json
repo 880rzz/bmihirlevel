@@ -1,6 +1,6 @@
 {
   "edition": "2026-27-W07",
-  "generatedAt": "2026-10-18T19:39:53.460681+00:00",
+  "generatedAt": "2026-10-18T19:58:29.185073+00:00",
   "images": {
     "pumpkin": {
       "status": "photo",
@@ -251,22 +251,22 @@
     },
     "hdarvasi": {
       "status": "photo",
-      "sourceUrl": "https://static.wixstatic.com/media/b0aee1_80b01ff00a024db69de24fe6ba1cd6f8~mv2.jpg",
+      "sourceUrl": "https://static.wixstatic.com/media/b0aee1_0a903895e1ca458cb47d495de074ceca~mv2.jpeg",
       "errors": [],
       "files": {
         "jpg": {
           "path": "assets/events/hdarvasi-640.jpg",
-          "bytes": 15848,
-          "sha256": "e3846856a26cf5b2813303d64222a6c81e66e0b30ba8d709f8b76d74fa10d6ba"
+          "bytes": 20064,
+          "sha256": "b819a9103410917dabe28d7479f71fddd88956cb8417aee92abbe38553ba493a"
         },
         "webp": {
           "path": "assets/events/hdarvasi-640.webp",
-          "bytes": 8100,
-          "sha256": "e5d4411f67a85846504523aef18fbac531cedfe230fe8c01ff79e43de11d8108"
+          "bytes": 9496,
+          "sha256": "e7413c515072c026aacddabf653c6b2a8788fcb282299772db3cbcabc855f2d9"
         }
       },
-      "photoRights": "third-party rights review",
-      "sourceKind": "archive"
+      "photoRights": "official organiser event artwork",
+      "sourceKind": "organizer_event_artwork"
     },
     "comic": {
       "status": "photo",
