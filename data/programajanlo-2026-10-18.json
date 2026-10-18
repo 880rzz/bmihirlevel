@@ -576,6 +576,30 @@
           "featuredPeople": [
             "Koncz Zsuzsa"
           ]
+        },
+        {
+          "id": "napraforgok-2026",
+          "title": "XXVII. Bécsi Magyar Táncháztalálkozó",
+          "date": "2026. november 7. · 15:00-tól",
+          "target": "Magyar néptánc · minden korosztály",
+          "url": "https://www.napraforgok.at/kezd%C5%91lap",
+          "source": "2026-os rendezvényplakát és a Napraforgók 2025-ös programoldala",
+          "verifiedAt": "2026-10-19",
+          "startDate": "2026-11-07",
+          "tags": [
+            "Néptánc",
+            "Közösség",
+            "Családi"
+          ],
+          "description": "Gyermektáncház, kézműveskedés, tánctanítás, gálaműsor és táncház. A 2026-os plakát szerint Festsaal, Längenfeldgasse 13–15, 1120 Wien.",
+          "venue": "Festsaal, Längenfeldgasse 13–15, 1120 Wien",
+          "ticketPriceStatus": "Nem közölt a 2026-os plakáton; szervezőnél ellenőrizendő.",
+          "historySource": "https://www.napraforgok.at/kezd%C5%91lap",
+          "image": {
+            "status": "USER_SUPPLIED_IN_CHAT_NOT_YET_IN_REPOSITORY",
+            "kind": "event_poster",
+            "note": "Poster 2026 user upload; must be added as an asset before HTML references it."
+          }
         }
       ]
     },
