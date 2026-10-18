@@ -1,6 +1,6 @@
 {
   "edition": "2026-27-W07",
-  "generatedAt": "2026-10-18T18:25:38.936416+00:00",
+  "generatedAt": "2026-10-18T18:29:03.592030+00:00",
   "images": {
     "pumpkin": {
       "status": "photo",
@@ -349,6 +349,22 @@
         }
       },
       "photoRights": "first-party"
+    }
+  },
+  "logo": {
+    "status": "first_party",
+    "sourceUrl": "https://static.wixstatic.com/media/b0aee1_944db6e866844c83b2e5d8b7bdf7ecb6~mv2.png",
+    "files": {
+      "png": {
+        "path": "assets/bmi-logo-272.png",
+        "bytes": 66432,
+        "sha256": "570f5b7e05fc16b03e48f95c13f899ce725b3255282ce39ce633ff5028117423"
+      },
+      "webp": {
+        "path": "assets/bmi-logo-272.webp",
+        "bytes": 51598,
+        "sha256": "ee63af5ba8946c645c630f93b808be0374f08731e530564d6bf6e57099990955"
+      }
     }
   }
 }

@@ -96,3 +96,12 @@ A háromkategóriás kezdőlap változatlan. A `#program-iskola` blokk az archiv
 4. A workflow **külön `generated/newsletter-image-assets-...` review branchre** ment. Ezt ellenőrizni és PR-ként egyesíteni kell a `main` ágba. A mostani PR kizárólag a megjelenítést javítja és bevezeti a migrációs eszközt; **a GitHub-képtárolás nem tekinthető késznek, amíg a generált fájlokat nem látjuk a main ágon.**
 
 A képek harmadik féltől származó újraközlési jogai továbbra is külön szerkesztői ellenőrzést igényelnek; a saját Wix médiatárba másolás nem jelent automatikus felhasználási engedélyt.
+
+## GitHub-képek: kész elsődleges forrás (2026-10-18)
+
+- **Az összes hírlevél-kép a repository saját `assets/` mappájában van**: 19 programhoz JPEG + WebP (38 fájl) és a hivatalos BMI körlogóhoz PNG + WebP (2 fájl).
+- A 3 webes nyelv és az egylapos nyelvi sablonok `/assets/events/<id>-640.webp` és `/assets/bmi-logo-272.webp` URL-eket használnak; a 3 Wix e-mail export teljes HTTPS JPEG/PNG URL-eket.
+- Az adott 19 képből **17 valódi fénykép vagy eredeti BMI-grafika**, **2 jelölt helyettesítő** (`prater` és `u4`), mert a megadott harmadik fél képfájlját nem lehetett érvényes képformátumban letölteni.
+- Az eredeti BMI-programképek képaránya megmaradt; a külső ajánlóképek 640×360 pixelesek, szülőelemet kitöltő megjelenítéssel és 5 px lekerekítéssel.
+- A `data/event-image-assets.json` tartalmazza a generált fájlok méretét, SHA-256 értékét és fotó/helyettesítő státuszát. A hírlevél HTML-kódja közvetlenül nem használ többé Wix médiaszolgáltatást. A főoldal elsődleges nyelve magyar maradt.
+- **Korlátok:** az éles GitHub Pages URL vizuális ellenőrzése és a harmadik féltől származó fotók újraközlési engedélye külön feladat. A későbbi képcseréket ugyanaz az automatizmus generálhatja új PR-ben.
