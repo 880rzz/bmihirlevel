@@ -485,7 +485,7 @@
           "description": "„A csodáért dolgozni kell” – irodalmi este Lendvai Zsóka vezetésével, Schwedenplatz 2.",
           "image": {
             "status": "OFFICIAL_EVENT_ARTWORK",
-            "kind": "official_event_artwork",
+            "kind": "organizer_event_artwork",
             "credit": "Központi Szövetség – hivatalos eseménykép",
             "source": "https://www.kozpontiszovetseg.at/event-details/darvasi-laszlo",
             "original": "https://static.wixstatic.com/media/b0aee1_0a903895e1ca458cb47d495de074ceca~mv2.jpeg",
