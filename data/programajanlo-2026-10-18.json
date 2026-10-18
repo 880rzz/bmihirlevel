@@ -498,8 +498,8 @@
             "wixUploadStatus": "SOURCE_ON_ORGANISER_SITE",
             "githubAsset": "/assets/events/hdarvasi-640.webp",
             "githubEmailAsset": "https://hirlevel.magyariskola.at/assets/events/hdarvasi-640.jpg",
-            "assetGenerationStatus": "pending_refresh",
-            "wixExternalDependencyRemoved": false,
+            "assetGenerationStatus": "photo",
+            "wixExternalDependencyRemoved": true,
             "note": "Official main image from the Központi Szövetség event record for the 17 Nov 2026 Darvasi László event. No generated likeness."
           }
         },
