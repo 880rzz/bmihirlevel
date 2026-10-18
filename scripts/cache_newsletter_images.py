@@ -67,6 +67,8 @@ def main():
     OUTPUT.mkdir(parents=True,exist_ok=True)
     records={}
     for event in events:
+        if event.get("featuredPeople") and event.get("image",{}).get("kind")=="generated_poster":
+            raise ValueError("Generated poster forbidden for featured-person event: "+event["id"])
         im,url,errors=download(session,event)
         status="photo" if im is not None else "labelled_fallback"
         if im is None: im=fallback(event)
