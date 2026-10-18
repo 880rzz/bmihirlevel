@@ -486,7 +486,6 @@
           "image": {
             "status": "OFFICIAL_EVENT_ARTWORK",
             "kind": "official_event_artwork",
-            "originYear": "2023",
             "credit": "Központi Szövetség – hivatalos eseménykép",
             "source": "https://www.kozpontiszovetseg.at/event-details/darvasi-laszlo",
             "original": "https://static.wixstatic.com/media/b0aee1_0a903895e1ca458cb47d495de074ceca~mv2.jpeg",
@@ -494,8 +493,8 @@
             "thumbnailUrl": "https://static.wixstatic.com/media/b0aee1_0a903895e1ca458cb47d495de074ceca~mv2.jpeg",
             "width": 910,
             "height": 902,
-            "quality": 65,
-            "radiusPx": 5,
+            "quality": 90,
+            "radiusPx": 18,
             "wixUploadStatus": "SOURCE_ON_ORGANISER_SITE",
             "githubAsset": "/assets/events/hdarvasi-640.webp",
             "githubEmailAsset": "https://hirlevel.magyariskola.at/assets/events/hdarvasi-640.jpg",
