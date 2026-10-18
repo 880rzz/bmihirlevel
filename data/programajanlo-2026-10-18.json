@@ -29,7 +29,22 @@
             "Halloween",
             "Családi"
           ],
-          "description": "Ingyenes, őszies közösségi program az 5. kerületben."
+          "description": "Ingyenes, őszies közösségi program az 5. kerületben.",
+          "image": {
+            "status": "CURATED_RIGHTS_REVIEW_REQUIRED",
+            "kind": "archive",
+            "originYear": "2019",
+            "credit": "wohnpartner Wien",
+            "source": "https://wohnpartner-wien.at/aktuelles/detail/kuerbisfest-am-siebenbrunneplatz/",
+            "original": "https://wohnpartner-wien.at/fileadmin/Seiten/user_upload/Kuerbisfest_Siebenbrunnenplatz_2019__28_.jpg",
+            "mediaId": "b0aee1_544aca11c8b04eae909684e070fcf775~mv2.jpg",
+            "thumbnailUrl": "https://static.wixstatic.com/media/b0aee1_544aca11c8b04eae909684e070fcf775~mv2.jpg/v1/fill/w_480,h_270,al_c,q_65/b0aee1_544aca11c8b04eae909684e070fcf775~mv2.jpg",
+            "width": 480,
+            "height": 270,
+            "quality": 65,
+            "radiusPx": 5,
+            "wixUploadStatus": "PENDING"
+          }
         },
         {
           "id": "kkunst",
@@ -44,7 +59,22 @@
           "tags": [
             "Családi"
           ],
-          "description": "Gyermekeknek szóló kreatív foglalkozások és múzeumi programok az őszi szünetben. A korhatár és a részvételi feltételek helyszínenként eltérnek."
+          "description": "Gyermekeknek szóló kreatív foglalkozások és múzeumi programok az őszi szünetben. A korhatár és a részvételi feltételek helyszínenként eltérnek.",
+          "image": {
+            "status": "CURATED_RIGHTS_REVIEW_REQUIRED",
+            "kind": "archive",
+            "originYear": "2025",
+            "credit": "1000things Magazine",
+            "source": "https://www.1000thingsmagazine.com/de/a/2170542/kinderkunstfest-wien/",
+            "original": "https://cdn.1000thingsmagazine.com/app/uploads/2025/10/kinderkunstfest-wien-2000x1333.jpg",
+            "mediaId": "b0aee1_ea7e3fac12db43fdb09049df755416b9~mv2.jpg",
+            "thumbnailUrl": "https://static.wixstatic.com/media/b0aee1_ea7e3fac12db43fdb09049df755416b9~mv2.jpg/v1/fill/w_480,h_270,al_c,q_65/b0aee1_ea7e3fac12db43fdb09049df755416b9~mv2.jpg",
+            "width": 480,
+            "height": 270,
+            "quality": 65,
+            "radiusPx": 5,
+            "wixUploadStatus": "PENDING"
+          }
         },
         {
           "id": "sicher",
@@ -59,7 +89,22 @@
           "tags": [
             "Családi"
           ],
-          "description": "Családbarát, ingyenes városi bemutatók és programok a Rathausplatzon."
+          "description": "Családbarát, ingyenes városi bemutatók és programok a Rathausplatzon.",
+          "image": {
+            "status": "CURATED_RIGHTS_REVIEW_REQUIRED",
+            "kind": "illustrative",
+            "originYear": null,
+            "credit": "LPD Wien / Polizeimusik",
+            "source": "https://www.polizei.gv.at/wien/start.aspx",
+            "original": "https://www.polizei.gv.at/lpd_pics/47000/d_47387.jpg",
+            "mediaId": "b0aee1_25b149b24b584f9b96d183ee200d44ef~mv2.jpg",
+            "thumbnailUrl": "https://static.wixstatic.com/media/b0aee1_25b149b24b584f9b96d183ee200d44ef~mv2.jpg/v1/fill/w_480,h_270,al_c,q_65/b0aee1_25b149b24b584f9b96d183ee200d44ef~mv2.jpg",
+            "width": 480,
+            "height": 270,
+            "quality": 65,
+            "radiusPx": 5,
+            "wixUploadStatus": "PENDING"
+          }
         },
         {
           "id": "prater",
@@ -75,7 +120,22 @@
             "Halloween",
             "Családi"
           ],
-          "description": "Öt délután ingyenes program: tökfaragás, kézműveskedés, arcfestés és előadások. A szervező szerint idén nincs felvonulás."
+          "description": "Öt délután ingyenes program: tökfaragás, kézműveskedés, arcfestés és előadások. A szervező szerint idén nincs felvonulás.",
+          "image": {
+            "status": "CURATED_RIGHTS_REVIEW_REQUIRED",
+            "kind": "archive",
+            "originYear": "2017",
+            "credit": "Prater Wien",
+            "source": "https://www.praterwien.com/en/events/details/halloween-6",
+            "original": "https://www.praterwien.com/uploads/tx_dimpraterv2/user_upload/2017_Halloween_MG_1227.jpg",
+            "mediaId": "b0aee1_0569622cc51848e694f23b248f04ffe1~mv2.jpg",
+            "thumbnailUrl": "https://static.wixstatic.com/media/b0aee1_0569622cc51848e694f23b248f04ffe1~mv2.jpg/v1/fill/w_480,h_270,al_c,q_65/b0aee1_0569622cc51848e694f23b248f04ffe1~mv2.jpg",
+            "width": 480,
+            "height": 270,
+            "quality": 65,
+            "radiusPx": 5,
+            "wixUploadStatus": "PENDING"
+          }
         },
         {
           "id": "run",
@@ -91,7 +151,22 @@
             "Halloween",
             "Családi"
           ],
-          "description": "Jelmezes futóesemény gyermek- és családi távokkal, illetve 5 km-es futammal. Nevezés szükséges."
+          "description": "Jelmezes futóesemény gyermek- és családi távokkal, illetve 5 km-es futammal. Nevezés szükséges.",
+          "image": {
+            "status": "CURATED_RIGHTS_REVIEW_REQUIRED",
+            "kind": "official",
+            "originYear": null,
+            "credit": "Persil Vienna Halloween Run",
+            "source": "https://www.vienna-halloween-run.at/",
+            "original": "https://static.wixstatic.com/media/cfd667_68ff241ec58041f5ab60c30fd127a4cf~mv2.jpg",
+            "mediaId": "b0aee1_1b5beb1fa10c4ddabf5c3703011de1dc~mv2.jpg",
+            "thumbnailUrl": "https://static.wixstatic.com/media/b0aee1_1b5beb1fa10c4ddabf5c3703011de1dc~mv2.jpg/v1/fill/w_480,h_270,al_c,q_65/b0aee1_1b5beb1fa10c4ddabf5c3703011de1dc~mv2.jpg",
+            "width": 480,
+            "height": 270,
+            "quality": 65,
+            "radiusPx": 5,
+            "wixUploadStatus": "PENDING"
+          }
         },
         {
           "id": "friedhof",
@@ -107,7 +182,22 @@
             "Halloween",
             "Családi"
           ],
-          "description": "Ingyenes családi rejtvényprogram. Gyermekek csak felnőtt kísérővel vehetnek részt."
+          "description": "Ingyenes családi rejtvényprogram. Gyermekek csak felnőtt kísérővel vehetnek részt.",
+          "image": {
+            "status": "CURATED_RIGHTS_REVIEW_REQUIRED",
+            "kind": "archive",
+            "originYear": "2025",
+            "credit": "Friedhöfe Wien",
+            "source": "https://www.friedhoefewien.at/halloween-2025",
+            "original": "https://www.friedhoefewien.at/documents/1161147/0be0610d-e64c-eb50-3273-8d28ac2fb14d",
+            "mediaId": "b0aee1_a328d6a862d44349a562cf3651602e46~mv2.jpg",
+            "thumbnailUrl": "https://static.wixstatic.com/media/b0aee1_a328d6a862d44349a562cf3651602e46~mv2.jpg/v1/fill/w_480,h_270,al_c,q_65/b0aee1_a328d6a862d44349a562cf3651602e46~mv2.jpg",
+            "width": 480,
+            "height": 270,
+            "quality": 65,
+            "radiusPx": 5,
+            "wixUploadStatus": "PENDING"
+          }
         },
         {
           "id": "schoen",
@@ -122,7 +212,22 @@
           "tags": [
             "Családi"
           ],
-          "description": "Ünnepi vásár és családi élmények a kastély előtt. A vásár látogatása ingyenes; egyes attrakciókért fizetni kell."
+          "description": "Ünnepi vásár és családi élmények a kastély előtt. A vásár látogatása ingyenes; egyes attrakciókért fizetni kell.",
+          "image": {
+            "status": "CURATED_RIGHTS_REVIEW_REQUIRED",
+            "kind": "archive",
+            "originYear": "2022",
+            "credit": "FOTOFALLY / Weihnachtsmarkt Schönbrunn",
+            "source": "https://www.weihnachtsmarkt.co.at/presse/",
+            "original": "https://www.weihnachtsmarkt.co.at/wp-content/uploads/2022/05/Abendstimmung-Weihnachtsmarkt-Schoenbrunn-%C2%A9-FOTOFALLY-scaled-e1652789145696.jpg",
+            "mediaId": "b0aee1_5debd788302e459bbfecda2daeab3c85~mv2.jpg",
+            "thumbnailUrl": "https://static.wixstatic.com/media/b0aee1_5debd788302e459bbfecda2daeab3c85~mv2.jpg/v1/fill/w_480,h_270,al_c,q_65/b0aee1_5debd788302e459bbfecda2daeab3c85~mv2.jpg",
+            "width": 480,
+            "height": 270,
+            "quality": 65,
+            "radiusPx": 5,
+            "wixUploadStatus": "PENDING"
+          }
         },
         {
           "id": "buch",
@@ -137,7 +242,22 @@
           "tags": [
             "Családi"
           ],
-          "description": "Felolvasások, játékok és alkotóműhelyek. A szervező tájékoztatása szerint a 14 év alattiaknak a szüleikkel ingyenes a belépés."
+          "description": "Felolvasások, játékok és alkotóműhelyek. A szervező tájékoztatása szerint a 14 év alattiaknak a szüleikkel ingyenes a belépés.",
+          "image": {
+            "status": "CURATED_RIGHTS_REVIEW_REQUIRED",
+            "kind": "illustrative",
+            "originYear": null,
+            "credit": "eSeL.at",
+            "source": "https://www.esel.at/de/event/kinder-und-jugendbuch--031J6xCrz9mWOTHQq5kHvv",
+            "original": "https://pix.esel.at/unsafe/1024x/eselfiles/original/ev/031J/712iZl0ugqUgq4Tnzd.jpg",
+            "mediaId": "b0aee1_51fc3458fe1e45aba48bf720362a7dc9~mv2.jpg",
+            "thumbnailUrl": "https://static.wixstatic.com/media/b0aee1_51fc3458fe1e45aba48bf720362a7dc9~mv2.jpg/v1/fill/w_480,h_270,al_c,q_65/b0aee1_51fc3458fe1e45aba48bf720362a7dc9~mv2.jpg",
+            "width": 480,
+            "height": 270,
+            "quality": 65,
+            "radiusPx": 5,
+            "wixUploadStatus": "PENDING"
+          }
         }
       ]
     },
@@ -159,7 +279,22 @@
           "tags": [
             "Kultúra"
           ],
-          "description": "Zene és filmrészletek az 1956 után Magyarországról elmenekült zeneszerzők emlékére, a MuTh koncertteremben."
+          "description": "Zene és filmrészletek az 1956 után Magyarországról elmenekült zeneszerzők emlékére, a MuTh koncertteremben.",
+          "image": {
+            "status": "CURATED_RIGHTS_REVIEW_REQUIRED",
+            "kind": "illustrative",
+            "originYear": "2014",
+            "credit": "Zene.hu",
+            "source": "https://zene.hu/20141001_ismerd_meg_a_theremint_a_legfoldonkivulibb_hangszer",
+            "original": "https://zene.hu/image/article/main/.640x640/41757.jpg",
+            "mediaId": "b0aee1_9257b14e341f414482107c63921fbdd3~mv2.jpg",
+            "thumbnailUrl": "https://static.wixstatic.com/media/b0aee1_9257b14e341f414482107c63921fbdd3~mv2.jpg/v1/fill/w_480,h_270,al_c,q_65/b0aee1_9257b14e341f414482107c63921fbdd3~mv2.jpg",
+            "width": 480,
+            "height": 270,
+            "quality": 65,
+            "radiusPx": 5,
+            "wixUploadStatus": "PENDING"
+          }
         },
         {
           "id": "h1956",
@@ -174,7 +309,12 @@
           "tags": [
             "Magyar"
           ],
-          "description": "Ünnepi megemlékezés az Europa-Club és az Ausztriai Magyar Szervezetek Kerekasztala szervezésében a Collegium Hungaricumban."
+          "description": "Ünnepi megemlékezés az Europa-Club és az Ausztriai Magyar Szervezetek Kerekasztala szervezésében a Collegium Hungaricumban.",
+          "image": {
+            "status": "NOT_FOUND",
+            "reason": "A bécsi 2026-os közös megemlékezés hiteles eseményképét nem találtuk meg; más helyszínről származó 2025-ös fotót nem használunk megtévesztően.",
+            "radiusPx": 5
+          }
         },
         {
           "id": "viennale",
@@ -189,7 +329,22 @@
           "tags": [
             "Kultúra"
           ],
-          "description": "Filmvetítések és filmes találkozások. A korhatárt és a vetítés nyelvét a választott filmnél ellenőrizzétek."
+          "description": "Filmvetítések és filmes találkozások. A korhatárt és a vetítés nyelvét a választott filmnél ellenőrizzétek.",
+          "image": {
+            "status": "CURATED_RIGHTS_REVIEW_REQUIRED",
+            "kind": "official",
+            "originYear": "2026",
+            "credit": "Stadt Wien / Viennale",
+            "source": "https://www.wien.gv.at/veranstaltungen/viennale-2026",
+            "original": "https://www.wien.gv.at/bilder/_imager/events/ma53/6204565/viennale-2026.c8d2849df7.1788253087.jpg",
+            "mediaId": "b0aee1_a01cf4458f294d4b8c48b60bd1623a3e~mv2.jpg",
+            "thumbnailUrl": "https://static.wixstatic.com/media/b0aee1_a01cf4458f294d4b8c48b60bd1623a3e~mv2.jpg/v1/fill/w_480,h_270,al_c,q_65/b0aee1_a01cf4458f294d4b8c48b60bd1623a3e~mv2.jpg",
+            "width": 480,
+            "height": 270,
+            "quality": 65,
+            "radiusPx": 5,
+            "wixUploadStatus": "PENDING"
+          }
         },
         {
           "id": "hsecession",
@@ -204,7 +359,22 @@
           "tags": [
             "Magyar"
           ],
-          "description": "Könyvbemutató és beszélgetés a két város építészeti örökségéről, majd vezetés a Zsolnay-kiállításban."
+          "description": "Könyvbemutató és beszélgetés a két város építészeti örökségéről, majd vezetés a Zsolnay-kiállításban.",
+          "image": {
+            "status": "CURATED_RIGHTS_REVIEW_REQUIRED",
+            "kind": "illustrative",
+            "originYear": "2016",
+            "credit": "NLC",
+            "source": "https://nlc.hu/utazas/20161126/magyarorszag-10-legszebb-szecesszios-epulete/",
+            "original": "https://nlc.p3k.hu/data/cikk/20/190956/4.jpg",
+            "mediaId": "b0aee1_d0830fa7631f47eb80cb37f9f4eb34c9~mv2.jpg",
+            "thumbnailUrl": "https://static.wixstatic.com/media/b0aee1_d0830fa7631f47eb80cb37f9f4eb34c9~mv2.jpg/v1/fill/w_480,h_270,al_c,q_65/b0aee1_d0830fa7631f47eb80cb37f9f4eb34c9~mv2.jpg",
+            "width": 480,
+            "height": 270,
+            "quality": 65,
+            "radiusPx": 5,
+            "wixUploadStatus": "PENDING"
+          }
         },
         {
           "id": "u4",
@@ -220,7 +390,12 @@
             "Halloween",
             "Családi"
           ],
-          "description": "Jelmezes este két tánctérrel, négy DJ-vel és horrorhangulattal. 18 éven felülieknek."
+          "description": "Jelmezes este két tánctérrel, négy DJ-vel és horrorhangulattal. 18 éven felülieknek.",
+          "image": {
+            "status": "NOT_FOUND",
+            "reason": "A 2026. október 31-i U4 rendezvény hivatalos plakátjának ellenőrizhető közvetlen média-URL-je nem volt elérhető.",
+            "radiusPx": 5
+          }
         },
         {
           "id": "hdarvasi",
@@ -235,7 +410,22 @@
           "tags": [
             "Magyar"
           ],
-          "description": "„A csodáért dolgozni kell” – irodalmi este Lendvai Zsóka vezetésével, Schwedenplatz 2."
+          "description": "„A csodáért dolgozni kell” – irodalmi este Lendvai Zsóka vezetésével, Schwedenplatz 2.",
+          "image": {
+            "status": "CURATED_RIGHTS_REVIEW_REQUIRED",
+            "kind": "archive",
+            "originYear": "2023",
+            "credit": "Litera",
+            "source": "https://litera.hu/media/litera-podcast/irok-a-klubban-15-felolvas-darvasi-laszlo.html",
+            "original": "https://litera.hu/file/slides/1/172027/fe_800_500_litera_3hollo_buli_2023_06_07_ogm_0456.jpg",
+            "mediaId": "b0aee1_80b01ff00a024db69de24fe6ba1cd6f8~mv2.jpg",
+            "thumbnailUrl": "https://static.wixstatic.com/media/b0aee1_80b01ff00a024db69de24fe6ba1cd6f8~mv2.jpg/v1/fill/w_480,h_270,al_c,q_65/b0aee1_80b01ff00a024db69de24fe6ba1cd6f8~mv2.jpg",
+            "width": 480,
+            "height": 270,
+            "quality": 65,
+            "radiusPx": 5,
+            "wixUploadStatus": "PENDING"
+          }
         },
         {
           "id": "comic",
@@ -250,7 +440,22 @@
           "tags": [
             "Kultúra"
           ],
-          "description": "Képregények, fantasy, cosplay és popkultúra a Messe Wienben."
+          "description": "Képregények, fantasy, cosplay és popkultúra a Messe Wienben.",
+          "image": {
+            "status": "CURATED_RIGHTS_REVIEW_REQUIRED",
+            "kind": "illustrative",
+            "originYear": null,
+            "credit": "Volume.at",
+            "source": "https://www.volume.at/events/vienna-comic-con-2026-2026-11-21/",
+            "original": "https://www.volume.at/cdn/event/2076751-scaled__original.jpg",
+            "mediaId": "b0aee1_12d3ad774de44cb9b67c6ad5c23a7629~mv2.jpg",
+            "thumbnailUrl": "https://static.wixstatic.com/media/b0aee1_12d3ad774de44cb9b67c6ad5c23a7629~mv2.jpg/v1/fill/w_480,h_270,al_c,q_65/b0aee1_12d3ad774de44cb9b67c6ad5c23a7629~mv2.jpg",
+            "width": 480,
+            "height": 270,
+            "quality": 65,
+            "radiusPx": 5,
+            "wixUploadStatus": "PENDING"
+          }
         },
         {
           "id": "hkoncz",
@@ -265,7 +470,22 @@
           "tags": [
             "Magyar"
           ],
-          "description": "Beszélgetés a Collegium Hungaricumban. A jegyek, a regisztráció és a helyek elérhetőségét az eseményoldalon ellenőrizzétek."
+          "description": "Beszélgetés a Collegium Hungaricumban. A jegyek, a regisztráció és a helyek elérhetőségét az eseményoldalon ellenőrizzétek.",
+          "image": {
+            "status": "CURATED_RIGHTS_REVIEW_REQUIRED",
+            "kind": "archive",
+            "originYear": null,
+            "credit": "Hello Miskolc",
+            "source": "https://www.hellomiskolc.hu/koncz-zsuzsa-koncert",
+            "original": "https://www.hellomiskolc.hu/files/www.hellomiskolc.hu/media/objects/7/6/4/1/ori/koncz-zsuzsa-koncert.jpg",
+            "mediaId": "b0aee1_9ca6f81980d944ec8d5831d7303b0c8f~mv2.jpg",
+            "thumbnailUrl": "https://static.wixstatic.com/media/b0aee1_9ca6f81980d944ec8d5831d7303b0c8f~mv2.jpg/v1/fill/w_480,h_270,al_c,q_65/b0aee1_9ca6f81980d944ec8d5831d7303b0c8f~mv2.jpg",
+            "width": 480,
+            "height": 270,
+            "quality": 65,
+            "radiusPx": 5,
+            "wixUploadStatus": "PENDING"
+          }
         }
       ]
     },
@@ -286,7 +506,12 @@
           ],
           "url": "https://www.magyariskola.at/event-details/csinaljuk-a-forradalmat-2026",
           "source": "Bécsi Magyar Iskola",
-          "description": "Játékos, alkotó történelemfoglalkozás, amelyben a gyerekek kérdezve és döntéseket hozva fedezik fel, mit jelent egy forradalom."
+          "description": "Játékos, alkotó történelemfoglalkozás, amelyben a gyerekek kérdezve és döntéseket hozva fedezik fel, mit jelent egy forradalom.",
+          "image": {
+            "status": "NOT_FOUND",
+            "reason": "No authoritative visual confirmed",
+            "radiusPx": 5
+          }
         },
         {
           "id": "bmi-ruhacsere",
@@ -300,7 +525,12 @@
           ],
           "url": "https://www.magyariskola.at/event-details/ruhacsere-party-2026-osz",
           "source": "Bécsi Magyar Iskola",
-          "description": "Jó állapotú ruhák cseréje a Schwedenplatzon. Részvételi hozzájárulás: 5 €. A megmaradt ruhákat az Igazgyöngy Alapítvány kapja."
+          "description": "Jó állapotú ruhák cseréje a Schwedenplatzon. Részvételi hozzájárulás: 5 €. A megmaradt ruhákat az Igazgyöngy Alapítvány kapja.",
+          "image": {
+            "status": "NOT_FOUND",
+            "reason": "No authoritative visual confirmed",
+            "radiusPx": 5
+          }
         },
         {
           "id": "bmi-telapo",
@@ -316,7 +546,12 @@
           "source": "Bécsi Magyar Iskola",
           "videoUrl": "https://youtu.be/o5A4SUl_bow?feature=shared",
           "imageUrl": "https://static.wixstatic.com/media/b0aee1_5c18bf79ad11491eaaa0ce0e8f787ae9~mv2.png",
-          "description": "Interaktív magyar nyelvű mesekoncert a Wiener Rathaus dísztermében. A jegyértékesítés első hetében a rendelkezésre álló jegyek közel fele elkelt."
+          "description": "Interaktív magyar nyelvű mesekoncert a Wiener Rathaus dísztermében. A jegyértékesítés első hetében a rendelkezésre álló jegyek közel fele elkelt.",
+          "image": {
+            "status": "NOT_FOUND",
+            "reason": "No authoritative visual confirmed",
+            "radiusPx": 5
+          }
         }
       ]
     }

@@ -65,3 +65,11 @@ A háromkategóriás kezdőlap változatlan. A `#program-iskola` blokk az archiv
 - A `de/index.html` és `en/index.html` külön nyelvű kanonikus oldalak továbbra is rendelkezésre állnak SEO/hreflang és JavaScript nélküli eszközök számára.
 - A Wix e-mail HTML-ekbe **nem** kerül interaktív JavaScript; az ikonok a nyelvnek megfelelő teljes online hírlevélre linkelnek. A forrás tartalma és képei mindhárom kiadásban változatlanok.
 - A levelezőkliensek JS-tiltása miatt kizárólag a webes online verzió kapcsol át a három nyelv között helyben. A Wix-export HTML-változatok külön is megtarthatók.
+
+## Optimalizált eseményképek és 5 px sarokkerekítés (2026-10-18)
+
+- A 16 külső eseményből **14** kapott a szervezői oldalhoz vagy témához köthető fotót; **2** programnál nincs hitelesen társítható közvetlen médiaforrás (1956-os bécsi közös megemlékezés és U4 Halloween). Az eredeti **3 BMI-eseménykép maradt**, és sarokkerekítésük 10 → **5 px**.
+- Az új képek eredetije és dátuma a `data/programajanlo-2026-10-18.json` `image` mezőjében van nyilvántartva. Az archív/témakép szerkesztőségi képaláírást kap, ezért nem látszik 2026-os eseményen készült felvételnek.
+- Képek: Wix Media CDN, 480 × 270 px JPEG transzformáció, `q_65`, max. 300 px vizuális szélesség, 5 px radius, deklarált 300 × 169 megjelenítési méret. Az online verzió lusta képletöltést és aszinkron dekódolást használ; a három Wix e-mail export JS-mentes és a képeket e-mailbarát `img` elemekkel jeleníti meg.
+- A három nyelv azonos 14 külső képhez csatlakozik; böngésző gyorsítótára megosztja a képek letöltését. A két kép nélküli programnál nem került be hamis vagy félrevezető kép.
+- **Release-korlát:** a Wix médiaszolgáltatás feltöltéskor `PENDING` státuszt jelentett. A végleges CDN-válasz és a tényleges teljesítmény/fájlméret külső eszközzel nem ellenőrzött. **A szerzői jogi / felhasználási engedély nem igazolt**, különösen a harmadik fél által publikált sajtó-/archív fotóknál. A képek nyilvános közzététele és a Wix-kiküldés előtt jogosultsági ellenőrzés szükséges.
