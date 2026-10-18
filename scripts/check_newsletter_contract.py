@@ -15,8 +15,11 @@ PAGES = {
 POSTERS = ("h1956", "hdarvasi", "hkoncz")
 for path, lang in PAGES.items():
     html = (ROOT / path).read_text(encoding="utf-8")
-    assert len(html.encode("utf-8")) < 85000, f"{path}: HTML exceeds 85 KB"
+    assert len(html.encode("utf-8")) < 150000, f"{path}: editorial HTML exceeds 150 KB"
     assert html.count("<h1 ") == 1, f"{path}: expected exactly one H1"
+    assert html.count('class="event-editorial-details"') >= 17, f"{path}: missing magazine details"
+    assert html.count('class="event-school-details"') == 2, f"{path}: missing school details"
+    assert 'data-event="napraforgok-2026"' in html, f"{path}: missing 20th event"
     assert 'data-unsubscribe-request="email"' in html, f"{path}: unsubscribe missing"
     assert "mailto:marketing@kozpontiszovetseg.at?" in html
     assert f'<html lang="{lang}">' in html
