@@ -81,10 +81,10 @@
     .newsletter-shell [data-newsletter-langs] a{color:#F5F3EE!important;background-color:#15263A!important;border:1px solid #8E99A8!important}
     .newsletter-shell [data-newsletter-langs] strong[aria-current="page"]{color:#F5F3EE!important;background-color:#24364A!important;border:1px solid #C8A76D!important}
     .newsletter-shell [data-newsletter-langs] :is(a,strong):focus-visible{outline:2px solid #E7C58B;outline-offset:3px}
-    .newsletter-shell .editorial-event :is(p,span,div){color:inherit}
 
+    body>table{position:relative;z-index:1}
     @media (min-width:621px){html body{background-attachment:fixed!important}}
-    @media (max-width:620px){html body{background-attachment:scroll!important}html body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:#071422 url('/assets/halloween/night-pattern.svg') repeat center top/280px 280px}}
+    @media (max-width:620px){html body{background-attachment:scroll!important}html body::before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;background:#071422 url('/assets/halloween/night-pattern.svg') repeat center top/280px 280px}}
   </style>
   <script defer src="/analytics-consent.js"></script>
 </head>
