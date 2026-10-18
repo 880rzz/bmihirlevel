@@ -57,3 +57,11 @@ A háromkategóriás kezdőlap változatlan. A `#program-iskola` blokk az archiv
 - Wix Email Marketing import: `exports/bmi-hirlevel-wix-2026-10-18.html` (HU), `exports/bmi-hirlevel-wix-de-2026-10-18.html` (DE), `exports/bmi-hirlevel-wix-en-2026-10-18.html` (EN).
 - Az e-mail HTML fájlokból hiányzik a JavaScript és a saját leiratkozási felszólítás; Wix biztosítja a natív leiratkozást. Mindhárom változat azonos 19 programot, BMI-képeket, külső linkeket és a 3 célcsoportot használja.
 - Egy magyar vonatkozású program nem feltétlenül magyar nyelvű. Fordításkor eseménycímek (különösen saját márkanevek) és forráslinkek megmaradnak, a kísérőszöveg DE/EN nyelvű. A dátumok a 2026-10-18-i hírlevél pillanatképét jelentik.
+
+## Egylapos háromnyelvű nyelvválasztó (2026-10-18)
+
+- A webes gyökéroldal (`index.html`) alapnyelve magyar, és tartalmazza a teljes DE/EN verziót két inaktív HTML `template` blokkban. A nyelvváltás kattintásra ugyanazon az oldalon, újratöltés nélkül történik, és `?lang=de` / `?lang=en` megosztható URL-re frissíti a címsort.
+- A három nyelvikon: 🇭🇺 Magyar · 🇦🇹 Deutsch · 🇬🇧 English. Az aktív nyelv vizuálisan jelölt. A választás az oldalcímet és a nyelvi metaadatokat is frissíti, a magyar alapértelmezés mellett.
+- A `de/index.html` és `en/index.html` külön nyelvű kanonikus oldalak továbbra is rendelkezésre állnak SEO/hreflang és JavaScript nélküli eszközök számára.
+- A Wix e-mail HTML-ekbe **nem** kerül interaktív JavaScript; az ikonok a nyelvnek megfelelő teljes online hírlevélre linkelnek. A forrás tartalma és képei mindhárom kiadásban változatlanok.
+- A levelezőkliensek JS-tiltása miatt kizárólag a webes online verzió kapcsol át a három nyelv között helyben. A Wix-export HTML-változatok külön is megtarthatók.
