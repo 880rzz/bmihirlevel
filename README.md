@@ -75,3 +75,10 @@ A háromkategóriás kezdőlap változatlan. A `#program-iskola` blokk az archiv
 - **Release-korlát:** a Wix médiaszolgáltatás feltöltéskor `PENDING` státuszt jelentett. A végleges CDN-válasz és a tényleges teljesítmény/fájlméret külső eszközzel nem ellenőrzött. **A szerzői jogi / felhasználási engedély nem igazolt**, különösen a harmadik fél által publikált sajtó-/archív fotóknál. A képek nyilvános közzététele és a Wix-kiküldés előtt jogosultsági ellenőrzés szükséges.
 
 - **Adatjavítás:** a három eredeti BMI-programképet a képadatbázis `EXISTING_OWN_EVENT_ARTWORK` státusszal kezeli. A kizárólag két kép nélküli külső esemény: 1956-os megemlékezés és U4 Halloween.
+
+## Teljes vizuális lefedettség: 19/19 (2026-10-18, kiegészítés)
+
+- A két utolsó külső eseményhez külön **szimbólumot** illesztettünk a már meglevő 14 fotó mellé. Az 1956-os közös megemlékezés jelölője Thommy9 1956-os lyukas zászlója (**CC0**, nem rendezvényfotó); az U4 Halloween jelölője az U4 helyszín logója (**nem a 2026-os esemény plakátja**). A forrás és státusz a JSON-ben szerepel.
+- Most minden eseménynek van vizuális eleme: **16 külső ajánló (14 archív/illusztratív/aktuális fotó + 2 jelképes), 3 BMI eredeti eseménykép**. A korábbi 14/16 és két kép nélküli sor a korábbi végrehajtási szakasz állapotát jelölte.
+- Mind a 19 eseményképnél 5 px sarokkerekítés érvényes; a kör alakú BMI-fejléclogót nem téglalaposítottuk.
+- A sajtóképek és U4 márkajel szerzői jogi/használati státuszának ellenőrzése továbbra is kötelező. A Wix CDN-válaszok és az éles oldal teljesítménye az ellenőrző eszközből nem volt igazolható.
