@@ -1,0 +1,26 @@
+name: Check deployed BMI newsletter images
+on:
+  push:
+    branches: [main]
+    paths:
+      - scripts/check_production_images.py
+      - .github/workflows/check-newsletter-production.yml
+      - assets/**
+      - index.html
+      - de/**
+      - en/**
+      - exports/**
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  production-image-smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 7
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify live language pages and 40 image URLs
+        run: python scripts/check_production_images.py
