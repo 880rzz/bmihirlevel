@@ -26,15 +26,19 @@ def audit():
         if "/assets/bmi-logo-272.webp" not in html:raise ValueError(route+": BMI logo not local")
         for id in IDS:
             if f"/assets/events/{id}-640.webp" not in html:raise ValueError(route+": missing "+id)
-        if "border-radius:5px" not in html:raise ValueError(route+": missing 5px design")
+        if "border-radius:18px" not in html:raise ValueError(route+": missing Apple-like card radius")
         # Ensure the deployed site contains the actual requested editorial design.
-        if 'class="feature-grid"' not in html:raise ValueError(route+": image-led categories not deployed")
+        if 'class="category-buttons"' not in html:raise ValueError(route+": compact category buttons not deployed")
         expected_features=9 if route=="/" else 3
         expected_events=48 if route=="/" else 16
         if html.count('class="feature-cell"')!=expected_features:raise ValueError(route+": category cards missing")
         if html.count('class="editorial-event"')!=expected_events:raise ValueError(route+": editorial event cards missing")
-        if "background:#F6F1E7" not in html or "font-size:44px" not in html:raise ValueError(route+": editorial hero not deployed")
-        if "padding:12px 16px" not in html or "background:#C82932" not in html:raise ValueError(route+": editorial CTAs not deployed")
+        if "font-size:48px" not in html or "BlinkMacSystemFont" not in html:raise ValueError(route+": Apple-inspired typography not deployed")
+        if "background:#007C83" not in html:raise ValueError(route+": turquoise action system not deployed")
+        expected_school=9 if route=="/" else 3
+        if html.count('class="mobile-padding school-event-image"')!=expected_school:raise ValueError(route+": unified school cards missing")
+        if html.count("aspect-ratio:1/1")<expected_school:raise ValueError(route+": square school images missing")
+        if "#C82932" in html or "#B82029" in html:raise ValueError(route+": old burgundy accent remains")
         if re.search(r'<img\b[^>]*src="https://static\.wixstatic\.com/',html):raise ValueError(route+": unresolved Wix source")
         pages.append({"route":route,"htmlBytes":len(html)})
     with ThreadPoolExecutor(max_workers=8) as pool:
