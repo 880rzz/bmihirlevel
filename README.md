@@ -35,3 +35,7 @@ A Wix-hírlevélben használható reszponzív HTML-forrás: `index.html`.
 - 3 fő csoport → közvetlen részletek → a szervező hivatalos oldala. Az új részletes eseménylista egyszer szerepelteti az egyes eseményeket.
 - Hírréteg: Mikulás-jegyértékesítés röviden a 3 belépési pont alatt. Teljes részletek az iskolai kategóriában.
 - A korábbi nagy iskolai képgalériát egyetlen, kisebb Télapó-képre redukáltuk; a többi esemény linkje és tartalma megmaradt.
+
+## BMI iskolai programegység megőrzött stílusa (2026-10-18)
+
+A háromkategóriás kezdőlap változatlan. A `#program-iskola` blokk az archivált `archive/2026-10-18-week07-before-three-entry-structure.html` kiadás eredeti iskolai megjelenéséből lett visszaállítva: nagyméretű programképek, hosszabb leírások, az eredeti jelentkezési gombok és a Télapó Pingvintánc-linkje. Mobilon a táblázatcellák oldalsó paddingje a meglévő közös szabályt követi. A többi programkategória nem változott.
