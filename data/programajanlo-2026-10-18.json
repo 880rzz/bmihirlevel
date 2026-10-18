@@ -501,7 +501,10 @@
             "assetGenerationStatus": "photo",
             "wixExternalDependencyRemoved": true,
             "note": "Official main image from the Központi Szövetség event record for the 17 Nov 2026 Darvasi László event. No generated likeness."
-          }
+          },
+          "featuredPeople": [
+            "Darvasi László"
+          ]
         },
         {
           "id": "comic",
@@ -569,7 +572,10 @@
             "assetGenerationStatus": "photo",
             "wixExternalDependencyRemoved": true,
             "note": "User supplied the event's own artwork in this conversation."
-          }
+          },
+          "featuredPeople": [
+            "Koncz Zsuzsa"
+          ]
         }
       ]
     },
@@ -659,7 +665,10 @@
             "githubEmailAsset": "https://hirlevel.magyariskola.at/assets/events/bmi-telapo-640.jpg",
             "assetGenerationStatus": "photo",
             "wixExternalDependencyRemoved": true
-          }
+          },
+          "featuredPeople": [
+            "Kovácsovics Fruzsina"
+          ]
         }
       ]
     }
