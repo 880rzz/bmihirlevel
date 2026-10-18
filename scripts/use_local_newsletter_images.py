@@ -34,20 +34,32 @@ for rel in (*WEB_FILES,*EMAIL_FILES):
             if not old: raise ValueError("Missing first-party source for "+eid)
             expected=3 if rel=="index.html" else 1
             present=text.count('src="'+old+'"')
-            if present!=expected: raise ValueError(f"Missing BMI image {eid} in {rel}: {present}/{expected}")
-            text=text.replace('src="'+old+'"','src="'+target+'"')
+            if present==expected:
+                text=text.replace('src="'+old+'"','src="'+target+'"')
+            elif text.count('src="'+target+'"')!=expected:
+                raise ValueError(f"Missing BMI image {eid} in {rel}: {present}/{expected}")
         else:
             pattern=r'(<div data-event-thumb="'+re.escape(eid)+r'"[^>]*>\s*<img\s+src=")([^"]+)(")'
             text,count=re.subn(pattern,lambda m:m.group(1)+target+m.group(3),text)
             expected=3 if rel=="index.html" else 1
             if count!=expected: raise ValueError(f"Event photo missing {eid} in {rel}: {count}/{expected}")
         replacements[eid]=target
+    # Migrate the user-supplied, official BMI masthead logo as well.
+    wix_logo="https://static.wixstatic.com/media/b0aee1_944db6e866844c83b2e5d8b7bdf7ecb6~mv2.png"
+    logo_suffix="png" if email else "webp"
+    logo_path="/assets/bmi-logo-272."+logo_suffix
+    logo_target=(SITE+logo_path) if email else logo_path
+    if not (ROOT/logo_path.lstrip("/")).is_file():
+        raise FileNotFoundError(logo_path)
+    logos=3 if rel=="index.html" else 1
+    if text.count('src="'+wix_logo+'"')==logos:
+        text=text.replace('src="'+wix_logo+'"','src="'+logo_target+'"')
+    elif text.count('src="'+logo_target+'"')!=logos:
+        raise ValueError("BMI masthead logo not found "+rel)
+
     if len(replacements)!=19: raise ValueError("Incomplete imagery")
-    # The independent BMI masthead logo remains in its previously working Wix URL.
-    # All 19 programme visuals must already have GitHub assets before migration.
     remaining=re.findall(r'<img\b[^>]*src="https://static\.wixstatic\.com/media/[^"]+"[^>]*>',text)
-    if any("Wiener Ungarische Schule" not in image for image in remaining):
-        raise ValueError("Unmigrated programme image remains in "+rel)
+    if remaining: raise ValueError("Unmigrated Wix images remain in "+rel)
     if email and '<script' in text:
         raise ValueError("JavaScript leaked into "+rel)
     p.write_text(text,encoding="utf-8")
