@@ -73,3 +73,5 @@ A háromkategóriás kezdőlap változatlan. A `#program-iskola` blokk az archiv
 - Képek: Wix Media CDN, 480 × 270 px JPEG transzformáció, `q_65`, max. 300 px vizuális szélesség, 5 px radius, deklarált 300 × 169 megjelenítési méret. Az online verzió lusta képletöltést és aszinkron dekódolást használ; a három Wix e-mail export JS-mentes és a képeket e-mailbarát `img` elemekkel jeleníti meg.
 - A három nyelv azonos 14 külső képhez csatlakozik; böngésző gyorsítótára megosztja a képek letöltését. A két kép nélküli programnál nem került be hamis vagy félrevezető kép.
 - **Release-korlát:** a Wix médiaszolgáltatás feltöltéskor `PENDING` státuszt jelentett. A végleges CDN-válasz és a tényleges teljesítmény/fájlméret külső eszközzel nem ellenőrzött. **A szerzői jogi / felhasználási engedély nem igazolt**, különösen a harmadik fél által publikált sajtó-/archív fotóknál. A képek nyilvános közzététele és a Wix-kiküldés előtt jogosultsági ellenőrzés szükséges.
+
+- **Adatjavítás:** a három eredeti BMI-programképet a képadatbázis `EXISTING_OWN_EVENT_ARTWORK` státusszal kezeli. A kizárólag két kép nélküli külső esemény: 1956-os megemlékezés és U4 Halloween.
