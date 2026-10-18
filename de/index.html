@@ -76,6 +76,15 @@
     .newsletter-shell .editorial-event a:hover{background:#23374E!important}
     .newsletter-shell img{max-width:100%;height:auto}
     @media(max-width:620px){body{background-size:280px 280px!important}.newsletter-shell{border-left:0!important;border-right:0!important;border-radius:0!important}.newsletter-shell h1{font-size:clamp(28px,8vw,34px)!important}.newsletter-shell .editorial-event{padding:15px!important}}
+
+    /* Contrast authority for nocturnal theme; inline legacy text colors are normalized at source. */
+    .newsletter-shell [data-newsletter-langs] a{color:#F5F3EE!important;background-color:#15263A!important;border:1px solid #8E99A8!important}
+    .newsletter-shell [data-newsletter-langs] strong[aria-current="page"]{color:#F5F3EE!important;background-color:#24364A!important;border:1px solid #C8A76D!important}
+    .newsletter-shell [data-newsletter-langs] :is(a,strong):focus-visible{outline:2px solid #E7C58B;outline-offset:3px}
+    .newsletter-shell .editorial-event :is(p,span,div){color:inherit}
+
+    @media (min-width:621px){html body{background-attachment:fixed!important}}
+    @media (max-width:620px){html body{background-attachment:scroll!important}html body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:#071422 url('/assets/halloween/night-pattern.svg') repeat center top/280px 280px}}
   </style>
   <script defer src="/analytics-consent.js"></script>
 </head>
@@ -89,7 +98,7 @@
       <td align="center" style="padding:36px 12px;">
         <table class="newsletter-shell" role="presentation" width="680" cellspacing="0" cellpadding="0" border="0" style="width:100%;max-width:680px;background:#101F33;border-radius:5px;overflow:hidden;">
 
-          <tr data-unsubscribe-request="email"><td class="mobile-padding" align="right" style="padding:13px 26px 8px;text-align:right;background:#101F33;font-size:12px;line-height:1.65;color:#C4CDD6;"><a href="mailto:marketing@kozpontiszovetseg.at?subject=Abmeldung%20%E2%80%93%20Wiener%20Programmtipps&amp;body=Bitte%20entfernen%20Sie%20die%20E-Mail-Adresse%20des%20Absenders%20aus%20dem%20Verteiler%20des%20Newsletters%20Wiener%20Programmtipps.%20Vielen%20Dank." style="color:#345C63;text-decoration:underline;font-weight:650;">Abmelden</a><span style="display:block;font-size:11px;color:#C4CDD6;">Wenn Sie keine weiteren Newsletter erhalten möchten, klicken Sie hier und senden Sie die vorausgefüllte E-Mail.</span></td></tr>
+          <tr data-unsubscribe-request="email"><td class="mobile-padding" align="right" style="padding:13px 26px 8px;text-align:right;background:#101F33;font-size:12px;line-height:1.65;color:#C4CDD6;"><a href="mailto:marketing@kozpontiszovetseg.at?subject=Abmeldung%20%E2%80%93%20Wiener%20Programmtipps&amp;body=Bitte%20entfernen%20Sie%20die%20E-Mail-Adresse%20des%20Absenders%20aus%20dem%20Verteiler%20des%20Newsletters%20Wiener%20Programmtipps.%20Vielen%20Dank." style="color:#E4E9F0;text-decoration:underline;font-weight:650;">Abmelden</a><span style="display:block;font-size:11px;color:#C4CDD6;">Wenn Sie keine weiteren Newsletter erhalten möchten, klicken Sie hier und senden Sie die vorausgefüllte E-Mail.</span></td></tr>
 
           <tr><td class="mobile-padding" align="center" style="padding:20px 26px 10px;text-align:center;background:#101F33;">
             <a href="https://www.magyariskola.at/" target="_blank" rel="noopener noreferrer" aria-label="Bécsi Magyar Iskola – offizielle Website" style="display:inline-block;text-decoration:none;border:0;">
@@ -99,14 +108,14 @@
 
 
           <tr><td align="center" class="mobile-padding" style="padding:8px 20px 19px;text-align:center;background:#101F33;">
-            <nav data-newsletter-langs aria-label="Newsletter-Sprache auswählen" style="display:block;font-size:13px;line-height:1.8;color:#191817;">
-              <a data-newsletter-locale="hu" lang="hu" href="https://hirlevel.magyariskola.at/" style="display:inline-block;padding:8px 10px;margin:2px 1px;border:1px solid #D4CCC0;border-radius:5px;color:#24211D;text-decoration:none;font-size:13px;line-height:1.5;font-weight:600;"><span aria-hidden="true" style="font-size:17px;vertical-align:middle;margin-right:5px;">🇭🇺</span><span>Magyar</span></a>
-              <strong lang="de" aria-current="page" style="display:inline-block;padding:8px 10px;margin:2px 1px;background:#E9DCD3;border:1px solid #C82A32;border-radius:5px;color:#1B1917;font-size:13px;line-height:1.5;font-weight:700;"><span aria-hidden="true" style="font-size:17px;vertical-align:middle;margin-right:5px;">🇦🇹</span><span>Deutsch</span></strong>
-              <a data-newsletter-locale="en" lang="en" href="https://hirlevel.magyariskola.at/en/" style="display:inline-block;padding:8px 10px;margin:2px 1px;border:1px solid #D4CCC0;border-radius:5px;color:#24211D;text-decoration:none;font-size:13px;line-height:1.5;font-weight:600;"><span aria-hidden="true" style="font-size:17px;vertical-align:middle;margin-right:5px;">🇬🇧</span><span>English</span></a>
+            <nav data-newsletter-langs aria-label="Newsletter-Sprache auswählen" style="display:block;font-size:13px;line-height:1.8;color:#E4E9F0;">
+              <a data-newsletter-locale="hu" lang="hu" href="https://hirlevel.magyariskola.at/" style="display:inline-block;padding:8px 10px;margin:2px 1px;border:1px solid #D4CCC0;border-radius:5px;color:#E4E9F0;text-decoration:none;font-size:13px;line-height:1.5;font-weight:600;"><span aria-hidden="true" style="font-size:17px;vertical-align:middle;margin-right:5px;">🇭🇺</span><span>Magyar</span></a>
+              <strong lang="de" aria-current="page" style="display:inline-block;padding:8px 10px;margin:2px 1px;background:#24364A;border:1px solid #C8A76D;border-radius:5px;color:#F5F3EE;font-size:13px;line-height:1.5;font-weight:700;"><span aria-hidden="true" style="font-size:17px;vertical-align:middle;margin-right:5px;">🇦🇹</span><span>Deutsch</span></strong>
+              <a data-newsletter-locale="en" lang="en" href="https://hirlevel.magyariskola.at/en/" style="display:inline-block;padding:8px 10px;margin:2px 1px;border:1px solid #D4CCC0;border-radius:5px;color:#E4E9F0;text-decoration:none;font-size:13px;line-height:1.5;font-weight:600;"><span aria-hidden="true" style="font-size:17px;vertical-align:middle;margin-right:5px;">🇬🇧</span><span>English</span></a>
             </nav>
           </td></tr>
           <tr><td class="mobile-padding" style="padding:32px 34px 30px;text-align:center;background:#101F33;color:#F5F3EE;border-top:5px solid #C8A76D;">
-  <div style="font-size:11px;letter-spacing:1.5px;text-transform:none;line-height:1.65;font-weight:800;color:#69625B;margin:0 0 18px;">Bécsi Magyar Iskola · Schuljahr 2026/27 · Woche 7 · Newsletter 7</div>
+  <div style="font-size:11px;letter-spacing:1.5px;text-transform:none;line-height:1.65;font-weight:800;color:#E4E9F0;margin:0 0 18px;">Bécsi Magyar Iskola · Schuljahr 2026/27 · Woche 7 · Newsletter 7</div>
   <h1 style="font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","SF Pro Display","Helvetica Neue",Arial,sans-serif;font-size:38px;line-height:1.16;letter-spacing:-.9px;text-transform:none;margin:0 auto 18px;color:#F5F3EE;font-weight:700;max-width:580px;">Wiener Programmtipps</h1>
   <div class="seasonal-edition" style="margin:0 auto 16px;color:#D1B27E;letter-spacing:2.5px;font-size:11px;font-weight:700;line-height:1.5;text-align:center;">HALLOWEEN-AUSGABE</div>
   <p style="font-size:17px;line-height:1.55;color:#C4CDD6;margin:0 auto;max-width:520px;">Woche für Woche stellen wir neben den Programmen der Bécsi Magyar Iskola auch eine Auswahl der interessantesten Veranstaltungen in Wien zusammen.</p>
@@ -114,9 +123,9 @@
           <tr><td class="mobile-padding" style="padding:20px 30px 13px;background:#101F33;" id="kategoria-valaszto">
             <div style="font-size:11px;font-weight:700;line-height:1.5;letter-spacing:1px;text-transform:none;color:#C8A76D;">Wähle eine Kategorie</div>
           </td></tr>
-          <tr><td class="mobile-padding" style="padding:0 25px 18px;background:#101F33;"><table role="presentation" class="feature-grid category-buttons" width="100%" cellspacing="0" cellpadding="0" border="0" style="width:100%;table-layout:fixed;border-collapse:separate;border-spacing:0;"><tr><td class="feature-cell" width="33%" valign="middle" style="vertical-align:middle;width:33.333%;padding:0 5px;background:#101F33;"><a class="feature-link" href="https://hirlevel.magyariskola.at/de/#program-gyerekek" style="border:1px solid #C8A76D;display:block;padding:13px 12px;border-radius:5px;background:#101F33;color:#101F33;text-decoration:none;text-align:center;font-size:13px;line-height:1.25;font-weight:600;letter-spacing:-.1px;">Kinder <span aria-hidden="true">↓</span></a></td>
-<td class="feature-cell" width="33%" valign="middle" style="vertical-align:middle;width:33.333%;padding:0 5px;background:#101F33;"><a class="feature-link" href="https://hirlevel.magyariskola.at/de/#program-felnottek" style="border:1px solid #C8A76D;display:block;padding:13px 12px;border-radius:5px;background:#101F33;color:#101F33;text-decoration:none;text-align:center;font-size:13px;line-height:1.25;font-weight:600;letter-spacing:-.1px;">Erwachsene <span aria-hidden="true">↓</span></a></td>
-<td class="feature-cell" width="33%" valign="middle" style="vertical-align:middle;width:33.333%;padding:0 5px;background:#101F33;"><a class="feature-link" href="https://hirlevel.magyariskola.at/de/#program-iskola" style="border:1px solid #C8A76D;display:block;padding:13px 12px;border-radius:5px;background:#101F33;color:#101F33;text-decoration:none;text-align:center;font-size:13px;line-height:1.25;font-weight:600;letter-spacing:-.1px;">Schule <span aria-hidden="true">↓</span></a></td></tr></table></td></tr>
+          <tr><td class="mobile-padding" style="padding:0 25px 18px;background:#101F33;"><table role="presentation" class="feature-grid category-buttons" width="100%" cellspacing="0" cellpadding="0" border="0" style="width:100%;table-layout:fixed;border-collapse:separate;border-spacing:0;"><tr><td class="feature-cell" width="33%" valign="middle" style="vertical-align:middle;width:33.333%;padding:0 5px;background:#101F33;"><a class="feature-link" href="https://hirlevel.magyariskola.at/de/#program-gyerekek" style="border:1px solid #C8A76D;display:block;padding:13px 12px;border-radius:5px;background:#101F33;color:#E4E9F0;text-decoration:none;text-align:center;font-size:13px;line-height:1.25;font-weight:600;letter-spacing:-.1px;">Kinder <span aria-hidden="true">↓</span></a></td>
+<td class="feature-cell" width="33%" valign="middle" style="vertical-align:middle;width:33.333%;padding:0 5px;background:#101F33;"><a class="feature-link" href="https://hirlevel.magyariskola.at/de/#program-felnottek" style="border:1px solid #C8A76D;display:block;padding:13px 12px;border-radius:5px;background:#101F33;color:#E4E9F0;text-decoration:none;text-align:center;font-size:13px;line-height:1.25;font-weight:600;letter-spacing:-.1px;">Erwachsene <span aria-hidden="true">↓</span></a></td>
+<td class="feature-cell" width="33%" valign="middle" style="vertical-align:middle;width:33.333%;padding:0 5px;background:#101F33;"><a class="feature-link" href="https://hirlevel.magyariskola.at/de/#program-iskola" style="border:1px solid #C8A76D;display:block;padding:13px 12px;border-radius:5px;background:#101F33;color:#E4E9F0;text-decoration:none;text-align:center;font-size:13px;line-height:1.25;font-weight:600;letter-spacing:-.1px;">Schule <span aria-hidden="true">↓</span></a></td></tr></table></td></tr>
 <tr><td class="mobile-padding" style="padding:18px 30px 25px;background:#101F33;">
             <p style="font-size:13px;line-height:1.65;color:#BEC7D2;margin:0;">
               <a href="https://programvalaszto.magyariskola.at/" style="display:inline-block;color:#C8A76D;text-decoration:underline;padding:5px 5px 5px 0;">Kurs- und Programmauswahl ↗</a>
@@ -136,90 +145,90 @@
               
               <div data-event-thumb="pumpkin" style="margin:0 0 15px;">
                 <img src="/assets/events/pumpkin-640.webp" alt="Archivfoto (2019) – wohnpartner Wien" width="568" height="320" loading="lazy" decoding="async" style="display:block;width:100%;max-width:100%;height:auto;aspect-ratio:16/9;border:0;border-radius:5px;object-fit:cover;">
-                <div style="font-size:10px;line-height:1.5;color:#738491;padding:5px 0 0;">Archivfoto · 2019 · Bild: wohnpartner Wien</div>
+                <div style="font-size:10px;line-height:1.5;color:#E4E9F0;padding:5px 0 0;">Archivfoto · 2019 · Bild: wohnpartner Wien</div>
               </div>
               <h3 style="font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","SF Pro Display","Helvetica Neue",Arial,sans-serif;font-size:20px;line-height:1.3;letter-spacing:-.35px;font-weight:700;text-transform:none;color:#F5F3EE;margin:4px 0 12px;">Kürbisfest am Siebenbrunnenplatz</h3>
               <p style="font-size:14px;line-height:1.7;color:#BEC7D2;margin:0 0 9px;">Kostenlose herbstliche Veranstaltung im 5. Wiener Bezirk.</p>
-              <a href="https://www.wien.gv.at/veranstaltungen/herbst-veranstaltungen" target="_blank" rel="noopener noreferrer" style="border:1px solid #C8A76D;display:inline-block;padding:12px 16px;line-height:1.35;background:#101F33;border-radius:5px;text-decoration:none;color:#101F33;font-size:13px;font-weight:800;">Details beim Veranstalter ↗</a>
+              <a href="https://www.wien.gv.at/veranstaltungen/herbst-veranstaltungen" target="_blank" rel="noopener noreferrer" style="border:1px solid #C8A76D;display:inline-block;padding:12px 16px;line-height:1.35;background:#101F33;border-radius:5px;text-decoration:none;color:#E4E9F0;font-size:13px;font-weight:800;">Details beim Veranstalter ↗</a>
             </div>
             <div class="editorial-event halloween-bat" style="margin:0 0 17px;padding:17px 17px 19px;background:#17283D;border:1px solid #3A4A5E;border-radius:5px;">
               <div style="font-size:11px;line-height:1.6;font-weight:800;letter-spacing:.6px;text-transform:none;color:#C8A76D;margin-bottom:11px;">Familienprogramm · 24. Oktober – 1. November</div>
               
               <div data-event-thumb="kkunst" style="margin:0 0 15px;">
                 <img src="/assets/events/kkunst-640.webp" alt="Archivfoto (2025) – 1000things Magazine" width="568" height="320" loading="lazy" decoding="async" style="display:block;width:100%;max-width:100%;height:auto;aspect-ratio:16/9;border:0;border-radius:5px;object-fit:cover;">
-                <div style="font-size:10px;line-height:1.5;color:#738491;padding:5px 0 0;">Archivfoto · 2025 · Bild: 1000things Magazine</div>
+                <div style="font-size:10px;line-height:1.5;color:#E4E9F0;padding:5px 0 0;">Archivfoto · 2025 · Bild: 1000things Magazine</div>
               </div>
               <h3 style="font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","SF Pro Display","Helvetica Neue",Arial,sans-serif;font-size:20px;line-height:1.3;letter-spacing:-.35px;font-weight:700;text-transform:none;color:#F5F3EE;margin:4px 0 12px;">KinderKunstFest</h3>
               <p style="font-size:14px;line-height:1.7;color:#BEC7D2;margin:0 0 9px;">Kreativworkshops und Museumsprogramme für Kinder in den Herbstferien. Altersgrenzen und Teilnahmebedingungen unterscheiden sich je nach Veranstaltungsort.</p>
-              <a href="https://echoevent.at/kinderkunstfest/programm/" target="_blank" rel="noopener noreferrer" style="border:1px solid #C8A76D;display:inline-block;padding:12px 16px;line-height:1.35;background:#101F33;border-radius:5px;text-decoration:none;color:#101F33;font-size:13px;font-weight:800;">Details beim Veranstalter ↗</a>
+              <a href="https://echoevent.at/kinderkunstfest/programm/" target="_blank" rel="noopener noreferrer" style="border:1px solid #C8A76D;display:inline-block;padding:12px 16px;line-height:1.35;background:#101F33;border-radius:5px;text-decoration:none;color:#E4E9F0;font-size:13px;font-weight:800;">Details beim Veranstalter ↗</a>
             </div>
             <div class="editorial-event halloween-moon" style="margin:0 0 17px;padding:17px 17px 19px;background:#17283D;border:1px solid #3A4A5E;border-radius:5px;">
               <div style="font-size:11px;line-height:1.6;font-weight:800;letter-spacing:.6px;text-transform:none;color:#C8A76D;margin-bottom:11px;">Familienprogramm · 25.–26. Oktober · 9:00–16:00</div>
               
               <div data-event-thumb="sicher" style="margin:0 0 15px;">
                 <img src="/assets/events/sicher-640.webp" alt="Symbolbild – LPD Wien / Polizeimusik" width="568" height="320" loading="lazy" decoding="async" style="display:block;width:100%;max-width:100%;height:auto;aspect-ratio:16/9;border:0;border-radius:5px;object-fit:cover;">
-                <div style="font-size:10px;line-height:1.5;color:#738491;padding:5px 0 0;">Symbolbild · Bild: LPD Wien / Polizeimusik</div>
+                <div style="font-size:10px;line-height:1.5;color:#E4E9F0;padding:5px 0 0;">Symbolbild · Bild: LPD Wien / Polizeimusik</div>
               </div>
               <h3 style="font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","SF Pro Display","Helvetica Neue",Arial,sans-serif;font-size:20px;line-height:1.3;letter-spacing:-.35px;font-weight:700;text-transform:none;color:#F5F3EE;margin:4px 0 12px;">Wiener Sicherheitsfest</h3>
               <p style="font-size:14px;line-height:1.7;color:#BEC7D2;margin:0 0 9px;">Kostenlose Vorführungen und familienfreundliche Mitmachangebote am Rathausplatz.</p>
-              <a href="https://www.wien.gv.at/veranstaltungen/herbst-veranstaltungen" target="_blank" rel="noopener noreferrer" style="border:1px solid #C8A76D;display:inline-block;padding:12px 16px;line-height:1.35;background:#101F33;border-radius:5px;text-decoration:none;color:#101F33;font-size:13px;font-weight:800;">Details beim Veranstalter ↗</a>
+              <a href="https://www.wien.gv.at/veranstaltungen/herbst-veranstaltungen" target="_blank" rel="noopener noreferrer" style="border:1px solid #C8A76D;display:inline-block;padding:12px 16px;line-height:1.35;background:#101F33;border-radius:5px;text-decoration:none;color:#E4E9F0;font-size:13px;font-weight:800;">Details beim Veranstalter ↗</a>
             </div>
             <div class="editorial-event halloween-pumpkin" style="margin:0 0 17px;padding:17px 17px 19px;background:#17283D;border:1px solid #3A4A5E;border-radius:5px;">
               <div style="font-size:11px;line-height:1.6;font-weight:800;letter-spacing:.6px;text-transform:none;color:#C8A76D;margin-bottom:11px;">Halloween · für Familien · 27.–31. Oktober · 14:00–17:00</div>
               
               <div data-event-thumb="prater" style="margin:0 0 15px;">
                 <img src="/assets/events/prater-640.webp" alt="Generiertes Halloween-Plakat – Wurstelprater" width="568" height="320" loading="lazy" decoding="async" style="display:block;width:100%;max-width:100%;height:auto;aspect-ratio:16/9;border:0;border-radius:5px;object-fit:cover;">
-                <div style="font-size:10px;line-height:1.5;color:#738491;padding:5px 0 0;">Für den BMI-Newsletter generierte Illustration · kein offizielles Veranstalterplakat</div>
+                <div style="font-size:10px;line-height:1.5;color:#E4E9F0;padding:5px 0 0;">Für den BMI-Newsletter generierte Illustration · kein offizielles Veranstalterplakat</div>
               </div>
               <h3 style="font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","SF Pro Display","Helvetica Neue",Arial,sans-serif;font-size:20px;line-height:1.3;letter-spacing:-.35px;font-weight:700;text-transform:none;color:#F5F3EE;margin:4px 0 12px;">Halloween im Wurstelprater</h3>
               <p style="font-size:14px;line-height:1.7;color:#BEC7D2;margin:0 0 9px;">Fünf Nachmittage mit kostenlosem Kürbisschnitzen, Basteln, Kinderschminken und Vorführungen. Laut Veranstalter gibt es dieses Jahr keinen Umzug.</p>
-              <a href="https://www.praterwien.com/veranstaltungen/details/halloween-im-wurstelprater/" target="_blank" rel="noopener noreferrer" style="border:1px solid #C8A76D;display:inline-block;padding:12px 16px;line-height:1.35;background:#101F33;border-radius:5px;text-decoration:none;color:#101F33;font-size:13px;font-weight:800;">Details beim Veranstalter ↗</a>
+              <a href="https://www.praterwien.com/veranstaltungen/details/halloween-im-wurstelprater/" target="_blank" rel="noopener noreferrer" style="border:1px solid #C8A76D;display:inline-block;padding:12px 16px;line-height:1.35;background:#101F33;border-radius:5px;text-decoration:none;color:#E4E9F0;font-size:13px;font-weight:800;">Details beim Veranstalter ↗</a>
             </div>
             <div class="editorial-event halloween-bat" style="margin:0 0 17px;padding:17px 17px 19px;background:#17283D;border:1px solid #3A4A5E;border-radius:5px;">
               <div style="font-size:11px;line-height:1.6;font-weight:800;letter-spacing:.6px;text-transform:none;color:#C8A76D;margin-bottom:11px;">Halloween · für Familien · 30. Oktober · 16:00–21:00</div>
               
               <div data-event-thumb="run" style="margin:0 0 15px;">
                 <img src="/assets/events/run-640.webp" alt="Veranstaltungsbild – Persil Vienna Halloween Run" width="568" height="320" loading="lazy" decoding="async" style="display:block;width:100%;max-width:100%;height:auto;aspect-ratio:16/9;border:0;border-radius:5px;object-fit:cover;">
-                <div style="font-size:10px;line-height:1.5;color:#738491;padding:5px 0 0;">Veranstaltungsbild · Bild: Persil Vienna Halloween Run</div>
+                <div style="font-size:10px;line-height:1.5;color:#E4E9F0;padding:5px 0 0;">Veranstaltungsbild · Bild: Persil Vienna Halloween Run</div>
               </div>
               <h3 style="font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","SF Pro Display","Helvetica Neue",Arial,sans-serif;font-size:20px;line-height:1.3;letter-spacing:-.35px;font-weight:700;text-transform:none;color:#F5F3EE;margin:4px 0 12px;">Persil Vienna Halloween Run</h3>
               <p style="font-size:14px;line-height:1.7;color:#BEC7D2;margin:0 0 9px;">Kostümlauf mit Kinder- und Familienbewerben sowie einem 5-km-Lauf. Anmeldung erforderlich.</p>
-              <a href="https://www.vienna-halloween-run.at/" target="_blank" rel="noopener noreferrer" style="border:1px solid #C8A76D;display:inline-block;padding:12px 16px;line-height:1.35;background:#101F33;border-radius:5px;text-decoration:none;color:#101F33;font-size:13px;font-weight:800;">Details beim Veranstalter ↗</a>
+              <a href="https://www.vienna-halloween-run.at/" target="_blank" rel="noopener noreferrer" style="border:1px solid #C8A76D;display:inline-block;padding:12px 16px;line-height:1.35;background:#101F33;border-radius:5px;text-decoration:none;color:#E4E9F0;font-size:13px;font-weight:800;">Details beim Veranstalter ↗</a>
             </div>
             <div class="editorial-event halloween-moon" style="margin:0 0 17px;padding:17px 17px 19px;background:#17283D;border:1px solid #3A4A5E;border-radius:5px;">
               <div style="font-size:11px;line-height:1.6;font-weight:800;letter-spacing:.6px;text-transform:none;color:#C8A76D;margin-bottom:11px;">Halloween · für Familien · 31. Oktober · 16:00–20:00</div>
               
               <div data-event-thumb="friedhof" style="margin:0 0 15px;">
                 <img src="/assets/events/friedhof-640.webp" alt="Archivfoto (2025) – Friedhöfe Wien" width="568" height="320" loading="lazy" decoding="async" style="display:block;width:100%;max-width:100%;height:auto;aspect-ratio:16/9;border:0;border-radius:5px;object-fit:cover;">
-                <div style="font-size:10px;line-height:1.5;color:#738491;padding:5px 0 0;">Archivfoto · 2025 · Bild: Friedhöfe Wien</div>
+                <div style="font-size:10px;line-height:1.5;color:#E4E9F0;padding:5px 0 0;">Archivfoto · 2025 · Bild: Friedhöfe Wien</div>
               </div>
               <h3 style="font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","SF Pro Display","Helvetica Neue",Arial,sans-serif;font-size:20px;line-height:1.3;letter-spacing:-.35px;font-weight:700;text-transform:none;color:#F5F3EE;margin:4px 0 12px;">Halloween am Wiener Zentralfriedhof</h3>
               <p style="font-size:14px;line-height:1.7;color:#BEC7D2;margin:0 0 9px;">Kostenloses Rätselprogramm für Familien. Kinder dürfen nur in Begleitung Erwachsener teilnehmen.</p>
-              <a href="https://www.wien.gv.at/veranstaltungen/halloween-2026-am-wiener-zentralfriedhof" target="_blank" rel="noopener noreferrer" style="border:1px solid #C8A76D;display:inline-block;padding:12px 16px;line-height:1.35;background:#101F33;border-radius:5px;text-decoration:none;color:#101F33;font-size:13px;font-weight:800;">Details beim Veranstalter ↗</a>
+              <a href="https://www.wien.gv.at/veranstaltungen/halloween-2026-am-wiener-zentralfriedhof" target="_blank" rel="noopener noreferrer" style="border:1px solid #C8A76D;display:inline-block;padding:12px 16px;line-height:1.35;background:#101F33;border-radius:5px;text-decoration:none;color:#E4E9F0;font-size:13px;font-weight:800;">Details beim Veranstalter ↗</a>
             </div>
             <div class="editorial-event halloween-pumpkin" style="margin:0 0 17px;padding:17px 17px 19px;background:#17283D;border:1px solid #3A4A5E;border-radius:5px;">
               <div style="font-size:11px;line-height:1.6;font-weight:800;letter-spacing:.6px;text-transform:none;color:#C8A76D;margin-bottom:11px;">Familienprogramm · 6. November – 6. Januar</div>
               
               <div data-event-thumb="schoen" style="margin:0 0 15px;">
                 <img src="/assets/events/schoen-640.webp" alt="Archivfoto (2022) – FOTOFALLY / Weihnachtsmarkt Schönbrunn" width="568" height="320" loading="lazy" decoding="async" style="display:block;width:100%;max-width:100%;height:auto;aspect-ratio:16/9;border:0;border-radius:5px;object-fit:cover;">
-                <div style="font-size:10px;line-height:1.5;color:#738491;padding:5px 0 0;">Archivfoto · 2022 · Bild: FOTOFALLY / Weihnachtsmarkt Schönbrunn</div>
+                <div style="font-size:10px;line-height:1.5;color:#E4E9F0;padding:5px 0 0;">Archivfoto · 2022 · Bild: FOTOFALLY / Weihnachtsmarkt Schönbrunn</div>
               </div>
               <h3 style="font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","SF Pro Display","Helvetica Neue",Arial,sans-serif;font-size:20px;line-height:1.3;letter-spacing:-.35px;font-weight:700;text-transform:none;color:#F5F3EE;margin:4px 0 12px;">Weihnachtsmarkt vor Schloss Schönbrunn</h3>
               <p style="font-size:14px;line-height:1.7;color:#BEC7D2;margin:0 0 9px;">Weihnachtsmarkt und Familienprogramm vor Schloss Schönbrunn. Der Eintritt zum Markt ist frei, einzelne Attraktionen sind kostenpflichtig.</p>
-              <a href="https://www.schoenbrunn.at/veranstaltungen/alle-veranstaltungen/event/weihnachtsmarkt-schloss-schoenbrunn" target="_blank" rel="noopener noreferrer" style="border:1px solid #C8A76D;display:inline-block;padding:12px 16px;line-height:1.35;background:#101F33;border-radius:5px;text-decoration:none;color:#101F33;font-size:13px;font-weight:800;">Details beim Veranstalter ↗</a>
+              <a href="https://www.schoenbrunn.at/veranstaltungen/alle-veranstaltungen/event/weihnachtsmarkt-schloss-schoenbrunn" target="_blank" rel="noopener noreferrer" style="border:1px solid #C8A76D;display:inline-block;padding:12px 16px;line-height:1.35;background:#101F33;border-radius:5px;text-decoration:none;color:#E4E9F0;font-size:13px;font-weight:800;">Details beim Veranstalter ↗</a>
             </div>
             <div class="editorial-event halloween-bat" style="margin:0 0 17px;padding:17px 17px 19px;background:#17283D;border:1px solid #3A4A5E;border-radius:5px;">
               <div style="font-size:11px;line-height:1.6;font-weight:800;letter-spacing:.6px;text-transform:none;color:#C8A76D;margin-bottom:11px;">Familienprogramm · 25.–29. November</div>
               
               <div data-event-thumb="buch" style="margin:0 0 15px;">
                 <img src="/assets/events/buch-640.webp" alt="Symbolbild – eSeL.at" width="568" height="320" loading="lazy" decoding="async" style="display:block;width:100%;max-width:100%;height:auto;aspect-ratio:16/9;border:0;border-radius:5px;object-fit:cover;">
-                <div style="font-size:10px;line-height:1.5;color:#738491;padding:5px 0 0;">Symbolbild · Bild: eSeL.at</div>
+                <div style="font-size:10px;line-height:1.5;color:#E4E9F0;padding:5px 0 0;">Symbolbild · Bild: eSeL.at</div>
               </div>
               <h3 style="font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","SF Pro Display","Helvetica Neue",Arial,sans-serif;font-size:20px;line-height:1.3;letter-spacing:-.35px;font-weight:700;text-transform:none;color:#F5F3EE;margin:4px 0 12px;">Buch Wien – Kinder- und Jugendprogramm</h3>
               <p style="font-size:14px;line-height:1.7;color:#BEC7D2;margin:0 0 9px;">Lesungen, Spiele und Kreativworkshops. Laut Veranstalter haben Kinder unter 14 Jahren in Begleitung ihrer Eltern freien Eintritt.</p>
-              <a href="https://www.buchwien.at/kinder-jugendbuch/" target="_blank" rel="noopener noreferrer" style="border:1px solid #C8A76D;display:inline-block;padding:12px 16px;line-height:1.35;background:#101F33;border-radius:5px;text-decoration:none;color:#101F33;font-size:13px;font-weight:800;">Details beim Veranstalter ↗</a>
+              <a href="https://www.buchwien.at/kinder-jugendbuch/" target="_blank" rel="noopener noreferrer" style="border:1px solid #C8A76D;display:inline-block;padding:12px 16px;line-height:1.35;background:#101F33;border-radius:5px;text-decoration:none;color:#E4E9F0;font-size:13px;font-weight:800;">Details beim Veranstalter ↗</a>
             </div>
-            <div class="editorial-event bmi-child-event" data-event="bmi-telapo" style="margin:0 0 17px;padding:17px 17px 19px;background:#17283D;border:1px solid #3A4A5E;border-radius:18px;"><div style="font-size:11px;line-height:1.6;font-weight:800;letter-spacing:.6px;color:#C8A76D;margin-bottom:11px;">Familie · BMI · 3. Dezember · 17:00–19:00</div><div style="margin:0 0 15px;"><img src="/assets/events/bmi-telapo-640.webp" alt="Nikolauskonzert mit Fruzsina Kovácsovics" width="568" height="568" style="display:block;width:100%;max-width:100%;height:auto;aspect-ratio:1/1;border:0;border-radius:18px;object-fit:cover;object-position:center;" loading="lazy" decoding="async"></div><h3 style="font-family:-apple-system,BlinkMacSystemFont,&quot;SF Pro Text&quot;,&quot;SF Pro Display&quot;,&quot;Helvetica Neue&quot;,Arial,sans-serif;font-size:20px;line-height:1.3;letter-spacing:-.35px;font-weight:700;color:#F5F3EE;margin:4px 0 12px;">Nikolauskonzert mit Fruzsina Kovácsovics</h3><p style="font-size:14px;line-height:1.7;color:#BEC7D2;margin:0 0 12px;">Interaktives Märchenkonzert mit gemeinsamen Liedern und festlichen Spielen für Kinder von 2 bis 9 Jahren und ihre Familien. Ort: Wiener Rathaus, Festsaal, Lichtenfelsgasse 2, 1010 Wien.</p><p style="font-size:14px;line-height:1.7;color:#C8A76D;margin:0 0 14px;"><strong>In der ersten Verkaufswoche wurde bereits fast die Hälfte der verfügbaren Tickets verkauft. Wer mit uns feiern möchte, sollte sich rechtzeitig anmelden.</strong></p><p style="margin:0 0 14px;"><a href="https://youtu.be/o5A4SUl_bow?feature=shared" target="_blank" rel="noopener noreferrer" style="color:#C8A76D;text-decoration:underline;font-size:14px;font-weight:600;line-height:1.6;">▶ Kovácsovics Fruzsina × Fluor – Pingvintánc</a></p><a href="https://www.magyariskola.at/event-details/becsi-magyar-mikulas" style="border:1px solid #C8A76D;display:inline-block;padding:12px 16px;line-height:1.35;background:#101F33;border-radius:5px;text-decoration:none;color:#101F33;font-size:13px;font-weight:700;">Details und Anmeldung →</a></div>
+            <div class="editorial-event bmi-child-event" data-event="bmi-telapo" style="margin:0 0 17px;padding:17px 17px 19px;background:#17283D;border:1px solid #3A4A5E;border-radius:18px;"><div style="font-size:11px;line-height:1.6;font-weight:800;letter-spacing:.6px;color:#C8A76D;margin-bottom:11px;">Familie · BMI · 3. Dezember · 17:00–19:00</div><div style="margin:0 0 15px;"><img src="/assets/events/bmi-telapo-640.webp" alt="Nikolauskonzert mit Fruzsina Kovácsovics" width="568" height="568" style="display:block;width:100%;max-width:100%;height:auto;aspect-ratio:1/1;border:0;border-radius:18px;object-fit:cover;object-position:center;" loading="lazy" decoding="async"></div><h3 style="font-family:-apple-system,BlinkMacSystemFont,&quot;SF Pro Text&quot;,&quot;SF Pro Display&quot;,&quot;Helvetica Neue&quot;,Arial,sans-serif;font-size:20px;line-height:1.3;letter-spacing:-.35px;font-weight:700;color:#F5F3EE;margin:4px 0 12px;">Nikolauskonzert mit Fruzsina Kovácsovics</h3><p style="font-size:14px;line-height:1.7;color:#BEC7D2;margin:0 0 12px;">Interaktives Märchenkonzert mit gemeinsamen Liedern und festlichen Spielen für Kinder von 2 bis 9 Jahren und ihre Familien. Ort: Wiener Rathaus, Festsaal, Lichtenfelsgasse 2, 1010 Wien.</p><p style="font-size:14px;line-height:1.7;color:#C8A76D;margin:0 0 14px;"><strong>In der ersten Verkaufswoche wurde bereits fast die Hälfte der verfügbaren Tickets verkauft. Wer mit uns feiern möchte, sollte sich rechtzeitig anmelden.</strong></p><p style="margin:0 0 14px;"><a href="https://youtu.be/o5A4SUl_bow?feature=shared" target="_blank" rel="noopener noreferrer" style="color:#C8A76D;text-decoration:underline;font-size:14px;font-weight:600;line-height:1.6;">▶ Kovácsovics Fruzsina × Fluor – Pingvintánc</a></p><a href="https://www.magyariskola.at/event-details/becsi-magyar-mikulas" style="border:1px solid #C8A76D;display:inline-block;padding:12px 16px;line-height:1.35;background:#101F33;border-radius:5px;text-decoration:none;color:#E4E9F0;font-size:13px;font-weight:700;">Details und Anmeldung →</a></div>
             <a href="https://hirlevel.magyariskola.at/de/#kategoria-valaszto" style="display:inline-block;padding:12px 0;color:#C8A76D;font-size:13px;font-weight:650;text-decoration:underline;">Zurück zu den drei Kategorien ↑</a>
           </td></tr>
           <tr><td id="program-felnottek" class="mobile-padding" style="padding:32px 28px 26px;background:#17283D;">
@@ -231,88 +240,88 @@
               
               <div data-event-thumb="traume" style="margin:0 0 15px;">
                 <img src="/assets/events/traume-640.webp" alt="Symbolbild (2014) – Zene.hu" width="568" height="320" loading="lazy" decoding="async" style="display:block;width:100%;max-width:100%;height:auto;aspect-ratio:16/9;border:0;border-radius:5px;object-fit:cover;">
-                <div style="font-size:10px;line-height:1.5;color:#738491;padding:5px 0 0;">Symbolbild · Bild: Zene.hu</div>
+                <div style="font-size:10px;line-height:1.5;color:#E4E9F0;padding:5px 0 0;">Symbolbild · Bild: Zene.hu</div>
               </div>
               <h3 style="font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","SF Pro Display","Helvetica Neue",Arial,sans-serif;font-size:20px;line-height:1.3;letter-spacing:-.35px;font-weight:700;text-transform:none;color:#F5F3EE;margin:4px 0 12px;">TRÄUME – Musik und Film aus Ungarn</h3>
               <p style="font-size:14px;line-height:1.7;color:#BEC7D2;margin:0 0 9px;">Musik und Filmausschnitte zu Ehren von Komponisten, die nach 1956 aus Ungarn geflohen sind, im Konzertsaal MuTh.</p>
-              <a href="https://culture.hu/de/wien/blog/70-jahre-ungarnaufstand-1956-2" target="_blank" rel="noopener noreferrer" style="border:1px solid #C8A76D;display:inline-block;padding:12px 16px;line-height:1.35;background:#101F33;border-radius:5px;text-decoration:none;color:#101F33;font-size:13px;font-weight:800;">Details beim Veranstalter ↗</a>
+              <a href="https://culture.hu/de/wien/blog/70-jahre-ungarnaufstand-1956-2" target="_blank" rel="noopener noreferrer" style="border:1px solid #C8A76D;display:inline-block;padding:12px 16px;line-height:1.35;background:#101F33;border-radius:5px;text-decoration:none;color:#E4E9F0;font-size:13px;font-weight:800;">Details beim Veranstalter ↗</a>
             </div>
             <div class="editorial-event halloween-pumpkin" style="margin:0 0 17px;padding:17px 17px 19px;background:#17283D;border:1px solid #3A4A5E;border-radius:5px;">
               <div style="font-size:11px;line-height:1.6;font-weight:800;letter-spacing:.6px;text-transform:none;color:#C8A76D;margin-bottom:11px;">Ungarische Kulturveranstaltung · 21. Oktober · 18:00</div>
               
               <div data-event-thumb="h1956" style="margin:0 0 15px;">
                 <img src="/assets/events/h1956-640.webp" alt="Offizielles Veranstaltungsplakat – gemeinsame Gedenkfeier 1956" width="568" height="568" loading="lazy" decoding="async" style="display:block;width:100%;max-width:100%;height:auto;aspect-ratio:1/1;border:0;border-radius:5px;object-fit:cover;object-position:center;">
-                <div style="font-size:10px;line-height:1.5;color:#738491;padding:5px 0 0;">Offizielles Veranstaltungsplakat · Veranstalterbild</div>
+                <div style="font-size:10px;line-height:1.5;color:#E4E9F0;padding:5px 0 0;">Offizielles Veranstaltungsplakat · Veranstalterbild</div>
               </div>
               <h3 style="font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","SF Pro Display","Helvetica Neue",Arial,sans-serif;font-size:20px;line-height:1.3;letter-spacing:-.35px;font-weight:700;text-transform:none;color:#F5F3EE;margin:4px 0 12px;">1956 – gemeinsame ungarische Gedenkfeier</h3>
               <p style="font-size:14px;line-height:1.7;color:#BEC7D2;margin:0 0 9px;">Gedenkveranstaltung des Europa-Clubs und des Runden Tisches ungarischer Organisationen in Österreich im Collegium Hungaricum.</p>
-              <a href="https://europaclub.at/meghivo-es-felhivas-unnepeljuk-egyutt-az-1956-os-forradalom-70-evfordulojat/" target="_blank" rel="noopener noreferrer" style="border:1px solid #C8A76D;display:inline-block;padding:12px 16px;line-height:1.35;background:#101F33;border-radius:5px;text-decoration:none;color:#101F33;font-size:13px;font-weight:800;">Details beim Veranstalter ↗</a>
+              <a href="https://europaclub.at/meghivo-es-felhivas-unnepeljuk-egyutt-az-1956-os-forradalom-70-evfordulojat/" target="_blank" rel="noopener noreferrer" style="border:1px solid #C8A76D;display:inline-block;padding:12px 16px;line-height:1.35;background:#101F33;border-radius:5px;text-decoration:none;color:#E4E9F0;font-size:13px;font-weight:800;">Details beim Veranstalter ↗</a>
             </div>
             <div class="editorial-event halloween-bat" style="margin:0 0 17px;padding:17px 17px 19px;background:#17283D;border:1px solid #3A4A5E;border-radius:5px;">
               <div style="font-size:11px;line-height:1.6;font-weight:800;letter-spacing:.6px;text-transform:none;color:#C8A76D;margin-bottom:11px;">Kulturveranstaltung · 22. Oktober – 3. November</div>
               
               <div data-event-thumb="viennale" style="margin:0 0 15px;">
                 <img src="/assets/events/viennale-640.webp" alt="Veranstaltungsbild (2026) – Stadt Wien / Viennale" width="568" height="320" loading="lazy" decoding="async" style="display:block;width:100%;max-width:100%;height:auto;aspect-ratio:16/9;border:0;border-radius:5px;object-fit:cover;">
-                <div style="font-size:10px;line-height:1.5;color:#738491;padding:5px 0 0;">Veranstaltungsbild · Bild: Stadt Wien / Viennale</div>
+                <div style="font-size:10px;line-height:1.5;color:#E4E9F0;padding:5px 0 0;">Veranstaltungsbild · Bild: Stadt Wien / Viennale</div>
               </div>
               <h3 style="font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","SF Pro Display","Helvetica Neue",Arial,sans-serif;font-size:20px;line-height:1.3;letter-spacing:-.35px;font-weight:700;text-transform:none;color:#F5F3EE;margin:4px 0 12px;">Viennale – Internationales Filmfestival</h3>
               <p style="font-size:14px;line-height:1.7;color:#BEC7D2;margin:0 0 9px;">Filmvorführungen und Begegnungen mit Filmschaffenden. Bitte Altersfreigabe und Vorführsprache des gewählten Films prüfen.</p>
-              <a href="https://www.viennale.at/en/viennale-2026-pre-info" target="_blank" rel="noopener noreferrer" style="border:1px solid #C8A76D;display:inline-block;padding:12px 16px;line-height:1.35;background:#101F33;border-radius:5px;text-decoration:none;color:#101F33;font-size:13px;font-weight:800;">Details beim Veranstalter ↗</a>
+              <a href="https://www.viennale.at/en/viennale-2026-pre-info" target="_blank" rel="noopener noreferrer" style="border:1px solid #C8A76D;display:inline-block;padding:12px 16px;line-height:1.35;background:#101F33;border-radius:5px;text-decoration:none;color:#E4E9F0;font-size:13px;font-weight:800;">Details beim Veranstalter ↗</a>
             </div>
             <div class="editorial-event halloween-moon" style="margin:0 0 17px;padding:17px 17px 19px;background:#17283D;border:1px solid #3A4A5E;border-radius:5px;">
               <div style="font-size:11px;line-height:1.6;font-weight:800;letter-spacing:.6px;text-transform:none;color:#C8A76D;margin-bottom:11px;">Ungarische Kulturveranstaltung · 28. Oktober · 18:00</div>
               
               <div data-event-thumb="hsecession" style="margin:0 0 15px;">
                 <img src="/assets/events/hsecession-640.webp" alt="Symbolbild (2016) – NLC" width="568" height="320" loading="lazy" decoding="async" style="display:block;width:100%;max-width:100%;height:auto;aspect-ratio:16/9;border:0;border-radius:5px;object-fit:cover;">
-                <div style="font-size:10px;line-height:1.5;color:#738491;padding:5px 0 0;">Symbolbild · Bild: NLC</div>
+                <div style="font-size:10px;line-height:1.5;color:#E4E9F0;padding:5px 0 0;">Symbolbild · Bild: NLC</div>
               </div>
               <h3 style="font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","SF Pro Display","Helvetica Neue",Arial,sans-serif;font-size:20px;line-height:1.3;letter-spacing:-.35px;font-weight:700;text-transform:none;color:#F5F3EE;margin:4px 0 12px;">Jugendstil in Wien und Budapest</h3>
               <p style="font-size:14px;line-height:1.7;color:#BEC7D2;margin:0 0 9px;">Buchvorstellung und Gespräch über das architektonische Erbe beider Städte, anschließend Führung durch die Zsolnay-Ausstellung.</p>
-              <a href="https://culture.hu/de/wien/blog/programme-im-oktober-2" target="_blank" rel="noopener noreferrer" style="border:1px solid #C8A76D;display:inline-block;padding:12px 16px;line-height:1.35;background:#101F33;border-radius:5px;text-decoration:none;color:#101F33;font-size:13px;font-weight:800;">Details beim Veranstalter ↗</a>
+              <a href="https://culture.hu/de/wien/blog/programme-im-oktober-2" target="_blank" rel="noopener noreferrer" style="border:1px solid #C8A76D;display:inline-block;padding:12px 16px;line-height:1.35;background:#101F33;border-radius:5px;text-decoration:none;color:#E4E9F0;font-size:13px;font-weight:800;">Details beim Veranstalter ↗</a>
             </div>
             <div class="editorial-event halloween-pumpkin" style="margin:0 0 17px;padding:17px 17px 19px;background:#17283D;border:1px solid #3A4A5E;border-radius:5px;">
               <div style="font-size:11px;line-height:1.6;font-weight:800;letter-spacing:.6px;text-transform:none;color:#C8A76D;margin-bottom:11px;">Halloween · 18+ · 31. Oktober · ab 21:00 Uhr</div>
               
               <div data-event-thumb="u4" style="margin:0 0 15px;">
                 <img src="/assets/events/u4-640.webp" alt="Generiertes Halloween-Plakat – Death by Sexy, U4 Vienna" width="568" height="320" loading="lazy" decoding="async" style="display:block;width:100%;max-width:100%;height:auto;aspect-ratio:16/9;border:0;border-radius:5px;object-fit:cover;">
-                <div style="font-size:10px;line-height:1.5;color:#738491;padding:5px 0 0;">Für den BMI-Newsletter generierte Illustration · kein offizielles U4-Plakat</div>
+                <div style="font-size:10px;line-height:1.5;color:#E4E9F0;padding:5px 0 0;">Für den BMI-Newsletter generierte Illustration · kein offizielles U4-Plakat</div>
               </div>
               <h3 style="font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","SF Pro Display","Helvetica Neue",Arial,sans-serif;font-size:20px;line-height:1.3;letter-spacing:-.35px;font-weight:700;text-transform:none;color:#F5F3EE;margin:4px 0 12px;">Death by Sexy – Halloween im U4</h3>
               <p style="font-size:14px;line-height:1.7;color:#BEC7D2;margin:0 0 9px;">Halloween-Kostümparty mit zwei Dancefloors, vier DJs und Gruselstimmung. Ab 18 Jahren.</p>
-              <a href="https://www.u4.at/halloween/" target="_blank" rel="noopener noreferrer" style="border:1px solid #C8A76D;display:inline-block;padding:12px 16px;line-height:1.35;background:#101F33;border-radius:5px;text-decoration:none;color:#101F33;font-size:13px;font-weight:800;">Details beim Veranstalter ↗</a>
+              <a href="https://www.u4.at/halloween/" target="_blank" rel="noopener noreferrer" style="border:1px solid #C8A76D;display:inline-block;padding:12px 16px;line-height:1.35;background:#101F33;border-radius:5px;text-decoration:none;color:#E4E9F0;font-size:13px;font-weight:800;">Details beim Veranstalter ↗</a>
             </div>
             <div class="editorial-event halloween-bat" style="margin:0 0 17px;padding:17px 17px 19px;background:#17283D;border:1px solid #3A4A5E;border-radius:5px;">
               <div style="font-size:11px;line-height:1.6;font-weight:800;letter-spacing:.6px;text-transform:none;color:#C8A76D;margin-bottom:11px;">Ungarische Kulturveranstaltung · 17. November · 19:00</div>
               
               <div data-event-thumb="hdarvasi" style="margin:0 0 15px;">
                 <img src="/assets/events/hdarvasi-640.webp" alt="László Darvasi – offizielles Veranstaltungsbild" width="568" height="568" loading="lazy" decoding="async" style="display:block;width:100%;max-width:100%;height:auto;aspect-ratio:1/1;border:0;border-radius:5px;object-fit:cover;object-position:center;">
-                <div style="font-size:10px;line-height:1.5;color:#738491;padding:5px 0 0;">Offizielles Veranstaltungsbild · Zentralverband</div>
+                <div style="font-size:10px;line-height:1.5;color:#E4E9F0;padding:5px 0 0;">Offizielles Veranstaltungsbild · Zentralverband</div>
               </div>
               <h3 style="font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","SF Pro Display","Helvetica Neue",Arial,sans-serif;font-size:20px;line-height:1.3;letter-spacing:-.35px;font-weight:700;text-transform:none;color:#F5F3EE;margin:4px 0 12px;">Lesung und Gespräch mit László Darvasi</h3>
               <p style="font-size:14px;line-height:1.7;color:#BEC7D2;margin:0 0 9px;">„Für Wunder muss man arbeiten“ – ein Literaturabend mit László Darvasi, moderiert von Zsóka Lendvai, Schwedenplatz 2.</p>
-              <a href="https://www.kozpontiszovetseg.at/event-details/darvasi-laszlo" target="_blank" rel="noopener noreferrer" style="border:1px solid #C8A76D;display:inline-block;padding:12px 16px;line-height:1.35;background:#101F33;border-radius:5px;text-decoration:none;color:#101F33;font-size:13px;font-weight:800;">Details beim Veranstalter ↗</a>
+              <a href="https://www.kozpontiszovetseg.at/event-details/darvasi-laszlo" target="_blank" rel="noopener noreferrer" style="border:1px solid #C8A76D;display:inline-block;padding:12px 16px;line-height:1.35;background:#101F33;border-radius:5px;text-decoration:none;color:#E4E9F0;font-size:13px;font-weight:800;">Details beim Veranstalter ↗</a>
             </div>
             <div class="editorial-event halloween-moon" style="margin:0 0 17px;padding:17px 17px 19px;background:#17283D;border:1px solid #3A4A5E;border-radius:5px;">
               <div style="font-size:11px;line-height:1.6;font-weight:800;letter-spacing:.6px;text-transform:none;color:#C8A76D;margin-bottom:11px;">Kulturveranstaltung · 21.–22. November</div>
               
               <div data-event-thumb="comic" style="margin:0 0 15px;">
                 <img src="/assets/events/comic-640.webp" alt="Symbolbild – Volume.at" width="568" height="320" loading="lazy" decoding="async" style="display:block;width:100%;max-width:100%;height:auto;aspect-ratio:16/9;border:0;border-radius:5px;object-fit:cover;">
-                <div style="font-size:10px;line-height:1.5;color:#738491;padding:5px 0 0;">Symbolbild · Bild: Volume.at</div>
+                <div style="font-size:10px;line-height:1.5;color:#E4E9F0;padding:5px 0 0;">Symbolbild · Bild: Volume.at</div>
               </div>
               <h3 style="font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","SF Pro Display","Helvetica Neue",Arial,sans-serif;font-size:20px;line-height:1.3;letter-spacing:-.35px;font-weight:700;text-transform:none;color:#F5F3EE;margin:4px 0 12px;">Vienna Comic Con</h3>
               <p style="font-size:14px;line-height:1.7;color:#BEC7D2;margin:0 0 9px;">Comics, Fantasy, Cosplay und Popkultur in der Messe Wien.</p>
-              <a href="https://viecc.com/info/" target="_blank" rel="noopener noreferrer" style="border:1px solid #C8A76D;display:inline-block;padding:12px 16px;line-height:1.35;background:#101F33;border-radius:5px;text-decoration:none;color:#101F33;font-size:13px;font-weight:800;">Details beim Veranstalter ↗</a>
+              <a href="https://viecc.com/info/" target="_blank" rel="noopener noreferrer" style="border:1px solid #C8A76D;display:inline-block;padding:12px 16px;line-height:1.35;background:#101F33;border-radius:5px;text-decoration:none;color:#E4E9F0;font-size:13px;font-weight:800;">Details beim Veranstalter ↗</a>
             </div>
             <div class="editorial-event halloween-pumpkin" style="margin:0 0 17px;padding:17px 17px 19px;background:#17283D;border:1px solid #3A4A5E;border-radius:5px;">
               <div style="font-size:11px;line-height:1.6;font-weight:800;letter-spacing:.6px;text-transform:none;color:#C8A76D;margin-bottom:11px;">Ungarische Kulturveranstaltung · 26. November · 19:00</div>
               
               <div data-event-thumb="hkoncz" style="margin:0 0 15px;">
                 <img src="/assets/events/hkoncz-640.webp" alt="Offizielles Veranstaltungsplakat – Fordul a világ, Gespräch mit Zsuzsa Koncz" width="568" height="568" loading="lazy" decoding="async" style="display:block;width:100%;max-width:100%;height:auto;aspect-ratio:1/1;border:0;border-radius:5px;object-fit:cover;object-position:center;">
-                <div style="font-size:10px;line-height:1.5;color:#738491;padding:5px 0 0;">Offizielles Veranstaltungsplakat · Veranstalterbild</div>
+                <div style="font-size:10px;line-height:1.5;color:#E4E9F0;padding:5px 0 0;">Offizielles Veranstaltungsplakat · Veranstalterbild</div>
               </div>
               <h3 style="font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","SF Pro Display","Helvetica Neue",Arial,sans-serif;font-size:20px;line-height:1.3;letter-spacing:-.35px;font-weight:700;text-transform:none;color:#F5F3EE;margin:4px 0 12px;">Zsuzsa Koncz – Fordul a világ</h3>
               <p style="font-size:14px;line-height:1.7;color:#BEC7D2;margin:0 0 9px;">Gespräch im Collegium Hungaricum. Bitte Ticket-, Anmelde- und Platzverfügbarkeit auf der Veranstaltungsseite prüfen.</p>
-              <a href="https://www.kozpontiszovetseg.at/event-details/koncz-zsuzsa-becs" target="_blank" rel="noopener noreferrer" style="border:1px solid #C8A76D;display:inline-block;padding:12px 16px;line-height:1.35;background:#101F33;border-radius:5px;text-decoration:none;color:#101F33;font-size:13px;font-weight:800;">Details beim Veranstalter ↗</a>
+              <a href="https://www.kozpontiszovetseg.at/event-details/koncz-zsuzsa-becs" target="_blank" rel="noopener noreferrer" style="border:1px solid #C8A76D;display:inline-block;padding:12px 16px;line-height:1.35;background:#101F33;border-radius:5px;text-decoration:none;color:#E4E9F0;font-size:13px;font-weight:800;">Details beim Veranstalter ↗</a>
             </div>
             <a href="https://hirlevel.magyariskola.at/de/#kategoria-valaszto" style="display:inline-block;padding:12px 0;color:#C8A76D;font-size:13px;font-weight:650;text-decoration:underline;">Zurück zu den drei Kategorien ↑</a>
           </td></tr>
@@ -327,7 +336,7 @@
             <p style="margin:0 0 18px 0;font-size:15px;line-height:1.75;color:#BEC7D2;">Hier können Kinder fragen, gestalten, spielen und Entscheidungen treffen. So entdecken sie, was eine Revolution bedeutet. Wir wollen keine Jahreszahlen abfragen, sondern Neugier wecken.</p>
             <p style="margin:0 0 20px 0;font-size:15px;line-height:1.7;color:#BEC7D2;"><strong style="color:#F5F3EE;">Empfohlen ab 7 Jahren</strong>, besonders für Kinder, die gern nachdenken, Fragen stellen und beim aktiven Mitmachen lernen.</p>
             <table role="presentation" cellspacing="0" cellpadding="0" border="0"><tr><td style="border-radius:5px;background:#C8A76D;">
-              <a href="https://www.magyariskola.at/event-details/csinaljuk-a-forradalmat-2026" style="display:inline-block;padding:11px 18px;color:#101F33;text-decoration:none;font-size:14px;line-height:1.2;font-weight:600;">Details und Anmeldung →</a>
+              <a href="https://www.magyariskola.at/event-details/csinaljuk-a-forradalmat-2026" style="display:inline-block;padding:11px 18px;color:#E4E9F0;text-decoration:none;font-size:14px;line-height:1.2;font-weight:600;">Details und Anmeldung →</a>
             </td></tr></table></div></td></tr>
 
           <tr><td style="padding:0 34px;"><div style="height:1px;background:#e7ebee;"></div></td></tr>
@@ -356,7 +365,7 @@
             <p style="margin:0 0 14px 0;font-size:15px;line-height:1.75;color:#BEC7D2;">Geplant sind Wochenendausflüge, Museumsbesuche, Skitage, Familientreffen und weitere gemeinsame Unternehmungen.</p>
             <p style="margin:0 0 20px 0;font-size:15px;line-height:1.75;color:#BEC7D2;">Dabei möchten wir nicht alles allein bestimmen: <strong style="color:#F5F3EE;">Auch die Ideen und Vorschläge der Eltern sind willkommen.</strong></p>
             <table role="presentation" cellspacing="0" cellpadding="0" border="0"><tr><td style="border-radius:5px;background:#C8A76D;">
-              <a href="https://chat.whatsapp.com/Cv4xy5LsODzIztASzPCdCV?mode=gi_t" style="display:inline-block;padding:11px 18px;color:#101F33;text-decoration:none;font-size:14px;line-height:1.2;font-weight:600;">Der Elterngemeinschaft beitreten →</a>
+              <a href="https://chat.whatsapp.com/Cv4xy5LsODzIztASzPCdCV?mode=gi_t" style="display:inline-block;padding:11px 18px;color:#E4E9F0;text-decoration:none;font-size:14px;line-height:1.2;font-weight:600;">Der Elterngemeinschaft beitreten →</a>
             </td></tr></table>
           </td></tr>
 
@@ -368,22 +377,22 @@
             <p style="margin:0 0 14px 0;font-size:15px;line-height:1.75;color:#BEC7D2;">Viele Familien fragen sich, ob es in der Nähe gleichaltrige ungarischsprachige Kinder gibt, mit denen ihre Kinder spielen, lernen oder sich einfach am Nachmittag treffen können.</p>
             <p style="margin:0 0 20px 0;font-size:15px;line-height:1.75;color:#BEC7D2;">Deshalb haben wir die Gruppe <strong style="color:#F5F3EE;">BMI-Kinderkontakte</strong>. Damit finden BMI-Familien leichter Spiel- oder Lernfreunde für ihre Kinder und können Treffen unkompliziert organisieren.</p>
             <table role="presentation" cellspacing="0" cellpadding="0" border="0"><tr><td style="border-radius:5px;background:#C8A76D;">
-              <a href="https://chat.whatsapp.com/CPX54Pl8LQcAzuu6g9HW1D?mode=gi_t" style="display:inline-block;padding:11px 18px;color:#101F33;text-decoration:none;font-size:14px;line-height:1.2;font-weight:600;">Zur Kinderkontakte-Gruppe →</a>
+              <a href="https://chat.whatsapp.com/CPX54Pl8LQcAzuu6g9HW1D?mode=gi_t" style="display:inline-block;padding:11px 18px;color:#E4E9F0;text-decoration:none;font-size:14px;line-height:1.2;font-weight:600;">Zur Kinderkontakte-Gruppe →</a>
             </td></tr></table>
           </td></tr>
 
           <tr><td style="padding:32px 34px 34px;text-align:center;background:#17283D;">
             <p style="margin:0 0 7px 0;font-size:16px;line-height:1.5;font-weight:600;color:#F5F3EE;">Wir sehen uns am Schwedenplatz.</p>
-            <p style="margin:0;font-size:13px;line-height:1.7;color:#6b7c89;">Bécsi Magyar Iskola<br>Schwedenplatz 2, Top 9 · 1010 Wien</p>
-            <p style="margin:12px 0 0 0;font-size:13px;line-height:1.7;color:#6b7c89;"><a href="https://www.magyariskola.at/" style="color:#C8A76D;text-decoration:underline;">www.magyariskola.at</a></p>
+            <p style="margin:0;font-size:13px;line-height:1.7;color:#E4E9F0;">Bécsi Magyar Iskola<br>Schwedenplatz 2, Top 9 · 1010 Wien</p>
+            <p style="margin:12px 0 0 0;font-size:13px;line-height:1.7;color:#E4E9F0;"><a href="https://www.magyariskola.at/" style="color:#C8A76D;text-decoration:underline;">www.magyariskola.at</a></p>
             <div style="height:1px;background:#d9e0e5;margin:22px auto 18px auto;max-width:420px;"></div>
-            <p style="margin:0 0 8px 0;font-size:11px;line-height:1.7;color:#7a8994;">
+            <p style="margin:0 0 8px 0;font-size:11px;line-height:1.7;color:#E4E9F0;">
               Wenn Sie künftig keinen Newsletter mehr erhalten möchten, schreiben Sie bitte eine kurze Nachricht an
-              <a href="mailto:marketing@kozpontiszovetseg.at?subject=Leiratkoz%C3%A1s%20a%20BMI%20h%C3%ADrlev%C3%A9lr%C5%91l" style="color:#526c7e;text-decoration:underline;">marketing@kozpontiszovetseg.at</a>
+              <a href="mailto:marketing@kozpontiszovetseg.at?subject=Leiratkoz%C3%A1s%20a%20BMI%20h%C3%ADrlev%C3%A9lr%C5%91l" style="color:#E4E9F0;text-decoration:underline;">marketing@kozpontiszovetseg.at</a>
               diese Adresse.
             </p>
-            <p style="margin:0;font-size:11px;line-height:1.7;color:#8a979f;">
-              Diese E-Mail wurde von der <a href="https://www.magyariskola.at/" style="color:#526c7e;text-decoration:underline;">Website der Bécsi Magyar Iskola</a> versendet.
+            <p style="margin:0;font-size:11px;line-height:1.7;color:#E4E9F0;">
+              Diese E-Mail wurde von der <a href="https://www.magyariskola.at/" style="color:#E4E9F0;text-decoration:underline;">Website der Bécsi Magyar Iskola</a> versendet.
             </p>
           </td></tr>
 
