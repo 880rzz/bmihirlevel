@@ -43,7 +43,11 @@
             "height": 270,
             "quality": 65,
             "radiusPx": 5,
-            "wixUploadStatus": "PENDING"
+            "wixUploadStatus": "PENDING",
+            "githubAsset": "/assets/events/pumpkin-640.webp",
+            "githubEmailAsset": "https://hirlevel.magyariskola.at/assets/events/pumpkin-640.jpg",
+            "assetGenerationStatus": "photo",
+            "wixExternalDependencyRemoved": true
           }
         },
         {
@@ -73,7 +77,11 @@
             "height": 270,
             "quality": 65,
             "radiusPx": 5,
-            "wixUploadStatus": "PENDING"
+            "wixUploadStatus": "PENDING",
+            "githubAsset": "/assets/events/kkunst-640.webp",
+            "githubEmailAsset": "https://hirlevel.magyariskola.at/assets/events/kkunst-640.jpg",
+            "assetGenerationStatus": "photo",
+            "wixExternalDependencyRemoved": true
           }
         },
         {
@@ -103,7 +111,11 @@
             "height": 270,
             "quality": 65,
             "radiusPx": 5,
-            "wixUploadStatus": "PENDING"
+            "wixUploadStatus": "PENDING",
+            "githubAsset": "/assets/events/sicher-640.webp",
+            "githubEmailAsset": "https://hirlevel.magyariskola.at/assets/events/sicher-640.jpg",
+            "assetGenerationStatus": "photo",
+            "wixExternalDependencyRemoved": true
           }
         },
         {
@@ -134,7 +146,11 @@
             "height": 270,
             "quality": 65,
             "radiusPx": 5,
-            "wixUploadStatus": "PENDING"
+            "wixUploadStatus": "PENDING",
+            "githubAsset": "/assets/events/prater-640.webp",
+            "githubEmailAsset": "https://hirlevel.magyariskola.at/assets/events/prater-640.jpg",
+            "assetGenerationStatus": "labelled_fallback",
+            "wixExternalDependencyRemoved": true
           }
         },
         {
@@ -165,7 +181,11 @@
             "height": 270,
             "quality": 65,
             "radiusPx": 5,
-            "wixUploadStatus": "PENDING"
+            "wixUploadStatus": "PENDING",
+            "githubAsset": "/assets/events/run-640.webp",
+            "githubEmailAsset": "https://hirlevel.magyariskola.at/assets/events/run-640.jpg",
+            "assetGenerationStatus": "photo",
+            "wixExternalDependencyRemoved": true
           }
         },
         {
@@ -196,7 +216,11 @@
             "height": 270,
             "quality": 65,
             "radiusPx": 5,
-            "wixUploadStatus": "PENDING"
+            "wixUploadStatus": "PENDING",
+            "githubAsset": "/assets/events/friedhof-640.webp",
+            "githubEmailAsset": "https://hirlevel.magyariskola.at/assets/events/friedhof-640.jpg",
+            "assetGenerationStatus": "photo",
+            "wixExternalDependencyRemoved": true
           }
         },
         {
@@ -226,7 +250,11 @@
             "height": 270,
             "quality": 65,
             "radiusPx": 5,
-            "wixUploadStatus": "PENDING"
+            "wixUploadStatus": "PENDING",
+            "githubAsset": "/assets/events/schoen-640.webp",
+            "githubEmailAsset": "https://hirlevel.magyariskola.at/assets/events/schoen-640.jpg",
+            "assetGenerationStatus": "photo",
+            "wixExternalDependencyRemoved": true
           }
         },
         {
@@ -256,7 +284,11 @@
             "height": 270,
             "quality": 65,
             "radiusPx": 5,
-            "wixUploadStatus": "PENDING"
+            "wixUploadStatus": "PENDING",
+            "githubAsset": "/assets/events/buch-640.webp",
+            "githubEmailAsset": "https://hirlevel.magyariskola.at/assets/events/buch-640.jpg",
+            "assetGenerationStatus": "photo",
+            "wixExternalDependencyRemoved": true
           }
         }
       ]
@@ -293,7 +325,11 @@
             "height": 270,
             "quality": 65,
             "radiusPx": 5,
-            "wixUploadStatus": "PENDING"
+            "wixUploadStatus": "PENDING",
+            "githubAsset": "/assets/events/traume-640.webp",
+            "githubEmailAsset": "https://hirlevel.magyariskola.at/assets/events/traume-640.jpg",
+            "assetGenerationStatus": "photo",
+            "wixExternalDependencyRemoved": true
           }
         },
         {
@@ -324,7 +360,11 @@
             "quality": 65,
             "radiusPx": 5,
             "license": "CC0",
-            "note": "Not a photo from the 2026 event"
+            "note": "Not a photo from the 2026 event",
+            "githubAsset": "/assets/events/h1956-640.webp",
+            "githubEmailAsset": "https://hirlevel.magyariskola.at/assets/events/h1956-640.jpg",
+            "assetGenerationStatus": "photo",
+            "wixExternalDependencyRemoved": true
           }
         },
         {
@@ -354,7 +394,11 @@
             "height": 270,
             "quality": 65,
             "radiusPx": 5,
-            "wixUploadStatus": "PENDING"
+            "wixUploadStatus": "PENDING",
+            "githubAsset": "/assets/events/viennale-640.webp",
+            "githubEmailAsset": "https://hirlevel.magyariskola.at/assets/events/viennale-640.jpg",
+            "assetGenerationStatus": "photo",
+            "wixExternalDependencyRemoved": true
           }
         },
         {
@@ -384,7 +428,11 @@
             "height": 270,
             "quality": 65,
             "radiusPx": 5,
-            "wixUploadStatus": "PENDING"
+            "wixUploadStatus": "PENDING",
+            "githubAsset": "/assets/events/hsecession-640.webp",
+            "githubEmailAsset": "https://hirlevel.magyariskola.at/assets/events/hsecession-640.jpg",
+            "assetGenerationStatus": "photo",
+            "wixExternalDependencyRemoved": true
           }
         },
         {
@@ -416,7 +464,11 @@
             "quality": 65,
             "radiusPx": 5,
             "license": "Venue brand mark; rights review required",
-            "note": "Not a photo from the 2026 event"
+            "note": "Not a photo from the 2026 event",
+            "githubAsset": "/assets/events/u4-640.webp",
+            "githubEmailAsset": "https://hirlevel.magyariskola.at/assets/events/u4-640.jpg",
+            "assetGenerationStatus": "labelled_fallback",
+            "wixExternalDependencyRemoved": true
           }
         },
         {
@@ -446,7 +498,11 @@
             "height": 270,
             "quality": 65,
             "radiusPx": 5,
-            "wixUploadStatus": "PENDING"
+            "wixUploadStatus": "PENDING",
+            "githubAsset": "/assets/events/hdarvasi-640.webp",
+            "githubEmailAsset": "https://hirlevel.magyariskola.at/assets/events/hdarvasi-640.jpg",
+            "assetGenerationStatus": "photo",
+            "wixExternalDependencyRemoved": true
           }
         },
         {
@@ -476,7 +532,11 @@
             "height": 270,
             "quality": 65,
             "radiusPx": 5,
-            "wixUploadStatus": "PENDING"
+            "wixUploadStatus": "PENDING",
+            "githubAsset": "/assets/events/comic-640.webp",
+            "githubEmailAsset": "https://hirlevel.magyariskola.at/assets/events/comic-640.jpg",
+            "assetGenerationStatus": "photo",
+            "wixExternalDependencyRemoved": true
           }
         },
         {
@@ -506,7 +566,11 @@
             "height": 270,
             "quality": 65,
             "radiusPx": 5,
-            "wixUploadStatus": "PENDING"
+            "wixUploadStatus": "PENDING",
+            "githubAsset": "/assets/events/hkoncz-640.webp",
+            "githubEmailAsset": "https://hirlevel.magyariskola.at/assets/events/hkoncz-640.jpg",
+            "assetGenerationStatus": "photo",
+            "wixExternalDependencyRemoved": true
           }
         }
       ]
@@ -536,7 +600,11 @@
             "url": "https://static.wixstatic.com/media/b0aee1_8a255779fff640709c79f85392fb9634~mv2.jpg",
             "radiusPx": 5,
             "displayWidth": 552,
-            "retainedOriginal": true
+            "retainedOriginal": true,
+            "githubAsset": "/assets/events/bmi-forradalom-640.webp",
+            "githubEmailAsset": "https://hirlevel.magyariskola.at/assets/events/bmi-forradalom-640.jpg",
+            "assetGenerationStatus": "photo",
+            "wixExternalDependencyRemoved": true
           }
         },
         {
@@ -559,7 +627,11 @@
             "url": "https://static.wixstatic.com/media/b0aee1_788ae7702eea47b99e0be5e90e336b91~mv2.png",
             "radiusPx": 5,
             "displayWidth": 552,
-            "retainedOriginal": true
+            "retainedOriginal": true,
+            "githubAsset": "/assets/events/bmi-ruhacsere-640.webp",
+            "githubEmailAsset": "https://hirlevel.magyariskola.at/assets/events/bmi-ruhacsere-640.jpg",
+            "assetGenerationStatus": "photo",
+            "wixExternalDependencyRemoved": true
           }
         },
         {
@@ -584,7 +656,11 @@
             "url": "https://static.wixstatic.com/media/b0aee1_5c18bf79ad11491eaaa0ce0e8f787ae9~mv2.png",
             "radiusPx": 5,
             "displayWidth": 552,
-            "retainedOriginal": true
+            "retainedOriginal": true,
+            "githubAsset": "/assets/events/bmi-telapo-640.webp",
+            "githubEmailAsset": "https://hirlevel.magyariskola.at/assets/events/bmi-telapo-640.jpg",
+            "assetGenerationStatus": "photo",
+            "wixExternalDependencyRemoved": true
           }
         }
       ]

@@ -1,0 +1,354 @@
+{
+  "edition": "2026-27-W07",
+  "generatedAt": "2026-10-18T18:25:38.936416+00:00",
+  "images": {
+    "pumpkin": {
+      "status": "photo",
+      "sourceUrl": "https://static.wixstatic.com/media/b0aee1_544aca11c8b04eae909684e070fcf775~mv2.jpg",
+      "errors": [],
+      "files": {
+        "jpg": {
+          "path": "assets/events/pumpkin-640.jpg",
+          "bytes": 45380,
+          "sha256": "8d9185351e926ccacb52dbe4d11124bf1c06b2861936f78425713379b4e733db"
+        },
+        "webp": {
+          "path": "assets/events/pumpkin-640.webp",
+          "bytes": 35214,
+          "sha256": "27ba1eaffee07673e9a1c328b810c08122d6fcf6f4beeaa535c87ed4b471ad2b"
+        }
+      },
+      "photoRights": "third-party rights review"
+    },
+    "kkunst": {
+      "status": "photo",
+      "sourceUrl": "https://static.wixstatic.com/media/b0aee1_ea7e3fac12db43fdb09049df755416b9~mv2.jpg",
+      "errors": [],
+      "files": {
+        "jpg": {
+          "path": "assets/events/kkunst-640.jpg",
+          "bytes": 45860,
+          "sha256": "28c85e7e3dc528952605e0deba4a7872095be98a88cc5d1fba7e3993cd075485"
+        },
+        "webp": {
+          "path": "assets/events/kkunst-640.webp",
+          "bytes": 34976,
+          "sha256": "cb093e85c6c28a34935ecb4ea2ce9e2beed7a3a4f5390d92b47d0dece7918ea0"
+        }
+      },
+      "photoRights": "third-party rights review"
+    },
+    "sicher": {
+      "status": "photo",
+      "sourceUrl": "https://static.wixstatic.com/media/b0aee1_25b149b24b584f9b96d183ee200d44ef~mv2.jpg",
+      "errors": [],
+      "files": {
+        "jpg": {
+          "path": "assets/events/sicher-640.jpg",
+          "bytes": 45325,
+          "sha256": "bd1fe35910f14d5f357b54cb717d0159d40a9d7f5642fd1ec2f338b56796e50b"
+        },
+        "webp": {
+          "path": "assets/events/sicher-640.webp",
+          "bytes": 34082,
+          "sha256": "7c03a132a0dc5b538f3d4605950059865c6d704dc4ca4b0c76ae34c7abd57b66"
+        }
+      },
+      "photoRights": "third-party rights review"
+    },
+    "prater": {
+      "status": "labelled_fallback",
+      "sourceUrl": null,
+      "errors": [
+        "static.wixstatic.com: HTTPError",
+        "www.praterwien.com: HTTPError"
+      ],
+      "files": {
+        "jpg": {
+          "path": "assets/events/prater-640.jpg",
+          "bytes": 8536,
+          "sha256": "f9821e9e3d0df3e9c0963ad5f2f820d071a54b7de129642f8b09275b47d27c3d"
+        },
+        "webp": {
+          "path": "assets/events/prater-640.webp",
+          "bytes": 4380,
+          "sha256": "c07099412e8639e77638f239cb69f7e3256abcf02d5698a2e044d32878a74bed"
+        }
+      },
+      "photoRights": "third-party rights review"
+    },
+    "run": {
+      "status": "photo",
+      "sourceUrl": "https://static.wixstatic.com/media/b0aee1_1b5beb1fa10c4ddabf5c3703011de1dc~mv2.jpg",
+      "errors": [],
+      "files": {
+        "jpg": {
+          "path": "assets/events/run-640.jpg",
+          "bytes": 30121,
+          "sha256": "06cddc4b4a86bc25b678a4ed2dd175da4af5c1e7c0a5cb7ddc9e971e7483b364"
+        },
+        "webp": {
+          "path": "assets/events/run-640.webp",
+          "bytes": 20956,
+          "sha256": "7cff73f5ecffbce30c1b98844ecd55374a728af443823911d93dda2a51e32122"
+        }
+      },
+      "photoRights": "third-party rights review"
+    },
+    "friedhof": {
+      "status": "photo",
+      "sourceUrl": "https://static.wixstatic.com/media/b0aee1_a328d6a862d44349a562cf3651602e46~mv2.jpg",
+      "errors": [],
+      "files": {
+        "jpg": {
+          "path": "assets/events/friedhof-640.jpg",
+          "bytes": 32544,
+          "sha256": "2b6238c92d28e4d70d108da2dec99bd9c828cbd850899bdb19843275a4e03943"
+        },
+        "webp": {
+          "path": "assets/events/friedhof-640.webp",
+          "bytes": 21184,
+          "sha256": "90a947cd4feb50f2f4c88b2d5295cf50f469644522b378ea3b00f29ce82aaf4f"
+        }
+      },
+      "photoRights": "third-party rights review"
+    },
+    "schoen": {
+      "status": "photo",
+      "sourceUrl": "https://static.wixstatic.com/media/b0aee1_5debd788302e459bbfecda2daeab3c85~mv2.jpg",
+      "errors": [],
+      "files": {
+        "jpg": {
+          "path": "assets/events/schoen-640.jpg",
+          "bytes": 38618,
+          "sha256": "bacaed57777eccde4bead4e65ad57d2e0311ee378c9199791432c68115db4918"
+        },
+        "webp": {
+          "path": "assets/events/schoen-640.webp",
+          "bytes": 30470,
+          "sha256": "6fd48cd2d7cdc8c1f9927740b5aaa0d5e030b9b9250bf7c41265cb411d0b4799"
+        }
+      },
+      "photoRights": "third-party rights review"
+    },
+    "buch": {
+      "status": "photo",
+      "sourceUrl": "https://static.wixstatic.com/media/b0aee1_51fc3458fe1e45aba48bf720362a7dc9~mv2.jpg",
+      "errors": [],
+      "files": {
+        "jpg": {
+          "path": "assets/events/buch-640.jpg",
+          "bytes": 46978,
+          "sha256": "1b138270710f4b60735535399e8eff4ce5be06d97aa4d2a878dedd5428760a22"
+        },
+        "webp": {
+          "path": "assets/events/buch-640.webp",
+          "bytes": 36432,
+          "sha256": "f2b19ccc5dc590637072ced79bd193621225f8fd59c08a12d881c09b44ab9aec"
+        }
+      },
+      "photoRights": "third-party rights review"
+    },
+    "traume": {
+      "status": "photo",
+      "sourceUrl": "https://static.wixstatic.com/media/b0aee1_9257b14e341f414482107c63921fbdd3~mv2.jpg",
+      "errors": [],
+      "files": {
+        "jpg": {
+          "path": "assets/events/traume-640.jpg",
+          "bytes": 14889,
+          "sha256": "a5e00c912c4461e827fefb240921762b83f0b24c35c2efba51b09080dd936174"
+        },
+        "webp": {
+          "path": "assets/events/traume-640.webp",
+          "bytes": 6568,
+          "sha256": "7225c5357c3f3b02680f9d4d289afcefcdeea8e96fc54ba2011a21cdd903f502"
+        }
+      },
+      "photoRights": "third-party rights review"
+    },
+    "h1956": {
+      "status": "photo",
+      "sourceUrl": "https://static.wixstatic.com/media/b0aee1_8af695220bb2497aa1cd34b51c1af75b~mv2.png",
+      "errors": [],
+      "files": {
+        "jpg": {
+          "path": "assets/events/h1956-640.jpg",
+          "bytes": 5235,
+          "sha256": "9013065c9d9f1e1dffa97115e45e7611e134843575ad51ba299a490bd40ff6c6"
+        },
+        "webp": {
+          "path": "assets/events/h1956-640.webp",
+          "bytes": 2040,
+          "sha256": "04a17e7acea3b94d642367acfdd6d2ea2cb057536af86b4097bc6a30bad78f96"
+        }
+      },
+      "photoRights": "third-party rights review"
+    },
+    "viennale": {
+      "status": "photo",
+      "sourceUrl": "https://static.wixstatic.com/media/b0aee1_a01cf4458f294d4b8c48b60bd1623a3e~mv2.jpg",
+      "errors": [],
+      "files": {
+        "jpg": {
+          "path": "assets/events/viennale-640.jpg",
+          "bytes": 19324,
+          "sha256": "4962351492c7c867c3c5026d49927d358a2b34f3d5daf0a42abbc1c4d3b9eff8"
+        },
+        "webp": {
+          "path": "assets/events/viennale-640.webp",
+          "bytes": 12006,
+          "sha256": "d4e837dff589474269f5887a479c1174169282bf093012618d78927f9cfa1c4a"
+        }
+      },
+      "photoRights": "third-party rights review"
+    },
+    "hsecession": {
+      "status": "photo",
+      "sourceUrl": "https://static.wixstatic.com/media/b0aee1_d0830fa7631f47eb80cb37f9f4eb34c9~mv2.jpg",
+      "errors": [],
+      "files": {
+        "jpg": {
+          "path": "assets/events/hsecession-640.jpg",
+          "bytes": 56718,
+          "sha256": "7f82b23a73283e909b888f868001a40d54df868f187494eefa3127633f37e9eb"
+        },
+        "webp": {
+          "path": "assets/events/hsecession-640.webp",
+          "bytes": 51042,
+          "sha256": "08c6aab7290da76dae096d4acbfb4e84641744a5a6418d29dd18a38637d0a80c"
+        }
+      },
+      "photoRights": "third-party rights review"
+    },
+    "u4": {
+      "status": "labelled_fallback",
+      "sourceUrl": null,
+      "errors": [
+        "static.wixstatic.com: HTTPError",
+        "siddh.socialveins.com: HTTPError"
+      ],
+      "files": {
+        "jpg": {
+          "path": "assets/events/u4-640.jpg",
+          "bytes": 9067,
+          "sha256": "bf92c26cd4626839806e074c23a02740c9c3237707eee6e3e4329b384ec4a97d"
+        },
+        "webp": {
+          "path": "assets/events/u4-640.webp",
+          "bytes": 4616,
+          "sha256": "bb5ec7208bd388c73f0eb2b606eb5138f0da3d8a3ff4966b938fbeae99a8bc05"
+        }
+      },
+      "photoRights": "third-party rights review"
+    },
+    "hdarvasi": {
+      "status": "photo",
+      "sourceUrl": "https://static.wixstatic.com/media/b0aee1_80b01ff00a024db69de24fe6ba1cd6f8~mv2.jpg",
+      "errors": [],
+      "files": {
+        "jpg": {
+          "path": "assets/events/hdarvasi-640.jpg",
+          "bytes": 15848,
+          "sha256": "e3846856a26cf5b2813303d64222a6c81e66e0b30ba8d709f8b76d74fa10d6ba"
+        },
+        "webp": {
+          "path": "assets/events/hdarvasi-640.webp",
+          "bytes": 8100,
+          "sha256": "e5d4411f67a85846504523aef18fbac531cedfe230fe8c01ff79e43de11d8108"
+        }
+      },
+      "photoRights": "third-party rights review"
+    },
+    "comic": {
+      "status": "photo",
+      "sourceUrl": "https://static.wixstatic.com/media/b0aee1_12d3ad774de44cb9b67c6ad5c23a7629~mv2.jpg",
+      "errors": [],
+      "files": {
+        "jpg": {
+          "path": "assets/events/comic-640.jpg",
+          "bytes": 38550,
+          "sha256": "b80aa87f9bf8814c5bb401f289ea5d976dcbdaf352a3fcbcf0c70d556492c379"
+        },
+        "webp": {
+          "path": "assets/events/comic-640.webp",
+          "bytes": 26428,
+          "sha256": "e23eb66b31d68836b05f6d5939da6477b7d1555c39d88a947befc3d593fec35d"
+        }
+      },
+      "photoRights": "third-party rights review"
+    },
+    "hkoncz": {
+      "status": "photo",
+      "sourceUrl": "https://static.wixstatic.com/media/b0aee1_9ca6f81980d944ec8d5831d7303b0c8f~mv2.jpg",
+      "errors": [],
+      "files": {
+        "jpg": {
+          "path": "assets/events/hkoncz-640.jpg",
+          "bytes": 29238,
+          "sha256": "db24f8ce0b6b55c61498a87a27dd8cab03d37bd590c84c56db5e910b61dc5b7b"
+        },
+        "webp": {
+          "path": "assets/events/hkoncz-640.webp",
+          "bytes": 18800,
+          "sha256": "b128581e9fa1d90afa50f49dd973fec05cb2126b4fc4f4ef68c1a30a9413a7d7"
+        }
+      },
+      "photoRights": "third-party rights review"
+    },
+    "bmi-forradalom": {
+      "status": "photo",
+      "sourceUrl": "https://static.wixstatic.com/media/b0aee1_8a255779fff640709c79f85392fb9634~mv2.jpg",
+      "errors": [],
+      "files": {
+        "jpg": {
+          "path": "assets/events/bmi-forradalom-640.jpg",
+          "bytes": 180507,
+          "sha256": "e0bf8d65c03a6eda7f69e49d022635f13d4bffec219d8d2627af726a15468d13"
+        },
+        "webp": {
+          "path": "assets/events/bmi-forradalom-640.webp",
+          "bytes": 110258,
+          "sha256": "758d44ef75d8e0276cfff57d54c7df964e849cab4e9cda28026a194e5d1b20d6"
+        }
+      },
+      "photoRights": "first-party"
+    },
+    "bmi-ruhacsere": {
+      "status": "photo",
+      "sourceUrl": "https://static.wixstatic.com/media/b0aee1_788ae7702eea47b99e0be5e90e336b91~mv2.png",
+      "errors": [],
+      "files": {
+        "jpg": {
+          "path": "assets/events/bmi-ruhacsere-640.jpg",
+          "bytes": 143098,
+          "sha256": "07f31844c50b482cba1821f382b4e603c06325828bcd92ffa05b19cd0adefe5e"
+        },
+        "webp": {
+          "path": "assets/events/bmi-ruhacsere-640.webp",
+          "bytes": 91388,
+          "sha256": "5413b9d20fa98427c5484516bd1ce19a6f12d500af21497a1640c6fd8ee36c27"
+        }
+      },
+      "photoRights": "first-party"
+    },
+    "bmi-telapo": {
+      "status": "photo",
+      "sourceUrl": "https://static.wixstatic.com/media/b0aee1_5c18bf79ad11491eaaa0ce0e8f787ae9~mv2.png",
+      "errors": [],
+      "files": {
+        "jpg": {
+          "path": "assets/events/bmi-telapo-640.jpg",
+          "bytes": 163738,
+          "sha256": "476db8089fb4d63cf6a2baf8bb2ba272c210a8ca0363425b4d8ffbccb558f071"
+        },
+        "webp": {
+          "path": "assets/events/bmi-telapo-640.webp",
+          "bytes": 106404,
+          "sha256": "318446afba57ced2b719f6e67f334183842084abcc08a41c65168667f3141edd"
+        }
+      },
+      "photoRights": "first-party"
+    }
+  }
+}
