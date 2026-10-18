@@ -28,7 +28,7 @@ def audit():
             if f"/assets/events/{id}-640.webp" not in html:raise ValueError(route+": missing "+id)
         if "border-radius:18px" not in html:raise ValueError(route+": missing Apple-like card radius")
         # Ensure the deployed site contains the actual requested editorial design.
-        if not re.search(r'class="[^"]*\\bcategory-buttons\\b[^"]*"',html):raise ValueError(route+": compact category buttons not deployed")
+        if not re.search(r'class="[^"]*category-buttons[^"]*"',html):raise ValueError(route+": compact category buttons not deployed")
         expected_features=9 if route=="/" else 3
         expected_events=51 if route=="/" else 17
         if html.count('class="feature-cell"')!=expected_features:raise ValueError(route+": category cards missing")
