@@ -4,6 +4,7 @@ on:
     branches: [main]
     paths:
       - scripts/cache_newsletter_images.py
+      - scripts/use_local_newsletter_images.py
       - .github/workflows/cache-newsletter-images.yml
   workflow_dispatch:
 permissions:

@@ -43,8 +43,11 @@ for rel in (*WEB_FILES,*EMAIL_FILES):
             if count!=expected: raise ValueError(f"Event photo missing {eid} in {rel}: {count}/{expected}")
         replacements[eid]=target
     if len(replacements)!=19: raise ValueError("Incomplete imagery")
-    if re.search(r'<img\b[^>]*src="https://static\.wixstatic\.com/media/',text):
-        raise ValueError("Unmigrated Wix images remain in "+rel)
+    # The independent BMI masthead logo remains in its previously working Wix URL.
+    # All 19 programme visuals must already have GitHub assets before migration.
+    remaining=re.findall(r'<img\b[^>]*src="https://static\.wixstatic\.com/media/[^"]+"[^>]*>',text)
+    if any("Wiener Ungarische Schule" not in image for image in remaining):
+        raise ValueError("Unmigrated programme image remains in "+rel)
     if email and '<script' in text:
         raise ValueError("JavaScript leaked into "+rel)
     p.write_text(text,encoding="utf-8")
