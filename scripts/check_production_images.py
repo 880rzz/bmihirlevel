@@ -36,7 +36,7 @@ def audit():
         # Ensure the deployed site contains the actual requested editorial design.
         if class_count(html,"category-buttons")<1:raise ValueError(route+": compact category buttons not deployed")
         expected_features=3
-        expected_events=16
+        expected_events=17
         if class_count(html,"feature-cell")!=expected_features:raise ValueError(route+": category cards missing")
         if class_count(html,"editorial-event")!=expected_events:raise ValueError(route+": editorial event cards missing")
         if "BlinkMacSystemFont" not in html or "font-family:Georgia" not in html:raise ValueError(route+": premium typography not deployed")
