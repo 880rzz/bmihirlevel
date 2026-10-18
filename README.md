@@ -105,3 +105,12 @@ A képek harmadik féltől származó újraközlési jogai továbbra is külön 
 - Az eredeti BMI-programképek képaránya megmaradt; a külső ajánlóképek 640×360 pixelesek, szülőelemet kitöltő megjelenítéssel és 5 px lekerekítéssel.
 - A `data/event-image-assets.json` tartalmazza a generált fájlok méretét, SHA-256 értékét és fotó/helyettesítő státuszát. A hírlevél HTML-kódja közvetlenül nem használ többé Wix médiaszolgáltatást. A főoldal elsődleges nyelve magyar maradt.
 - **Korlátok:** az éles GitHub Pages URL vizuális ellenőrzése és a harmadik féltől származó fotók újraközlési engedélye külön feladat. A későbbi képcseréket ugyanaz az automatizmus generálhatja új PR-ben.
+
+## Editorial newsletter új dizájn, a 2026-10-18-i vizuális referencia alapján
+
+- A hírlevél webes és Wix-e-mail HTML-kiadásai azonos, **eredeti BMI-szerkesztőségi** dizájnt kaptak. A referencia vizuális logikáját vettük át, nem reklámszövegeit: grafikus, nagybetűs címsorok; törtfehér/bézs papírfelületek; sötét tipográfia; visszafogott vörös kiemelés; strukturált, 3 oszlopos képes kategóriaválasztó; kiemelt eseményfotók és egyértelmű piros CTA.
+- A 19 esemény (8 gyerek + 8 felnőtt + 3 iskolai), minden létező eseménylink, a 3 BMI saját esemény hosszabb leírása és képe, az iskolai logó, a szülői közösség és a magyar alapú HU/DE/EN nyelvváltás megmaradt.
+- A törzsszélesség 620-ról 680 pixelre bővült, hogy a háromoszlopos képes kategóriakártyák egyenként is olvashatók legyenek. Mobilon a kártyák egymás alá kerülnek; az elrendezés nem igényel JavaScriptet az e-mailen belül.
+- A saját GitHub-képtár WebP/JPEG/PNG eszközeit használjuk; a kategóriaképek meglévő 3 fájlt újrahasznosítanak. **Nincs új nagy kép letöltési kötelezettség.** Az eseményképek és kártyaképek 5 px lekerekítést kapnak; a BMI eseményposzterek képaránya megmarad.
+- Elrendezés email-kompatibilis táblázatos szerkezetre, inline CSS-re és kisméretű mobil media query-re épül. A Wix HTML-ek JavaScript-mentesek; a háromnyelvű webes változat nyelvváltása továbbra is működik.
+- A vizuális inspiráció célja a hangsúlyos tipográfiai hierarchia és a fotó-kép-szöveg egyensúly; **nem** értékesítési vagy akciós kommunikáció. A minta feliratai és grafikái nem lettek másolva.
