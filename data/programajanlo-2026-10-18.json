@@ -508,9 +508,13 @@
           "source": "Bécsi Magyar Iskola",
           "description": "Játékos, alkotó történelemfoglalkozás, amelyben a gyerekek kérdezve és döntéseket hozva fedezik fel, mit jelent egy forradalom.",
           "image": {
-            "status": "NOT_FOUND",
-            "reason": "No authoritative visual confirmed",
-            "radiusPx": 5
+            "status": "EXISTING_OWN_EVENT_ARTWORK",
+            "kind": "first_party",
+            "source": "Bécsi Magyar Iskola / Wix Media Manager",
+            "url": "https://static.wixstatic.com/media/b0aee1_8a255779fff640709c79f85392fb9634~mv2.jpg",
+            "radiusPx": 5,
+            "displayWidth": 552,
+            "retainedOriginal": true
           }
         },
         {
@@ -527,9 +531,13 @@
           "source": "Bécsi Magyar Iskola",
           "description": "Jó állapotú ruhák cseréje a Schwedenplatzon. Részvételi hozzájárulás: 5 €. A megmaradt ruhákat az Igazgyöngy Alapítvány kapja.",
           "image": {
-            "status": "NOT_FOUND",
-            "reason": "No authoritative visual confirmed",
-            "radiusPx": 5
+            "status": "EXISTING_OWN_EVENT_ARTWORK",
+            "kind": "first_party",
+            "source": "Bécsi Magyar Iskola / Wix Media Manager",
+            "url": "https://static.wixstatic.com/media/b0aee1_788ae7702eea47b99e0be5e90e336b91~mv2.png",
+            "radiusPx": 5,
+            "displayWidth": 552,
+            "retainedOriginal": true
           }
         },
         {
@@ -548,9 +556,13 @@
           "imageUrl": "https://static.wixstatic.com/media/b0aee1_5c18bf79ad11491eaaa0ce0e8f787ae9~mv2.png",
           "description": "Interaktív magyar nyelvű mesekoncert a Wiener Rathaus dísztermében. A jegyértékesítés első hetében a rendelkezésre álló jegyek közel fele elkelt.",
           "image": {
-            "status": "NOT_FOUND",
-            "reason": "No authoritative visual confirmed",
-            "radiusPx": 5
+            "status": "EXISTING_OWN_EVENT_ARTWORK",
+            "kind": "first_party",
+            "source": "Bécsi Magyar Iskola / Wix Media Manager",
+            "url": "https://static.wixstatic.com/media/b0aee1_5c18bf79ad11491eaaa0ce0e8f787ae9~mv2.png",
+            "radiusPx": 5,
+            "displayWidth": 552,
+            "retainedOriginal": true
           }
         }
       ]
