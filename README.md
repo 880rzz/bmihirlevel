@@ -46,3 +46,14 @@ A háromkategóriás kezdőlap változatlan. A `#program-iskola` blokk az archiv
 - Hivatalos BMI Wix média URL: `https://static.wixstatic.com/media/b0aee1_944db6e866844c83b2e5d8b7bdf7ecb6~mv2.png` (kép feltöltve 2026-10-18, a Wix visszajelzése: PENDING).
 - A logo közvetlenül a fejléc előtt, fehér háttérrel és 136 px látható szélességgel jelenik meg; a képre kattintva a hivatalos iskolai honlapra jut az olvasó.
 - A fejléc, kategóriák és a három eredeti iskolai program vizuális része nem változott. Éles CDN és GitHub Pages ellenőrzés szükséges a végleges production lezáráshoz.
+
+## Háromnyelvű hírlevél és nyelvválasztó (2026-10-18)
+
+- **Magyar:** https://hirlevel.magyariskola.at/ – `index.html`
+- **Német:** https://hirlevel.magyariskola.at/de/ – `de/index.html`
+- **Angol:** https://hirlevel.magyariskola.at/en/ – `en/index.html`
+- A kódoldali hírlevél nyelvválasztó három normál HTTPS linkkel működik; e-mailben nem függ JavaScripttől és mindig a teljes adott nyelvű online oldalra mutat.
+- Az egyes nyelvek külön canonical és hreflang kapcsolatokkal rendelkeznek. Az online EN/DE változat az analitikát a webhely gyökeréről tölti.
+- Wix Email Marketing import: `exports/bmi-hirlevel-wix-2026-10-18.html` (HU), `exports/bmi-hirlevel-wix-de-2026-10-18.html` (DE), `exports/bmi-hirlevel-wix-en-2026-10-18.html` (EN).
+- Az e-mail HTML fájlokból hiányzik a JavaScript és a saját leiratkozási felszólítás; Wix biztosítja a natív leiratkozást. Mindhárom változat azonos 19 programot, BMI-képeket, külső linkeket és a 3 célcsoportot használja.
+- Egy magyar vonatkozású program nem feltétlenül magyar nyelvű. Fordításkor eseménycímek (különösen saját márkanevek) és forráslinkek megmaradnak, a kísérőszöveg DE/EN nyelvű. A dátumok a 2026-10-18-i hírlevél pillanatképét jelentik.
