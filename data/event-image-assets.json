@@ -1,6 +1,6 @@
 {
   "edition": "2026-27-W07",
-  "generatedAt": "2026-10-18T18:29:03.592030+00:00",
+  "generatedAt": "2026-10-18T19:39:53.460681+00:00",
   "images": {
     "pumpkin": {
       "status": "photo",
@@ -18,7 +18,8 @@
           "sha256": "27ba1eaffee07673e9a1c328b810c08122d6fcf6f4beeaa535c87ed4b471ad2b"
         }
       },
-      "photoRights": "third-party rights review"
+      "photoRights": "third-party rights review",
+      "sourceKind": "archive"
     },
     "kkunst": {
       "status": "photo",
@@ -36,7 +37,8 @@
           "sha256": "cb093e85c6c28a34935ecb4ea2ce9e2beed7a3a4f5390d92b47d0dece7918ea0"
         }
       },
-      "photoRights": "third-party rights review"
+      "photoRights": "third-party rights review",
+      "sourceKind": "archive"
     },
     "sicher": {
       "status": "photo",
@@ -54,28 +56,27 @@
           "sha256": "7c03a132a0dc5b538f3d4605950059865c6d704dc4ca4b0c76ae34c7abd57b66"
         }
       },
-      "photoRights": "third-party rights review"
+      "photoRights": "third-party rights review",
+      "sourceKind": "illustrative"
     },
     "prater": {
-      "status": "labelled_fallback",
-      "sourceUrl": null,
-      "errors": [
-        "static.wixstatic.com: HTTPError",
-        "www.praterwien.com: HTTPError"
-      ],
+      "status": "photo",
+      "sourceUrl": "https://static.wixstatic.com/media/b0aee1_1cba0f16dde94c1a9bf4b05f2da67475~mv2.jpg",
+      "errors": [],
       "files": {
         "jpg": {
           "path": "assets/events/prater-640.jpg",
-          "bytes": 8536,
-          "sha256": "f9821e9e3d0df3e9c0963ad5f2f820d071a54b7de129642f8b09275b47d27c3d"
+          "bytes": 34276,
+          "sha256": "79b41044ec0d0b199dfeccbfc2fc6a166dfbf8aca6e85d01b74202b7d5f91e4e"
         },
         "webp": {
           "path": "assets/events/prater-640.webp",
-          "bytes": 4380,
-          "sha256": "c07099412e8639e77638f239cb69f7e3256abcf02d5698a2e044d32878a74bed"
+          "bytes": 24724,
+          "sha256": "fd175b40d277f30e4442c2ef3d3f2cbe1bd6f2a9b9d34cd1d7aed385c2707c6f"
         }
       },
-      "photoRights": "third-party rights review"
+      "photoRights": "generated for BMI newsletter; not official organiser artwork",
+      "sourceKind": "generated_poster"
     },
     "run": {
       "status": "photo",
@@ -93,7 +94,8 @@
           "sha256": "7cff73f5ecffbce30c1b98844ecd55374a728af443823911d93dda2a51e32122"
         }
       },
-      "photoRights": "third-party rights review"
+      "photoRights": "third-party rights review",
+      "sourceKind": "official"
     },
     "friedhof": {
       "status": "photo",
@@ -111,7 +113,8 @@
           "sha256": "90a947cd4feb50f2f4c88b2d5295cf50f469644522b378ea3b00f29ce82aaf4f"
         }
       },
-      "photoRights": "third-party rights review"
+      "photoRights": "third-party rights review",
+      "sourceKind": "archive"
     },
     "schoen": {
       "status": "photo",
@@ -129,7 +132,8 @@
           "sha256": "6fd48cd2d7cdc8c1f9927740b5aaa0d5e030b9b9250bf7c41265cb411d0b4799"
         }
       },
-      "photoRights": "third-party rights review"
+      "photoRights": "third-party rights review",
+      "sourceKind": "archive"
     },
     "buch": {
       "status": "photo",
@@ -147,7 +151,8 @@
           "sha256": "f2b19ccc5dc590637072ced79bd193621225f8fd59c08a12d881c09b44ab9aec"
         }
       },
-      "photoRights": "third-party rights review"
+      "photoRights": "third-party rights review",
+      "sourceKind": "illustrative"
     },
     "traume": {
       "status": "photo",
@@ -165,25 +170,27 @@
           "sha256": "7225c5357c3f3b02680f9d4d289afcefcdeea8e96fc54ba2011a21cdd903f502"
         }
       },
-      "photoRights": "third-party rights review"
+      "photoRights": "third-party rights review",
+      "sourceKind": "illustrative"
     },
     "h1956": {
       "status": "photo",
-      "sourceUrl": "https://static.wixstatic.com/media/b0aee1_8af695220bb2497aa1cd34b51c1af75b~mv2.png",
+      "sourceUrl": "https://static.wixstatic.com/media/b0aee1_a82361cef2154fae942bf34f5af55419~mv2.jpg",
       "errors": [],
       "files": {
         "jpg": {
           "path": "assets/events/h1956-640.jpg",
-          "bytes": 5235,
-          "sha256": "9013065c9d9f1e1dffa97115e45e7611e134843575ad51ba299a490bd40ff6c6"
+          "bytes": 32927,
+          "sha256": "b8150195e2ebadbcab5b2464cf2d1274a7e30baba56b2bb24fff586961f292f8"
         },
         "webp": {
           "path": "assets/events/h1956-640.webp",
-          "bytes": 2040,
-          "sha256": "04a17e7acea3b94d642367acfdd6d2ea2cb057536af86b4097bc6a30bad78f96"
+          "bytes": 24384,
+          "sha256": "49bf6e17f2938dc5e6955d1f36861634e5efecf9ea1a99d2d7d78bcddb720df2"
         }
       },
-      "photoRights": "third-party rights review"
+      "photoRights": "official event artwork supplied by user",
+      "sourceKind": "official_event_artwork"
     },
     "viennale": {
       "status": "photo",
@@ -201,7 +208,8 @@
           "sha256": "d4e837dff589474269f5887a479c1174169282bf093012618d78927f9cfa1c4a"
         }
       },
-      "photoRights": "third-party rights review"
+      "photoRights": "third-party rights review",
+      "sourceKind": "official"
     },
     "hsecession": {
       "status": "photo",
@@ -219,28 +227,27 @@
           "sha256": "08c6aab7290da76dae096d4acbfb4e84641744a5a6418d29dd18a38637d0a80c"
         }
       },
-      "photoRights": "third-party rights review"
+      "photoRights": "third-party rights review",
+      "sourceKind": "illustrative"
     },
     "u4": {
-      "status": "labelled_fallback",
-      "sourceUrl": null,
-      "errors": [
-        "static.wixstatic.com: HTTPError",
-        "siddh.socialveins.com: HTTPError"
-      ],
+      "status": "photo",
+      "sourceUrl": "https://static.wixstatic.com/media/b0aee1_341f1c44d87c4538acb92198ff433249~mv2.jpg",
+      "errors": [],
       "files": {
         "jpg": {
           "path": "assets/events/u4-640.jpg",
-          "bytes": 9067,
-          "sha256": "bf92c26cd4626839806e074c23a02740c9c3237707eee6e3e4329b384ec4a97d"
+          "bytes": 25227,
+          "sha256": "0e99a5c5f47f4f3334b033d79fe0cba31cbbe461da05d4b1818b236e419c55d7"
         },
         "webp": {
           "path": "assets/events/u4-640.webp",
-          "bytes": 4616,
-          "sha256": "bb5ec7208bd388c73f0eb2b606eb5138f0da3d8a3ff4966b938fbeae99a8bc05"
+          "bytes": 17046,
+          "sha256": "a9514ff1f2b808fb80b6ae6742652167fc1c90e205e3674f3c974cab9fc2d816"
         }
       },
-      "photoRights": "third-party rights review"
+      "photoRights": "generated for BMI newsletter; not official organiser artwork",
+      "sourceKind": "generated_poster"
     },
     "hdarvasi": {
       "status": "photo",
@@ -258,7 +265,8 @@
           "sha256": "e5d4411f67a85846504523aef18fbac531cedfe230fe8c01ff79e43de11d8108"
         }
       },
-      "photoRights": "third-party rights review"
+      "photoRights": "third-party rights review",
+      "sourceKind": "archive"
     },
     "comic": {
       "status": "photo",
@@ -276,25 +284,27 @@
           "sha256": "e23eb66b31d68836b05f6d5939da6477b7d1555c39d88a947befc3d593fec35d"
         }
       },
-      "photoRights": "third-party rights review"
+      "photoRights": "third-party rights review",
+      "sourceKind": "illustrative"
     },
     "hkoncz": {
       "status": "photo",
-      "sourceUrl": "https://static.wixstatic.com/media/b0aee1_9ca6f81980d944ec8d5831d7303b0c8f~mv2.jpg",
+      "sourceUrl": "https://static.wixstatic.com/media/b0aee1_e953368eea1b4e2598081f57499912da~mv2.jpg",
       "errors": [],
       "files": {
         "jpg": {
           "path": "assets/events/hkoncz-640.jpg",
-          "bytes": 29238,
-          "sha256": "db24f8ce0b6b55c61498a87a27dd8cab03d37bd590c84c56db5e910b61dc5b7b"
+          "bytes": 27129,
+          "sha256": "cc993d48bf1b85aa1eda302d7a808ea65dcea793a68380c1dddbb057ccc46591"
         },
         "webp": {
           "path": "assets/events/hkoncz-640.webp",
-          "bytes": 18800,
-          "sha256": "b128581e9fa1d90afa50f49dd973fec05cb2126b4fc4f4ef68c1a30a9413a7d7"
+          "bytes": 17394,
+          "sha256": "12b0505c49e7aff447e4f0b3d451c6037fd17b0a83e15ef1119329b4a120c8d5"
         }
       },
-      "photoRights": "third-party rights review"
+      "photoRights": "official event artwork supplied by user",
+      "sourceKind": "official_event_artwork"
     },
     "bmi-forradalom": {
       "status": "photo",
@@ -312,7 +322,8 @@
           "sha256": "758d44ef75d8e0276cfff57d54c7df964e849cab4e9cda28026a194e5d1b20d6"
         }
       },
-      "photoRights": "first-party"
+      "photoRights": "first-party",
+      "sourceKind": "first_party"
     },
     "bmi-ruhacsere": {
       "status": "photo",
@@ -330,7 +341,8 @@
           "sha256": "5413b9d20fa98427c5484516bd1ce19a6f12d500af21497a1640c6fd8ee36c27"
         }
       },
-      "photoRights": "first-party"
+      "photoRights": "first-party",
+      "sourceKind": "first_party"
     },
     "bmi-telapo": {
       "status": "photo",
@@ -348,7 +360,8 @@
           "sha256": "318446afba57ced2b719f6e67f334183842084abcc08a41c65168667f3141edd"
         }
       },
-      "photoRights": "first-party"
+      "photoRights": "first-party",
+      "sourceKind": "first_party"
     }
   },
   "logo": {
