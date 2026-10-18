@@ -41,7 +41,7 @@ def audit():
         if class_count(html,"editorial-event")!=expected_events:raise ValueError(route+": editorial event cards missing")
         if "BlinkMacSystemFont" not in html or "font-family:Georgia" not in html:raise ValueError(route+": premium typography not deployed")
         if "border:1px solid #C8A76D" not in html:raise ValueError(route+": gold 1px button border missing")
-        expected_school=2
+        expected_school=2 if route=="/" else 0
         if class_count(html,"school-event-image")!=expected_school:raise ValueError(route+": unified school cards missing")
         if html.count("aspect-ratio:1/1")<expected_school:raise ValueError(route+": square school images missing")
         expected_telapo=1
