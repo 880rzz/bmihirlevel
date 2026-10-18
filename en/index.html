@@ -82,12 +82,11 @@
     .newsletter-shell [data-newsletter-langs] strong[aria-current="page"]{color:#F5F3EE!important;background-color:#24364A!important;border:1px solid #C8A76D!important}
     .newsletter-shell [data-newsletter-langs] :is(a,strong):focus-visible{outline:2px solid #E7C58B;outline-offset:3px}
 
-    /* Fixed wallpaper layer across desktop and mobile; content scrolls over it. */
-    html{background:#071422!important}
-    html body{background:#071422!important;background-image:none!important}
-    html body::before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;background:#071422 url('/assets/halloween/night-pattern.svg') repeat center top;background-size:560px 560px}
+    /* Wallpaper belongs to the viewport, not the scrolling document. */
+    html{background:#071422 url('/assets/halloween/night-pattern.svg') repeat center top fixed!important;background-size:560px 560px!important}
+    html body{background:transparent!important;background-image:none!important;min-height:100vh}
     html body>table{position:relative;z-index:1;background:transparent!important;background-color:transparent!important}
-    @media (max-width:620px){html body::before{background-size:280px 280px}}
+    @media(max-width:620px){html{background-size:280px 280px!important}}
 
 
     .newsletter-shell td[style*="background:#eef3f6"] h2{color:#102238!important}
