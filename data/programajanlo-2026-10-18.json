@@ -311,9 +311,20 @@
           ],
           "description": "Ünnepi megemlékezés az Europa-Club és az Ausztriai Magyar Szervezetek Kerekasztala szervezésében a Collegium Hungaricumban.",
           "image": {
-            "status": "NOT_FOUND",
-            "reason": "A bécsi 2026-os közös megemlékezés hiteles eseményképét nem találtuk meg; más helyszínről származó 2025-ös fotót nem használunk megtévesztően.",
-            "radiusPx": 5
+            "status": "CURATED_SYMBOL_WITH_PROVENANCE",
+            "kind": "symbol",
+            "credit": "Thommy9 / Wikimedia Commons (CC0)",
+            "source": "https://commons.wikimedia.org/wiki/File:Flag_of_Hungary_(1956_revolution,_2-1).svg",
+            "original": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Flag_of_Hungary_%281956_revolution%2C_2-1%29.svg/960px-Flag_of_Hungary_%281956_revolution%2C_2-1%29.svg.png",
+            "mediaId": "b0aee1_8af695220bb2497aa1cd34b51c1af75b~mv2.png",
+            "thumbnailUrl": "https://static.wixstatic.com/media/b0aee1_8af695220bb2497aa1cd34b51c1af75b~mv2.png/v1/fill/w_480,h_270,al_c,q_65/h1956-newsletter.jpg",
+            "wixUploadStatus": "PENDING",
+            "width": 480,
+            "height": 270,
+            "quality": 65,
+            "radiusPx": 5,
+            "license": "CC0",
+            "note": "Not a photo from the 2026 event"
           }
         },
         {
@@ -392,9 +403,20 @@
           ],
           "description": "Jelmezes este két tánctérrel, négy DJ-vel és horrorhangulattal. 18 éven felülieknek.",
           "image": {
-            "status": "NOT_FOUND",
-            "reason": "A 2026. október 31-i U4 rendezvény hivatalos plakátjának ellenőrizhető közvetlen média-URL-je nem volt elérhető.",
-            "radiusPx": 5
+            "status": "CURATED_SYMBOL_WITH_PROVENANCE",
+            "kind": "venue_logo",
+            "credit": "U4 Vienna (venue logo) / Socialveins",
+            "source": "https://socialveins.com/influencer/instagram/u4_vienna",
+            "original": "https://siddh.socialveins.com/profiles/u4_vienna/1776200838720-profile.webp",
+            "mediaId": "b0aee1_2fb0bcd597764aef959740b9be0ee32b~mv2.webp",
+            "thumbnailUrl": "https://static.wixstatic.com/media/b0aee1_2fb0bcd597764aef959740b9be0ee32b~mv2.webp/v1/fill/w_480,h_270,al_c,q_65/u4-newsletter.jpg",
+            "wixUploadStatus": "PENDING",
+            "width": 480,
+            "height": 270,
+            "quality": 65,
+            "radiusPx": 5,
+            "license": "Venue brand mark; rights review required",
+            "note": "Not a photo from the 2026 event"
           }
         },
         {
