@@ -27,6 +27,14 @@ def audit():
         for id in IDS:
             if f"/assets/events/{id}-640.webp" not in html:raise ValueError(route+": missing "+id)
         if "border-radius:5px" not in html:raise ValueError(route+": missing 5px design")
+        # Ensure the deployed site contains the actual requested editorial design.
+        if 'class="feature-grid"' not in html:raise ValueError(route+": image-led categories not deployed")
+        expected_features=9 if route=="/" else 3
+        expected_events=48 if route=="/" else 16
+        if html.count('class="feature-cell"')!=expected_features:raise ValueError(route+": category cards missing")
+        if html.count('class="editorial-event"')!=expected_events:raise ValueError(route+": editorial event cards missing")
+        if "background:#F6F1E7" not in html or "font-size:44px" not in html:raise ValueError(route+": editorial hero not deployed")
+        if "padding:12px 16px" not in html or "background:#C82932" not in html:raise ValueError(route+": editorial CTAs not deployed")
         if re.search(r'<img\b[^>]*src="https://static\.wixstatic\.com/',html):raise ValueError(route+": unresolved Wix source")
         pages.append({"route":route,"htmlBytes":len(html)})
     with ThreadPoolExecutor(max_workers=8) as pool:
