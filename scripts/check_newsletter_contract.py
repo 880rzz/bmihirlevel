@@ -22,7 +22,7 @@ for path, lang in PAGES.items():
     assert f'<html lang="{lang}">' in html
     assert "newsletter-content-de" not in html and "newsletter-content-en" not in html
     for poster in POSTERS:
-        images = re.findall(r'<img\\b[^>]*src="[^"]*/' + poster + r'-640\\.(?:jpg|webp)"[^>]*>', html)
+        images = re.findall(r'<img\b[^>]*src="[^"]*/' + poster + r'-640\.(?:jpg|webp)"[^>]*>', html)
         assert len(images) == 1, f"{path}: {poster} missing or duplicated"
         assert "aspect-ratio:1/1" in images[0], f"{path}: {poster} not square"
     assert html.count('data-newsletter-locale=') == 2, f"{path}: language navigation"
