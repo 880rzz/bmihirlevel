@@ -39,3 +39,10 @@ A Wix-hírlevélben használható reszponzív HTML-forrás: `index.html`.
 ## BMI iskolai programegység megőrzött stílusa (2026-10-18)
 
 A háromkategóriás kezdőlap változatlan. A `#program-iskola` blokk az archivált `archive/2026-10-18-week07-before-three-entry-structure.html` kiadás eredeti iskolai megjelenéséből lett visszaállítva: nagyméretű programképek, hosszabb leírások, az eredeti jelentkezési gombok és a Télapó Pingvintánc-linkje. Mobilon a táblázatcellák oldalsó paddingje a meglévő közös szabályt követi. A többi programkategória nem változott.
+
+## BMI embléma a hírlevél elején
+
+- A feltöltött `bmi_blue_round_rgb_logo.svg` alapján email-kompatibilis, 420×426 px, átlátszó PNG készült. Az eredeti SVG nagy (8,4 MB), mert beágyazott rasterképet tartalmaz; ezért nem azt töltjük be a hírlevélből.
+- Hivatalos BMI Wix média URL: `https://static.wixstatic.com/media/b0aee1_944db6e866844c83b2e5d8b7bdf7ecb6~mv2.png` (kép feltöltve 2026-10-18, a Wix visszajelzése: PENDING).
+- A logo közvetlenül a fejléc előtt, fehér háttérrel és 136 px látható szélességgel jelenik meg; a képre kattintva a hivatalos iskolai honlapra jut az olvasó.
+- A fejléc, kategóriák és a három eredeti iskolai program vizuális része nem változott. Éles CDN és GitHub Pages ellenőrzés szükséges a végleges production lezáráshoz.
