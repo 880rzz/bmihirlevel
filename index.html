@@ -46,6 +46,16 @@
       .feature-link {font-size:15px!important;padding:14px 18px!important;}
       .school-event-image img {aspect-ratio:1/1!important;object-fit:cover!important;}
     }
+    /* Seasonal editorial theme: subtle, responsive, and safe for readability. */
+    body, body > table { background-color:#FAF7F2!important; }
+    body { background-image:url('/assets/halloween/pattern.svg')!important; background-repeat:repeat!important; background-size:360px 360px!important; }
+    .newsletter-shell {box-shadow:0 12px 38px rgba(46,33,19,.045);}
+    .editorial-event {position:relative;}
+    .editorial-event.halloween-pumpkin::before,.editorial-event.halloween-bat::before,.editorial-event.halloween-moon::before {content:"";display:block;width:24px;height:24px;margin:0 0 8px auto;background-position:center;background-size:contain;background-repeat:no-repeat;opacity:.85;}
+    .editorial-event.halloween-pumpkin::before {background-image:url('/assets/halloween/pumpkin.svg');}
+    .editorial-event.halloween-bat::before {background-image:url('/assets/halloween/bat.svg');}
+    .editorial-event.halloween-moon::before {background-image:url('/assets/halloween/moon.svg');}
+    @media screen and (max-width:620px) {body {background-size:240px 240px!important;} .newsletter-shell {box-shadow:none;} }
   </style>
   <script defer src="analytics-consent.js"></script>
 </head>
@@ -100,7 +110,7 @@
             <div style="font-size:11px;letter-spacing:1px;line-height:1.6;text-transform:none;color:#007C83;font-weight:700;margin-bottom:8px;">01 · 9 program</div>
             <h2 style="font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","SF Pro Display","Helvetica Neue",Arial,sans-serif;font-size:32px;line-height:1.12;letter-spacing:-.7px;text-transform:none;color:#1D1D1F;font-weight:700;margin:0 0 12px;">Bécsi gyerekprogramok</h2>
             <p style="font-size:14px;line-height:1.7;color:#526878;margin:0 0 15px;">Családi programok, alkotás, Halloween és szünidei élmények.</p>
-            <div class="editorial-event" style="margin:0 0 17px;padding:17px 17px 19px;background:#F5F5F7;border:1px solid #E0D8CA;border-radius:5px;">
+            <div class="editorial-event halloween-pumpkin" style="margin:0 0 17px;padding:17px 17px 19px;background:#F5F5F7;border:1px solid #E0D8CA;border-radius:5px;">
               <div style="font-size:11px;line-height:1.6;font-weight:800;letter-spacing:.6px;text-transform:none;color:#007C83;margin-bottom:11px;">Halloween · családi · Október 22. · 14:00–19:00</div>
               
               <div data-event-thumb="pumpkin" style="margin:0 0 15px;">
@@ -111,7 +121,7 @@
               <p style="font-size:14px;line-height:1.7;color:#465d70;margin:0 0 9px;">Ingyenes, őszies közösségi program az 5. kerületben.</p>
               <a href="https://www.wien.gv.at/veranstaltungen/herbst-veranstaltungen" target="_blank" rel="noopener noreferrer" style="display:inline-block;padding:12px 16px;line-height:1.35;background:#007C83;border-radius:5px;text-decoration:none;color:#ffffff;font-size:13px;font-weight:800;">Program részletei ↗</a>
             </div>
-            <div class="editorial-event" style="margin:0 0 17px;padding:17px 17px 19px;background:#F5F5F7;border:1px solid #E0D8CA;border-radius:5px;">
+            <div class="editorial-event halloween-bat" style="margin:0 0 17px;padding:17px 17px 19px;background:#F5F5F7;border:1px solid #E0D8CA;border-radius:5px;">
               <div style="font-size:11px;line-height:1.6;font-weight:800;letter-spacing:.6px;text-transform:none;color:#007C83;margin-bottom:11px;">Családi · Október 24. – november 1.</div>
               
               <div data-event-thumb="kkunst" style="margin:0 0 15px;">
@@ -122,7 +132,7 @@
               <p style="font-size:14px;line-height:1.7;color:#465d70;margin:0 0 9px;">Gyermekeknek szóló kreatív foglalkozások és múzeumi programok az őszi szünetben. A korhatár és a részvételi feltételek helyszínenként eltérnek.</p>
               <a href="https://echoevent.at/kinderkunstfest/programm/" target="_blank" rel="noopener noreferrer" style="display:inline-block;padding:12px 16px;line-height:1.35;background:#007C83;border-radius:5px;text-decoration:none;color:#ffffff;font-size:13px;font-weight:800;">Program részletei ↗</a>
             </div>
-            <div class="editorial-event" style="margin:0 0 17px;padding:17px 17px 19px;background:#F5F5F7;border:1px solid #E0D8CA;border-radius:5px;">
+            <div class="editorial-event halloween-moon" style="margin:0 0 17px;padding:17px 17px 19px;background:#F5F5F7;border:1px solid #E0D8CA;border-radius:5px;">
               <div style="font-size:11px;line-height:1.6;font-weight:800;letter-spacing:.6px;text-transform:none;color:#007C83;margin-bottom:11px;">Családi · Október 25–26. · 9:00–16:00</div>
               
               <div data-event-thumb="sicher" style="margin:0 0 15px;">
@@ -133,7 +143,7 @@
               <p style="font-size:14px;line-height:1.7;color:#465d70;margin:0 0 9px;">Családbarát, ingyenes városi bemutatók és programok a Rathausplatzon.</p>
               <a href="https://www.wien.gv.at/veranstaltungen/herbst-veranstaltungen" target="_blank" rel="noopener noreferrer" style="display:inline-block;padding:12px 16px;line-height:1.35;background:#007C83;border-radius:5px;text-decoration:none;color:#ffffff;font-size:13px;font-weight:800;">Program részletei ↗</a>
             </div>
-            <div class="editorial-event" style="margin:0 0 17px;padding:17px 17px 19px;background:#F5F5F7;border:1px solid #E0D8CA;border-radius:5px;">
+            <div class="editorial-event halloween-pumpkin" style="margin:0 0 17px;padding:17px 17px 19px;background:#F5F5F7;border:1px solid #E0D8CA;border-radius:5px;">
               <div style="font-size:11px;line-height:1.6;font-weight:800;letter-spacing:.6px;text-transform:none;color:#007C83;margin-bottom:11px;">Halloween · családi · Október 27–31. · 14:00–17:00</div>
               
               <div data-event-thumb="prater" style="margin:0 0 15px;">
@@ -144,7 +154,7 @@
               <p style="font-size:14px;line-height:1.7;color:#465d70;margin:0 0 9px;">Öt délután ingyenes program: tökfaragás, kézműveskedés, arcfestés és előadások. A szervező szerint idén nincs felvonulás.</p>
               <a href="https://www.praterwien.com/veranstaltungen/details/halloween-im-wurstelprater/" target="_blank" rel="noopener noreferrer" style="display:inline-block;padding:12px 16px;line-height:1.35;background:#007C83;border-radius:5px;text-decoration:none;color:#ffffff;font-size:13px;font-weight:800;">Program részletei ↗</a>
             </div>
-            <div class="editorial-event" style="margin:0 0 17px;padding:17px 17px 19px;background:#F5F5F7;border:1px solid #E0D8CA;border-radius:5px;">
+            <div class="editorial-event halloween-bat" style="margin:0 0 17px;padding:17px 17px 19px;background:#F5F5F7;border:1px solid #E0D8CA;border-radius:5px;">
               <div style="font-size:11px;line-height:1.6;font-weight:800;letter-spacing:.6px;text-transform:none;color:#007C83;margin-bottom:11px;">Halloween · családi · Október 30. · 16:00–21:00</div>
               
               <div data-event-thumb="run" style="margin:0 0 15px;">
@@ -155,7 +165,7 @@
               <p style="font-size:14px;line-height:1.7;color:#465d70;margin:0 0 9px;">Jelmezes futóesemény gyermek- és családi távokkal, illetve 5 km-es futammal. Nevezés szükséges.</p>
               <a href="https://www.vienna-halloween-run.at/" target="_blank" rel="noopener noreferrer" style="display:inline-block;padding:12px 16px;line-height:1.35;background:#007C83;border-radius:5px;text-decoration:none;color:#ffffff;font-size:13px;font-weight:800;">Program részletei ↗</a>
             </div>
-            <div class="editorial-event" style="margin:0 0 17px;padding:17px 17px 19px;background:#F5F5F7;border:1px solid #E0D8CA;border-radius:5px;">
+            <div class="editorial-event halloween-moon" style="margin:0 0 17px;padding:17px 17px 19px;background:#F5F5F7;border:1px solid #E0D8CA;border-radius:5px;">
               <div style="font-size:11px;line-height:1.6;font-weight:800;letter-spacing:.6px;text-transform:none;color:#007C83;margin-bottom:11px;">Halloween · családi · Október 31. · 16:00–20:00</div>
               
               <div data-event-thumb="friedhof" style="margin:0 0 15px;">
@@ -166,7 +176,7 @@
               <p style="font-size:14px;line-height:1.7;color:#465d70;margin:0 0 9px;">Ingyenes családi rejtvényprogram. Gyermekek csak felnőtt kísérővel vehetnek részt.</p>
               <a href="https://www.wien.gv.at/veranstaltungen/halloween-2026-am-wiener-zentralfriedhof" target="_blank" rel="noopener noreferrer" style="display:inline-block;padding:12px 16px;line-height:1.35;background:#007C83;border-radius:5px;text-decoration:none;color:#ffffff;font-size:13px;font-weight:800;">Program részletei ↗</a>
             </div>
-            <div class="editorial-event" style="margin:0 0 17px;padding:17px 17px 19px;background:#F5F5F7;border:1px solid #E0D8CA;border-radius:5px;">
+            <div class="editorial-event halloween-pumpkin" style="margin:0 0 17px;padding:17px 17px 19px;background:#F5F5F7;border:1px solid #E0D8CA;border-radius:5px;">
               <div style="font-size:11px;line-height:1.6;font-weight:800;letter-spacing:.6px;text-transform:none;color:#007C83;margin-bottom:11px;">Családi · November 6. – január 6.</div>
               
               <div data-event-thumb="schoen" style="margin:0 0 15px;">
@@ -177,7 +187,7 @@
               <p style="font-size:14px;line-height:1.7;color:#465d70;margin:0 0 9px;">Ünnepi vásár és családi élmények a kastély előtt. A vásár látogatása ingyenes; egyes attrakciókért fizetni kell.</p>
               <a href="https://www.schoenbrunn.at/veranstaltungen/alle-veranstaltungen/event/weihnachtsmarkt-schloss-schoenbrunn" target="_blank" rel="noopener noreferrer" style="display:inline-block;padding:12px 16px;line-height:1.35;background:#007C83;border-radius:5px;text-decoration:none;color:#ffffff;font-size:13px;font-weight:800;">Program részletei ↗</a>
             </div>
-            <div class="editorial-event" style="margin:0 0 17px;padding:17px 17px 19px;background:#F5F5F7;border:1px solid #E0D8CA;border-radius:5px;">
+            <div class="editorial-event halloween-bat" style="margin:0 0 17px;padding:17px 17px 19px;background:#F5F5F7;border:1px solid #E0D8CA;border-radius:5px;">
               <div style="font-size:11px;line-height:1.6;font-weight:800;letter-spacing:.6px;text-transform:none;color:#007C83;margin-bottom:11px;">Családi · November 25–29.</div>
               
               <div data-event-thumb="buch" style="margin:0 0 15px;">
@@ -195,7 +205,7 @@
             <div style="font-size:11px;letter-spacing:1px;line-height:1.6;text-transform:none;color:#007C83;font-weight:700;margin-bottom:8px;">02 · 8 program</div>
             <h2 style="font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","SF Pro Display","Helvetica Neue",Arial,sans-serif;font-size:32px;line-height:1.12;letter-spacing:-.7px;text-transform:none;color:#1D1D1F;font-weight:700;margin:0 0 12px;">Felnőtt programok</h2>
             <p style="font-size:14px;line-height:1.7;color:#526878;margin:0 0 15px;">Magyar estek, kultúra, filmek és Halloween Bécsben.</p>
-            <div class="editorial-event" style="margin:0 0 17px;padding:17px 17px 19px;background:#F5F5F7;border:1px solid #E0D8CA;border-radius:5px;">
+            <div class="editorial-event halloween-moon" style="margin:0 0 17px;padding:17px 17px 19px;background:#F5F5F7;border:1px solid #E0D8CA;border-radius:5px;">
               <div style="font-size:11px;line-height:1.6;font-weight:800;letter-spacing:.6px;text-transform:none;color:#007C83;margin-bottom:11px;">Magyar vonatkozás · zene · Október 19. · 19:30</div>
               
               <div data-event-thumb="traume" style="margin:0 0 15px;">
@@ -206,7 +216,7 @@
               <p style="font-size:14px;line-height:1.7;color:#465d70;margin:0 0 9px;">Zene és filmrészletek az 1956 után Magyarországról elmenekült zeneszerzők emlékére, a MuTh koncertteremben.</p>
               <a href="https://culture.hu/de/wien/blog/70-jahre-ungarnaufstand-1956-2" target="_blank" rel="noopener noreferrer" style="display:inline-block;padding:12px 16px;line-height:1.35;background:#007C83;border-radius:5px;text-decoration:none;color:#ffffff;font-size:13px;font-weight:800;">Program részletei ↗</a>
             </div>
-            <div class="editorial-event" style="margin:0 0 17px;padding:17px 17px 19px;background:#F5F5F7;border:1px solid #E0D8CA;border-radius:5px;">
+            <div class="editorial-event halloween-pumpkin" style="margin:0 0 17px;padding:17px 17px 19px;background:#F5F5F7;border:1px solid #E0D8CA;border-radius:5px;">
               <div style="font-size:11px;line-height:1.6;font-weight:800;letter-spacing:.6px;text-transform:none;color:#007C83;margin-bottom:11px;">Magyar kulturális program · Október 21. · 18:00</div>
               
               <div data-event-thumb="h1956" style="margin:0 0 15px;">
@@ -217,7 +227,7 @@
               <p style="font-size:14px;line-height:1.7;color:#465d70;margin:0 0 9px;">Ünnepi megemlékezés az Europa-Club és az Ausztriai Magyar Szervezetek Kerekasztala szervezésében a Collegium Hungaricumban.</p>
               <a href="https://europaclub.at/meghivo-es-felhivas-unnepeljuk-egyutt-az-1956-os-forradalom-70-evfordulojat/" target="_blank" rel="noopener noreferrer" style="display:inline-block;padding:12px 16px;line-height:1.35;background:#007C83;border-radius:5px;text-decoration:none;color:#ffffff;font-size:13px;font-weight:800;">Program részletei ↗</a>
             </div>
-            <div class="editorial-event" style="margin:0 0 17px;padding:17px 17px 19px;background:#F5F5F7;border:1px solid #E0D8CA;border-radius:5px;">
+            <div class="editorial-event halloween-bat" style="margin:0 0 17px;padding:17px 17px 19px;background:#F5F5F7;border:1px solid #E0D8CA;border-radius:5px;">
               <div style="font-size:11px;line-height:1.6;font-weight:800;letter-spacing:.6px;text-transform:none;color:#007C83;margin-bottom:11px;">Kulturális program · Október 22. – november 3.</div>
               
               <div data-event-thumb="viennale" style="margin:0 0 15px;">
@@ -228,7 +238,7 @@
               <p style="font-size:14px;line-height:1.7;color:#465d70;margin:0 0 9px;">Filmvetítések és filmes találkozások. A korhatárt és a vetítés nyelvét a választott filmnél ellenőrizzétek.</p>
               <a href="https://www.viennale.at/en/viennale-2026-pre-info" target="_blank" rel="noopener noreferrer" style="display:inline-block;padding:12px 16px;line-height:1.35;background:#007C83;border-radius:5px;text-decoration:none;color:#ffffff;font-size:13px;font-weight:800;">Program részletei ↗</a>
             </div>
-            <div class="editorial-event" style="margin:0 0 17px;padding:17px 17px 19px;background:#F5F5F7;border:1px solid #E0D8CA;border-radius:5px;">
+            <div class="editorial-event halloween-moon" style="margin:0 0 17px;padding:17px 17px 19px;background:#F5F5F7;border:1px solid #E0D8CA;border-radius:5px;">
               <div style="font-size:11px;line-height:1.6;font-weight:800;letter-spacing:.6px;text-transform:none;color:#007C83;margin-bottom:11px;">Magyar kulturális program · Október 28. · 18:00</div>
               
               <div data-event-thumb="hsecession" style="margin:0 0 15px;">
@@ -239,7 +249,7 @@
               <p style="font-size:14px;line-height:1.7;color:#465d70;margin:0 0 9px;">Könyvbemutató és beszélgetés a két város építészeti örökségéről, majd vezetés a Zsolnay-kiállításban.</p>
               <a href="https://culture.hu/de/wien/blog/programme-im-oktober-2" target="_blank" rel="noopener noreferrer" style="display:inline-block;padding:12px 16px;line-height:1.35;background:#007C83;border-radius:5px;text-decoration:none;color:#ffffff;font-size:13px;font-weight:800;">Program részletei ↗</a>
             </div>
-            <div class="editorial-event" style="margin:0 0 17px;padding:17px 17px 19px;background:#F5F5F7;border:1px solid #E0D8CA;border-radius:5px;">
+            <div class="editorial-event halloween-pumpkin" style="margin:0 0 17px;padding:17px 17px 19px;background:#F5F5F7;border:1px solid #E0D8CA;border-radius:5px;">
               <div style="font-size:11px;line-height:1.6;font-weight:800;letter-spacing:.6px;text-transform:none;color:#007C83;margin-bottom:11px;">Halloween · 18+ · Október 31. · 21:00-tól</div>
               
               <div data-event-thumb="u4" style="margin:0 0 15px;">
@@ -250,7 +260,7 @@
               <p style="font-size:14px;line-height:1.7;color:#465d70;margin:0 0 9px;">Jelmezes este két tánctérrel, négy DJ-vel és horrorhangulattal. 18 éven felülieknek.</p>
               <a href="https://www.u4.at/halloween/" target="_blank" rel="noopener noreferrer" style="display:inline-block;padding:12px 16px;line-height:1.35;background:#007C83;border-radius:5px;text-decoration:none;color:#ffffff;font-size:13px;font-weight:800;">Program részletei ↗</a>
             </div>
-            <div class="editorial-event" style="margin:0 0 17px;padding:17px 17px 19px;background:#F5F5F7;border:1px solid #E0D8CA;border-radius:5px;">
+            <div class="editorial-event halloween-bat" style="margin:0 0 17px;padding:17px 17px 19px;background:#F5F5F7;border:1px solid #E0D8CA;border-radius:5px;">
               <div style="font-size:11px;line-height:1.6;font-weight:800;letter-spacing:.6px;text-transform:none;color:#007C83;margin-bottom:11px;">Magyar kulturális program · November 17. · 19:00</div>
               
               <div data-event-thumb="hdarvasi" style="margin:0 0 15px;">
@@ -261,7 +271,7 @@
               <p style="font-size:14px;line-height:1.7;color:#465d70;margin:0 0 9px;">„A csodáért dolgozni kell” – irodalmi este Lendvai Zsóka vezetésével, Schwedenplatz 2.</p>
               <a href="https://www.kozpontiszovetseg.at/event-details/darvasi-laszlo" target="_blank" rel="noopener noreferrer" style="display:inline-block;padding:12px 16px;line-height:1.35;background:#007C83;border-radius:5px;text-decoration:none;color:#ffffff;font-size:13px;font-weight:800;">Program részletei ↗</a>
             </div>
-            <div class="editorial-event" style="margin:0 0 17px;padding:17px 17px 19px;background:#F5F5F7;border:1px solid #E0D8CA;border-radius:5px;">
+            <div class="editorial-event halloween-moon" style="margin:0 0 17px;padding:17px 17px 19px;background:#F5F5F7;border:1px solid #E0D8CA;border-radius:5px;">
               <div style="font-size:11px;line-height:1.6;font-weight:800;letter-spacing:.6px;text-transform:none;color:#007C83;margin-bottom:11px;">Kulturális program · November 21–22.</div>
               
               <div data-event-thumb="comic" style="margin:0 0 15px;">
@@ -272,7 +282,7 @@
               <p style="font-size:14px;line-height:1.7;color:#465d70;margin:0 0 9px;">Képregények, fantasy, cosplay és popkultúra a Messe Wienben.</p>
               <a href="https://viecc.com/info/" target="_blank" rel="noopener noreferrer" style="display:inline-block;padding:12px 16px;line-height:1.35;background:#007C83;border-radius:5px;text-decoration:none;color:#ffffff;font-size:13px;font-weight:800;">Program részletei ↗</a>
             </div>
-            <div class="editorial-event" style="margin:0 0 17px;padding:17px 17px 19px;background:#F5F5F7;border:1px solid #E0D8CA;border-radius:5px;">
+            <div class="editorial-event halloween-pumpkin" style="margin:0 0 17px;padding:17px 17px 19px;background:#F5F5F7;border:1px solid #E0D8CA;border-radius:5px;">
               <div style="font-size:11px;line-height:1.6;font-weight:800;letter-spacing:.6px;text-transform:none;color:#007C83;margin-bottom:11px;">Magyar kulturális program · November 26. · 19:00</div>
               
               <div data-event-thumb="hkoncz" style="margin:0 0 15px;">
