@@ -285,7 +285,8 @@
             "Gyermek"
           ],
           "url": "https://www.magyariskola.at/event-details/csinaljuk-a-forradalmat-2026",
-          "source": "Bécsi Magyar Iskola"
+          "source": "Bécsi Magyar Iskola",
+          "description": "Játékos, alkotó történelemfoglalkozás, amelyben a gyerekek kérdezve és döntéseket hozva fedezik fel, mit jelent egy forradalom."
         },
         {
           "id": "bmi-ruhacsere",
@@ -298,7 +299,8 @@
             "Közösség"
           ],
           "url": "https://www.magyariskola.at/event-details/ruhacsere-party-2026-osz",
-          "source": "Bécsi Magyar Iskola"
+          "source": "Bécsi Magyar Iskola",
+          "description": "Jó állapotú ruhák cseréje a Schwedenplatzon. Részvételi hozzájárulás: 5 €. A megmaradt ruhákat az Igazgyöngy Alapítvány kapja."
         },
         {
           "id": "bmi-telapo",
@@ -313,7 +315,8 @@
           "url": "https://www.magyariskola.at/event-details/becsi-magyar-mikulas",
           "source": "Bécsi Magyar Iskola",
           "videoUrl": "https://youtu.be/o5A4SUl_bow?feature=shared",
-          "imageUrl": "https://static.wixstatic.com/media/b0aee1_5c18bf79ad11491eaaa0ce0e8f787ae9~mv2.png"
+          "imageUrl": "https://static.wixstatic.com/media/b0aee1_5c18bf79ad11491eaaa0ce0e8f787ae9~mv2.png",
+          "description": "Interaktív magyar nyelvű mesekoncert a Wiener Rathaus dísztermében. A jegyértékesítés első hetében a rendelkezésre álló jegyek közel fele elkelt."
         }
       ]
     }
