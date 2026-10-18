@@ -148,8 +148,8 @@
             "wixUploadStatus": "PENDING",
             "githubAsset": "/assets/events/prater-640.webp",
             "githubEmailAsset": "https://hirlevel.magyariskola.at/assets/events/prater-640.jpg",
-            "assetGenerationStatus": "pending_refresh",
-            "wixExternalDependencyRemoved": false,
+            "assetGenerationStatus": "photo",
+            "wixExternalDependencyRemoved": true,
             "note": "Generated for the BMI newsletter from verified event facts; not official organiser artwork."
           }
         },
@@ -362,8 +362,8 @@
             "note": "User supplied the event's own artwork in this conversation.",
             "githubAsset": "/assets/events/h1956-640.webp",
             "githubEmailAsset": "https://hirlevel.magyariskola.at/assets/events/h1956-640.jpg",
-            "assetGenerationStatus": "pending_refresh",
-            "wixExternalDependencyRemoved": false
+            "assetGenerationStatus": "photo",
+            "wixExternalDependencyRemoved": true
           }
         },
         {
@@ -465,8 +465,8 @@
             "note": "Generated for the BMI newsletter from verified event facts; not official organiser artwork.",
             "githubAsset": "/assets/events/u4-640.webp",
             "githubEmailAsset": "https://hirlevel.magyariskola.at/assets/events/u4-640.jpg",
-            "assetGenerationStatus": "pending_refresh",
-            "wixExternalDependencyRemoved": false
+            "assetGenerationStatus": "photo",
+            "wixExternalDependencyRemoved": true
           }
         },
         {
@@ -566,8 +566,8 @@
             "wixUploadStatus": "PENDING",
             "githubAsset": "/assets/events/hkoncz-640.webp",
             "githubEmailAsset": "https://hirlevel.magyariskola.at/assets/events/hkoncz-640.jpg",
-            "assetGenerationStatus": "pending_refresh",
-            "wixExternalDependencyRemoved": false,
+            "assetGenerationStatus": "photo",
+            "wixExternalDependencyRemoved": true,
             "note": "User supplied the event's own artwork in this conversation."
           }
         }
