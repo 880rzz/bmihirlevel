@@ -78,7 +78,20 @@ def main():
             raw=p.read_bytes()
             records[event["id"]]["files"][ext]={"path":p.relative_to(ROOT).as_posix(),"bytes":len(raw),"sha256":hashlib.sha256(raw).hexdigest()}
         print(event["id"],status,records[event["id"]]["files"]["jpg"]["bytes"],flush=True)
-    out={"edition":"2026-27-W07","generatedAt":datetime.now(timezone.utc).isoformat(),"images":records}
+    # The BMI crest is a first-party logo, separate from event artwork.
+    logo_url="https://static.wixstatic.com/media/b0aee1_944db6e866844c83b2e5d8b7bdf7ecb6~mv2.png"
+    crest,url,issues=download(session,{"title":"Bécsi Magyar Iskola","image":{"original":logo_url}})
+    if crest is None:
+        raise RuntimeError("Unable to validate the official masthead logo source: "+str(issues))
+    crest=ImageOps.contain(crest.convert("RGBA"),(272,276),method=Image.Resampling.LANCZOS)
+    logoFiles={}
+    for ext,options in [("png",dict(format="PNG",optimize=True)),("webp",dict(format="WEBP",lossless=True,method=5))]:
+        path=ROOT/"assets"/("bmi-logo-272."+ext)
+        path.parent.mkdir(parents=True,exist_ok=True)
+        crest.save(path,**options)
+        b=path.read_bytes()
+        logoFiles[ext]={"path":path.relative_to(ROOT).as_posix(),"bytes":len(b),"sha256":hashlib.sha256(b).hexdigest()}
+    out={"edition":"2026-27-W07","generatedAt":datetime.now(timezone.utc).isoformat(),"images":records,"logo":{"status":"first_party","sourceUrl":logo_url,"files":logoFiles}}
     (ROOT/"data"/"event-image-assets.json").write_text(json.dumps(out,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
 
 if __name__=="__main__": main()

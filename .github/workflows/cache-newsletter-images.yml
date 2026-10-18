@@ -26,6 +26,6 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git checkout -b generated/newsletter-image-assets-${{ github.run_id }}
-          git add assets/events/ data/event-image-assets.json data/programajanlo-2026-10-18.json index.html de/index.html en/index.html exports/
+          git add assets/ data/event-image-assets.json data/programajanlo-2026-10-18.json index.html de/index.html en/index.html exports/
           git commit -m 'Generate self-hosted newsletter image assets'
           git push origin HEAD
