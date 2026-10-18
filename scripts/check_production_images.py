@@ -40,9 +40,10 @@ def audit():
         if html.count("aspect-ratio:1/1")<expected_school:raise ValueError(route+": square school images missing")
         expected_telapo=3 if route=="/" else 1
         if html.count('data-event="bmi-telapo"')!=expected_telapo:raise ValueError(route+": St Nicholas event not moved to children section")
-        expected_title={" / ":"Bécsi Programajánló"}.get(route) if False else None
         titles={"/":"Bécsi Programajánló","/de/":"Wiener Programmtipps","/en/":"Vienna Event Guide"}
         if titles[route] not in html:raise ValueError(route+": Vienna guide title not deployed")
+        child_counts={"/":"01 · 9 program","/de/":"01 · 9 Veranstaltungen","/en/":"01 · 9 events"}
+        if child_counts[route] not in html:raise ValueError(route+": children event count not updated")
         if "#C82932" in html or "#B82029" in html:raise ValueError(route+": old burgundy accent remains")
         if re.search(r'<img\b[^>]*src="https://static\.wixstatic\.com/',html):raise ValueError(route+": unresolved Wix source")
         pages.append({"route":route,"htmlBytes":len(html)})
