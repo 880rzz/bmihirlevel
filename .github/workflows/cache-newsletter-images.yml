@@ -6,6 +6,7 @@ on:
       - scripts/cache_newsletter_images.py
       - scripts/use_local_newsletter_images.py
       - .github/workflows/cache-newsletter-images.yml
+      - data/programajanlo-2026-10-18.json
   workflow_dispatch:
 permissions:
   contents: write
