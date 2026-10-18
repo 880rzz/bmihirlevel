@@ -70,7 +70,7 @@ def main():
         im,url,errors=download(session,event)
         status="photo" if im is not None else "labelled_fallback"
         if im is None: im=fallback(event)
-        im=ImageOps.fit(im.convert("RGB"),SIZE,method=Image.Resampling.LANCZOS)
+        im=(ImageOps.contain(im.convert("RGB"),(1104,1400),method=Image.Resampling.LANCZOS) if event.get("image",{}).get("kind")=="first_party" else ImageOps.fit(im.convert("RGB"),SIZE,method=Image.Resampling.LANCZOS))
         records[event["id"]]={"status":status,"sourceUrl":url,"errors":errors,"files":{},"photoRights":"first-party" if event.get("image",{}).get("kind")=="first_party" else "third-party rights review"}
         for ext,options in [("jpg",dict(format="JPEG",quality=72,optimize=True,progressive=True)),("webp",dict(format="WEBP",quality=70,method=5))]:
             p=OUTPUT/(event["id"]+"-640."+ext)
