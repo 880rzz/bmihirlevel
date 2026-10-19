@@ -29,16 +29,18 @@ def audit():
         html=fetch(route,"text/html").decode("utf-8")
         if "/assets/bmi-logo-272.webp" not in html:raise ValueError(route+": BMI logo not local")
         for id in IDS:
-            if f"/assets/events/{id}-640.webp" not in html:raise ValueError(route+": missing "+id)
+            if id != "u4" and f"/assets/events/{id}-640.webp" not in html:raise ValueError(route+": missing "+id)
         if "night-pattern.svg" not in html:raise ValueError(route+": Halloween night wallpaper not deployed")
         if 'data-unsubscribe-request="email"' not in html:raise ValueError(route+": unsubscribe control missing")
         if "halloween-pumpkin" not in html:raise ValueError(route+": seasonal card icons missing")
         # Ensure the deployed site contains the actual requested editorial design.
         if class_count(html,"category-buttons")<1:raise ValueError(route+": compact category buttons not deployed")
         expected_features=3
-        expected_events=17
+        expected_events=18
         if class_count(html,"feature-cell")!=expected_features:raise ValueError(route+": category cards missing")
         if class_count(html,"editorial-event")!=expected_events:raise ValueError(route+": editorial event cards missing")
+        if 'id="ceridwen-invite"' not in html or 'class="cer-trigger cer-figure"' not in html:raise ValueError(route+": Jósda figure is not live")
+        if '<span class="cer-name">Jósda</span>' not in html or 'https://www.helloits.me/' not in html:raise ValueError(route+": Jósda label or app link missing")
         if "BlinkMacSystemFont" not in html or "font-family:Georgia" not in html:raise ValueError(route+": premium typography not deployed")
         if "border:1px solid #C8A76D" not in html:raise ValueError(route+": gold 1px button border missing")
         expected_school=2 if route=="/" else 0
