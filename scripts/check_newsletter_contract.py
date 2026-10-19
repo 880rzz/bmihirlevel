@@ -34,6 +34,10 @@ for path, lang in PAGES.items():
         assert "aspect-ratio:1/1" in images[0], f"{path}: {poster} not square"
     assert html.count('data-newsletter-locale=') == 2, f"{path}: language navigation"
     if not path.startswith("exports/"):
+        expected_nav_name = {"hu":"Programkategóriák","de":"Programmkategorien","en":"Event categories"}[lang]
+        assert f'id="bmi-sticky-categories" aria-label="{expected_nav_name}"' in html, f"{path}: mobile navigation locale"
+        assert 'aria-current","location"' in html, f"{path}: mobile section marker missing"
+        assert "body::before" in html and "position:fixed" in html, f"{path}: mobile fixed wallpaper missing"
         assert html.count('id="ceridwen-invite"') == 1, f"{path}: Ceridwen launcher missing"
         assert 'href="https://www.helloits.me/"' in html, f"{path}: app link missing"
         assert 'aria-expanded="false"' in html, f"{path}: trigger state missing"
