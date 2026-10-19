@@ -17,9 +17,9 @@ for path, lang in PAGES.items():
     html = (ROOT / path).read_text(encoding="utf-8")
     assert len(html.encode("utf-8")) < 150000, f"{path}: editorial HTML exceeds 150 KB"
     assert html.count("<h1 ") == 1, f"{path}: expected exactly one H1"
-    assert html.count('data-newsletter-subscription="top"') == 1, f"{path}: top subscription CTA missing"
+    assert 'data-newsletter-subscription="top"' not in html, f"{path}: unwanted top subscription CTA"
     assert html.count('data-newsletter-subscription="bottom"') == 1, f"{path}: bottom subscription CTA missing"
-    assert html.count("https://magyariskola.at/#feliratkozas") == 2, f"{path}: incorrect subscription target"
+    assert html.count("https://magyariskola.at/#feliratkozas") == 1, f"{path}: incorrect subscription target"
     assert html.count('class="event-editorial-details"') == 18, f"{path}: editorial event parity broken"
     assert html.count('class="event-school-details"') == 2, f"{path}: school event panels missing"
     assert 'data-event="napraforgok-2026"' in html, f"{path}: missing 20th event"
