@@ -13,11 +13,27 @@ PAGES = {
     "exports/bmi-hirlevel-wix-en-2026-10-18.html": "en",
 }
 POSTERS = ("h1956", "hdarvasi", "hkoncz")
+SANTA_VIDEO = "https://youtu.be/o5A4SUl_bow?feature=shared"
+SANTA_BOOKING = "https://www.magyariskola.at/event-details/becsi-magyar-mikulas"
+SANTA_SALES_TEXT = {
+    "hu": "A jegyértékesítés első hetében",
+    "de": "In der ersten Verkaufswoche",
+    "en": "Almost half of all available tickets",
+}
 for path, lang in PAGES.items():
     html = (ROOT / path).read_text(encoding="utf-8")
     assert len(html.encode("utf-8")) < 150000, f"{path}: editorial HTML exceeds 150 KB"
     assert html.count("<h1 ") == 1, f"{path}: expected exactly one H1"
     assert html.count('data-event-thumb="traume"') == 1, f"{path}: duplicate TRÄUME event"
+    santa_start = html.index('data-event="bmi-telapo"')
+    traume_start = html.index('data-event-thumb="traume"')
+    santa = html[santa_start:traume_start]
+    traume_end = html.find('class="editorial-event', traume_start)
+    traume = html[traume_start:traume_end if traume_end != -1 else None]
+    for marker in (SANTA_VIDEO, SANTA_BOOKING, SANTA_SALES_TEXT[lang]):
+        assert html.count(marker) == 1, f"{path}: Santa content duplicated or missing: {marker}"
+        assert marker in santa, f"{path}: Santa card missing: {marker}"
+        assert marker not in traume, f"{path}: Santa content leaked into TRÄUME: {marker}"
     assert 'data-newsletter-subscription="top"' not in html, f"{path}: unwanted top subscription CTA"
     assert html.count('data-newsletter-subscription="bottom"') == 1, f"{path}: bottom subscription CTA missing"
     assert html.count("https://magyariskola.at/#feliratkozas") == 1, f"{path}: incorrect subscription target"
