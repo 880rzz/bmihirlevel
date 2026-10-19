@@ -32,6 +32,11 @@ for path, lang in PAGES.items():
         assert len(images) == 1, f"{path}: {poster} missing or duplicated"
         assert "aspect-ratio:1/1" in images[0], f"{path}: {poster} not square"
     assert html.count('data-newsletter-locale=') == 2, f"{path}: language navigation"
+    if not path.startswith("exports/"):
+        assert html.count('id="ceridwen-invite"') == 1, f"{path}: Ceridwen launcher missing"
+        assert 'href="https://www.helloits.me/"' in html, f"{path}: app link missing"
+        assert 'aria-expanded="false"' in html, f"{path}: trigger state missing"
+        assert 'min-height:44px' in html, f"{path}: mobile touch target missing"
     if path.startswith("exports/"):
         assert "<script" not in html, f"{path}: email must not contain JS"
     else:
