@@ -17,6 +17,7 @@ for path, lang in PAGES.items():
     html = (ROOT / path).read_text(encoding="utf-8")
     assert len(html.encode("utf-8")) < 150000, f"{path}: editorial HTML exceeds 150 KB"
     assert html.count("<h1 ") == 1, f"{path}: expected exactly one H1"
+    assert html.count('data-event-thumb="traume"') == 1, f"{path}: duplicate TRÄUME event"
     assert 'data-newsletter-subscription="top"' not in html, f"{path}: unwanted top subscription CTA"
     assert html.count('data-newsletter-subscription="bottom"') == 1, f"{path}: bottom subscription CTA missing"
     assert html.count("https://magyariskola.at/#feliratkozas") == 1, f"{path}: incorrect subscription target"
