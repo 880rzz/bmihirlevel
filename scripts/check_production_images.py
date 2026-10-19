@@ -36,9 +36,11 @@ def audit():
         # Ensure the deployed site contains the actual requested editorial design.
         if class_count(html,"category-buttons")<1:raise ValueError(route+": compact category buttons not deployed")
         expected_features=3
-        expected_events=18
+        expected_events=17
         if class_count(html,"feature-cell")!=expected_features:raise ValueError(route+": category cards missing")
         if class_count(html,"editorial-event")!=expected_events:raise ValueError(route+": editorial event cards missing")
+        if html.count('data-event-thumb="traume"')!=1:raise ValueError(route+": TRÄUME repeated")
+        if 'id="bmi-sticky-categories"' not in html:raise ValueError(route+": sticky category navigation missing")
         if 'id="ceridwen-invite"' not in html or 'class="cer-trigger cer-figure"' not in html:raise ValueError(route+": Jósda figure is not live")
         if '<span class="cer-name">Jósda</span>' not in html or 'https://www.helloits.me/' not in html:raise ValueError(route+": Jósda label or app link missing")
         if "BlinkMacSystemFont" not in html or "font-family:Georgia" not in html:raise ValueError(route+": premium typography not deployed")
