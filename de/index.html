@@ -93,6 +93,20 @@
 
     .newsletter-shell .event-editorial-details a[href*="google.com/maps"],.newsletter-shell .event-school-details a[href*="google.com/maps"]{background:transparent!important;border:0!important;border-radius:0!important;box-shadow:none!important;padding:0!important;text-decoration:none!important;color:#E5C48B!important;font-weight:600!important}
     .newsletter-shell .event-editorial-details a[href*="google.com/maps"]:hover,.newsletter-shell .event-school-details a[href*="google.com/maps"]:hover{text-decoration:underline!important;text-underline-offset:3px}
+
+/* Ceridwen cross-project invitation, user controlled and visually restrained. */
+#ceridwen-invite{position:fixed;right:max(16px,env(safe-area-inset-right));bottom:max(18px,env(safe-area-inset-bottom));z-index:1200;font-family:Georgia,serif;color:#F5F3EE}
+#ceridwen-invite button,#ceridwen-invite a{box-sizing:border-box}
+#ceridwen-invite .cer-trigger{display:flex;gap:10px;align-items:center;border:1px solid #C8A76D;background:#0B192B;color:#F5F3EE;box-shadow:0 8px 26px #0007;border-radius:30px;padding:10px 14px;cursor:pointer;font:600 13px/1.3 system-ui,sans-serif}
+#ceridwen-invite .cer-symbol{color:#D4B67C;font:26px/1 Georgia,serif}
+#ceridwen-invite .cer-panel{position:absolute;right:0;bottom:calc(100% + 12px);width:min(330px,calc(100vw - 32px));border:1px solid #867052;border-radius:14px;background:rgba(11,25,43,.97);box-shadow:0 18px 45px #0009;padding:21px;line-height:1.65}
+#ceridwen-invite .cer-panel[hidden]{display:none!important}
+#ceridwen-invite .cer-title{font:500 19px/1.3 Georgia,serif;color:#D4B67C;margin:0 24px 10px 0}
+#ceridwen-invite .cer-message{font:14px/1.65 Georgia,serif;color:#E4E9F0;margin:0 0 16px}
+#ceridwen-invite .cer-open{display:block;text-align:center;padding:10px;border:1px solid #C8A76D;border-radius:5px;color:#F5F3EE!important;text-decoration:none!important;font:650 13px/1.4 system-ui,sans-serif;background:transparent}
+#ceridwen-invite .cer-close{position:absolute;top:9px;right:12px;background:none;border:0;color:#E4E9F0;font:20px/1 system-ui,sans-serif;cursor:pointer;padding:7px}
+#ceridwen-invite :is(button,a):focus-visible{outline:2px solid #E5C48B;outline-offset:3px}
+@media(max-width:620px){#ceridwen-invite .cer-trigger{padding:9px 12px}#ceridwen-invite .cer-panel{max-height:60vh;overflow:auto}}
   </style>
   <script defer src="/analytics-consent.js"></script>
 </head>
@@ -446,5 +460,8 @@
   </table>
 
 
+
+<aside id="ceridwen-invite" aria-label="Ceridwen · Hüterin des Kessels"><section class="cer-panel" id="ceridwen-panel" hidden><button type="button" class="cer-close" id="ceridwen-close" aria-label="Ceridwens Einladung schließen">×</button><h2 class="cer-title">Ceridwen · Hüterin des Kessels</h2><p class="cer-message">Willkommen, Wanderer. Ich bin Ceridwen, Hüterin des Kessels. Hello It's Me ist ein keltisch inspirierter Raum zur Selbstreflexion: Die Karten sagen keine sichere Zukunft voraus, sondern eröffnen neue Perspektiven.</p><a class="cer-open" href="https://www.helloits.me/" target="_blank" rel="noopener noreferrer">Hello It's Me entdecken ↗</a></section><button type="button" class="cer-trigger" id="ceridwen-trigger" aria-controls="ceridwen-panel" aria-expanded="false" aria-label="Ceridwens Einladung öffnen"><span class="cer-symbol" aria-hidden="true">✧</span><span>Ceridwen</span></button></aside>
+<script>(function(){const toggle=document.getElementById('ceridwen-trigger'),box=document.getElementById('ceridwen-panel'),close=document.getElementById('ceridwen-close');function set(open){box.hidden=!open;toggle.setAttribute('aria-expanded',String(open));if(open)close.focus();else toggle.focus()}toggle.addEventListener('click',()=>set(box.hidden));close.addEventListener('click',()=>set(false));document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!box.hidden)set(false)})})();</script>
 </body>
 </html>
