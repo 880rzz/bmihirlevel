@@ -21,7 +21,7 @@ for path, lang in PAGES.items():
     assert 'data-newsletter-subscription="top"' not in html, f"{path}: unwanted top subscription CTA"
     assert html.count('data-newsletter-subscription="bottom"') == 1, f"{path}: bottom subscription CTA missing"
     assert html.count("https://magyariskola.at/#feliratkozas") == 1, f"{path}: incorrect subscription target"
-    assert html.count('class="event-editorial-details"') == 17, f"{path}: editorial event parity broken"
+    assert html.count('class="event-editorial-details"') == 18, f"{path}: editorial event parity broken"
     assert html.count('class="event-school-details"') == 2, f"{path}: school event panels missing"
     assert 'data-event="napraforgok-2026"' in html, f"{path}: missing 20th event"
     assert 'data-unsubscribe-request="email"' in html, f"{path}: unsubscribe missing"
