@@ -43,6 +43,8 @@ for path, lang in PAGES.items():
     assert 'id="kozosseg"' in html, prefix + "BMI community section missing"
     assert 'data-unsubscribe-request="email"' in html, prefix + "unsubscribe missing"
     assert "halloween" not in html.lower(), prefix + "obsolete Halloween references"
+    assert "ceridwen" not in html.lower() and "helloits.me" not in html.lower(), prefix + "obsolete Ceridwen integration"
+    assert ("Őszi és téli programok" in html or "Herbst- und Winterprogramme" in html or "Autumn and winter programmes" in html), prefix + "autumn-winter heading missing"
     if path.startswith("exports/"):
         assert "<script" not in html.lower(), prefix + "email export contains JS"
     else:
