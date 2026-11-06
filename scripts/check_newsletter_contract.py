@@ -27,12 +27,12 @@ for path, lang in PAGES.items():
     prefix = f"{path}: "
     assert len(html.encode("utf-8")) < 150000, prefix + "HTML exceeds 150 KB"
     assert f'<html lang="{lang}">' in html, prefix + "incorrect locale"
-    assert len(re.findall(r"<h1\\b", html)) == 1, prefix + "expected one H1"
+    assert len(re.findall(r"<h1\b", html)) == 1, prefix + "expected one H1"
     start = html.find("<!-- Only requested Advent 2026 events -->")
     end = html.find("<!-- /Only requested Advent 2026 events -->")
     assert 0 <= start < end, prefix + "missing event section boundaries"
     section = html[start:end]
-    assert len(re.findall(r"<h3\\b", section)) == 9, prefix + "expected nine event cards"
+    assert len(re.findall(r"<h3\b", section)) == 9, prefix + "expected nine event cards"
     for name in EVENT_TITLES:
         assert name.lower() in section.lower(), prefix + "missing event " + name
     for url in EVENT_LINKS:
