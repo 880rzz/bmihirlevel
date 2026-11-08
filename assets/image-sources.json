@@ -1,0 +1,90 @@
+{
+  "schema": "bmi-clone/image-sources/v1",
+  "note": "Képforrások a hirlevel.magyariskola.at repójából és a hírlevélben hivatkozott oldalakról. A másolatok a klón helyi assetjei.",
+  "items": [
+    {
+      "file": "assets/brand/winter-pattern.svg",
+      "event": "Téli minta",
+      "source": "https://github.com/880rzz/bmihirlevel/blob/HEAD/assets/advent/winter-pattern.svg",
+      "note": "Dekoratív minta a forrás-repóból (a klón nem használja háttérként, csak tartalék)."
+    },
+    {
+      "file": "assets/brand/bmi-logo.webp",
+      "event": "Logó",
+      "source": "https://github.com/880rzz/bmihirlevel/blob/HEAD/assets/bmi-logo-272.webp",
+      "note": "Bécsi Magyar Iskola logó a forrás-repóból."
+    },
+    {
+      "file": "assets/events/darvasi.jpg",
+      "event": "A csodáért dolgozni kell – Beszélgetés Darvasi Lászlóval",
+      "source": "Felhasználó által feltöltött kép (attachment-001, AVIF → JPG)",
+      "note": "A felhasználó által biztosított fekete-fehér portré; 902×902 px, négyzetes."
+    },
+    {
+      "file": "assets/recap/telapo-kulisszatitkok.jpeg",
+      "event": "Télapó-visszatekintés",
+      "source": "https://hirlevel.magyariskola.at/IMG_6998.jpeg",
+      "note": "A Bécsi Magyar Iskola saját fotókollázsa a hírlevélből."
+    },
+    {
+      "file": "assets/events/ruhacsere-party.jpg",
+      "event": "Ruhacsere Party 2026 | Ősz",
+      "source": "https://static.wixstatic.com/media/b0aee1_788ae7702eea47b99e0be5e90e336b91~mv2.png",
+      "note": "A programképet a hírlevél a szervező/eredeti forrás oldaláról idézi; helyi másolat a klónhoz."
+    },
+    {
+      "file": "assets/events/taltos-dob.jpg",
+      "event": "Táltos dob és örömzene",
+      "source": "https://static.wixstatic.com/media/b0aee1_c1d43997a27a42f79e7a3f876bc3e38b~mv2.png",
+      "note": "A programképet a hírlevél a szervező/eredeti forrás oldaláról idézi; helyi másolat a klónhoz."
+    },
+    {
+      "file": "assets/events/mikulas.jpg",
+      "event": "Bécsi Magyar Mikulás – Kovácsovics Fruzsinával",
+      "source": "https://static.wixstatic.com/media/b0aee1_5c18bf79ad11491eaaa0ce0e8f787ae9~mv2.png",
+      "note": "A programképet a hírlevél a szervező/eredeti forrás oldaláról idézi; helyi másolat a klónhoz."
+    },
+    {
+      "file": "assets/events/adventi-bazar.jpg",
+      "event": "Adventi Bazár – Angyalok birodalma",
+      "source": "https://static.wixstatic.com/media/b0aee1_7f86fa39a27a4b83b6f1345d8cc3b336~mv2.png",
+      "note": "A programképet a hírlevél a szervező/eredeti forrás oldaláról idézi; helyi másolat a klónhoz."
+    },
+    {
+      "file": "assets/events/csizmas-kandur.webp",
+      "event": "CSIZMÁS KANDÚR – bábjáték / premier!",
+      "source": "https://hirlevel.magyariskola.at/IMG_7001.webp",
+      "note": "A programképet a hírlevél a szervező/eredeti forrás oldaláról idézi; helyi másolat a klónhoz."
+    },
+    {
+      "file": "assets/events/spontan.jpg",
+      "event": "SPONTÁN – fotókiállítás",
+      "source": "https://static.wixstatic.com/media/b0aee1_4a059d3770694e2f9ba4effb0a39905e~mv2.png",
+      "note": "A programképet a hírlevél a szervező/eredeti forrás oldaláról idézi; helyi másolat a klónhoz."
+    },
+    {
+      "file": "assets/events/koncz-zsuzsa.jpg",
+      "event": "Fordul a világ – beszélgetés Koncz Zsuzsával",
+      "source": "https://static.wixstatic.com/media/b0aee1_a948d44300074154b35069f1320232f1~mv2.png",
+      "note": "A programképet a hírlevél a szervező/eredeti forrás oldaláról idézi; helyi másolat a klónhoz."
+    },
+    {
+      "file": "assets/events/legcsinosabb-orias.jpg",
+      "event": "A legcsinosabb óriás – magyar nyelvű bábelőadás",
+      "source": "https://www.agoraszeged.hu/imgs/program/big/a-legcsinosabb-orias-mesejatek.jpg",
+      "note": "A programképet a hírlevél a szervező/eredeti forrás oldaláról idézi; helyi másolat a klónhoz."
+    },
+    {
+      "file": "assets/events/jazzjatszoter.jpg",
+      "event": "Jazzjátszótér Dés Andrással",
+      "source": "https://www.porgy.at/media/events/2026/ADQ1_Victoria_Nazarova.medium.jpg",
+      "note": "A programképet a hírlevél a szervező/eredeti forrás oldaláról idézi; helyi másolat a klónhoz."
+    },
+    {
+      "file": "assets/events/gospel-christmas.jpg",
+      "event": "Gospel Christmas – The Power of American Gospel",
+      "source": "https://admin.luganoeventi.ch/api/files/events/1200x706/19032ab0-79ab-4521-b0e6-7a3d37da2022.png",
+      "note": "A programképet a hírlevél a szervező/eredeti forrás oldaláról idézi; helyi másolat a klónhoz."
+    }
+  ]
+}
