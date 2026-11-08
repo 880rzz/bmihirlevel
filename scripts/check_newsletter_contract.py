@@ -50,7 +50,7 @@ for path, lang in PAGES.items():
     assert 'data-event-recap="osztunder-2026"' not in html, prefix + "obsolete autumn recap remains"
     assert "#A61920" in html and "#FBF6F0" in html, prefix + "new palette missing"
     for obsolete_color in ("#101F33", "#17283D", "#F5F3EE"):
-        assert obsolete_color not in html.upper(), prefix + "obsolete dark color remains: " + obsolete_color
+        assert obsolete_color.upper() not in html.upper(), prefix + "obsolete dark color remains: " + obsolete_color
     if path.startswith("exports/"):
         assert "<script" not in html.lower(), prefix + "email export contains JS"
     else:
