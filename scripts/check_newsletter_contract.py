@@ -28,6 +28,8 @@ for path, lang in PAGES.items():
     prefix = f"{path}: "
     assert len(html.encode("utf-8")) < 150000, prefix + "HTML exceeds 150 KB"
     assert f'<html lang="{lang}">' in html, prefix + "incorrect locale"
+    assert "programajánló" in html.lower() or "programmempfehlungen" in html.lower() or "events guide" in html.lower(), prefix + "program guide identity missing"
+    assert "7. hírlevél" not in re.search(r'<meta property="og:title" content="([^"]*)"', html).group(1), prefix + "stale social title"
     assert len(re.findall(r"<h1\b", html)) == 1, prefix + "expected one H1"
     start = html.find("<!-- Only requested Advent 2026 events -->")
     end = html.find("<!-- /Only requested Advent 2026 events -->")
