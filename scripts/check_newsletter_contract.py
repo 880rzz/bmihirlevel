@@ -33,7 +33,10 @@ for path, lang in PAGES.items():
     end = html.find("<!-- /Only requested Advent 2026 events -->")
     assert 0 <= start < end, prefix + "missing event section boundaries"
     section = html[start:end]
-    assert len(re.findall(r"<h3\b", section)) == 9, prefix + "expected nine event cards"
+    assert len(re.findall(r"<h3\b", section)) == 10, prefix + "expected ten event cards"
+    assert 'data-event="svung-8894"' in section, prefix + "SVUNG event missing"
+    assert "https://shop.svung.at/show/8894" in section, prefix + "SVUNG ticket link missing"
+    assert ("UTOLSÓ 50 JEGY" in section or "LETZTEN 50 TICKETS" in section or "FINAL 50 TICKETS" in section), prefix + "Santa ticket notice missing"
     for url in EVENT_LINKS:
         assert url in section, prefix + "missing event URL " + url
     assert "2026" in section and "december 9" in section.lower() or (
