@@ -36,7 +36,8 @@ for path, lang in PAGES.items():
     assert len(re.findall(r"<h3\b", section)) == 11, prefix + "expected eleven event cards"
     assert 'data-event="darvasi-laszlo-2026"' in section, prefix + "Darvasi event missing"
     assert "https://www.kozpontiszovetseg.at/event-details/darvasi-laszlo" in section, prefix + "Darvasi registration link missing"
-    assert section.rfind("Gospel Christmas") > section.rfind("Jazz"), prefix + "Jazz and Gospel should be last"
+    titles = re.findall(r"<h3[^>]*>(.*?)</h3>", section)
+    assert "Jazz" in titles[-2] and "Gospel Christmas" in titles[-1], prefix + "Jazz and Gospel should be last"
     assert 'data-event="svung-8894"' in section, prefix + "SVUNG event missing"
     assert "https://shop.svung.at/show/8894" in section, prefix + "SVUNG ticket link missing"
     assert ("UTOLSÓ 50 JEGY" in section or "LETZTEN 50 TICKETS" in section or "FINAL 50 TICKETS" in section), prefix + "Santa ticket notice missing"
@@ -49,10 +50,11 @@ for path, lang in PAGES.items():
     assert 'data-unsubscribe-request="email"' in html, prefix + "unsubscribe missing"
     assert "halloween" not in html.lower(), prefix + "obsolete Halloween references"
     assert "ceridwen-invite" in html.lower() and "helloits.me" in html.lower(), prefix + "Jósda/Ceridwen integration missing"
-    assert ("Őszi és téli programok" in html or "Herbst- und Winterprogramme" in html or "Autumn and winter programmes" in html), prefix + "autumn-winter heading missing"
+    assert ("Programajánló – bécsi magyar" in html or "Programmempfehlungen – ungarische" in html or "Events in Vienna – Hungarian" in html), prefix + "program guide heading missing"
     assert 'data-event-recap="telapo-backstage-2025"' in html, prefix + "Santa backstage recap missing"
     assert 'data-event-recap-image="telapo-backstage-2025"' in html, prefix + "square backstage image missing"
     assert "IMG_6998.jpeg" in html, prefix + "uploaded image reference missing"
+    assert "IMG_7001.webp" in section, prefix + "Puss in Boots poster missing"
     assert 'data-event-recap="osztunder-2026"' not in html, prefix + "obsolete autumn recap remains"
     assert "#A61920" in html and "#FBF6F0" in html, prefix + "new palette missing"
     for obsolete_color in ("#101F33", "#17283D", "#F5F3EE"):
