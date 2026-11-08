@@ -128,7 +128,21 @@
 /* Mobile wallpaper: fixed viewport layer, no attachment-fixed Safari dependency. */
 @media(max-width:620px){html{background:#071422!important}body::before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;background:#071422 url('/assets/advent/winter-pattern.svg') repeat center top;background-size:280px 280px}body{isolation:isolate;overflow-x:hidden}#bmi-sticky-categories{position:fixed;top:0;left:0;right:0;z-index:1150;display:flex;justify-content:center;gap:6px;padding:calc(7px + env(safe-area-inset-top)) 10px 8px;background:rgba(7,20,34,.96);border-bottom:1px solid #3A4A5E;box-sizing:border-box}#bmi-sticky-categories[hidden]{display:none!important}#bmi-sticky-categories a{flex:1;max-width:180px;border:1px solid #6F674F;border-radius:5px;padding:10px 4px;color:#F5F3EE;text-decoration:none;font:600 12px/1.25 system-ui,sans-serif;text-align:center}#program-gyerekek,#program-felnottek,#program-iskola{scroll-margin-top:90px}}
 @media(min-width:621px){#bmi-sticky-categories{position:fixed;top:0;left:0;right:0;z-index:1150;display:flex;justify-content:center;gap:12px;padding:12px 24px;background:rgba(7,20,34,.96);border-bottom:1px solid #3A4A5E;box-sizing:border-box}#bmi-sticky-categories[hidden]{display:none!important}#bmi-sticky-categories a{flex:0 1 220px;border:1px solid #6F674F;border-radius:5px;padding:11px 18px;color:#F5F3EE;text-decoration:none;font:600 14px/1.35 system-ui,sans-serif;text-align:center}#program-gyerekek,#program-felnottek,#program-iskola{scroll-margin-top:90px}}
-  </style>
+  
+/* BMI 2026 November — warm editorial palette, progressive enhancement. */
+:root{--bmi-cream:#fbf6f0;--bmi-sand:#e4c8b2;--bmi-red:#a61920;--bmi-ink:#352820}
+html{background:var(--bmi-cream)}
+body,body>table{background-color:var(--bmi-cream)!important;background-image:none!important;color:var(--bmi-ink)}
+.newsletter-shell{background:#fff!important;border:1px solid #ead8c9!important;box-shadow:0 12px 36px rgba(69,36,24,.07)!important}
+.newsletter-shell h1,.newsletter-shell h2,.newsletter-shell h3{color:var(--bmi-red)!important;overflow-wrap:normal;word-break:normal;hyphens:none}
+.newsletter-shell p,.newsletter-shell li{line-height:1.65;overflow-wrap:break-word}
+.editorial-event{background:#fbf6f0!important;border:1px solid #e4c8b2!important;color:var(--bmi-ink)!important}
+.editorial-event h2,.editorial-event h3{color:var(--bmi-red)!important}
+.feature-link:hover,.editorial-event a:hover{background:#8c1118!important;color:#fff!important}
+.school-event-image img{display:block;width:100%;aspect-ratio:1/1;object-fit:cover}
+@media(max-width:620px){body{margin:0!important}.newsletter-shell{border-radius:0!important;border-left:0!important;border-right:0!important}.mobile-padding{padding-left:18px!important;padding-right:18px!important}.newsletter-shell h1{font-size:clamp(27px,7vw,34px)!important}.newsletter-shell h2{font-size:clamp(22px,5.6vw,27px)!important}.newsletter-shell img{max-width:100%!important;height:auto!important}}
+@media(prefers-reduced-motion:reduce){.newsletter-shell *{animation:none!important;transition:none!important}}
+</style>
   <script defer src="/analytics-consent.js"></script>
 </head>
 <body style="margin:0;padding:0;background:#17283D;font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","SF Pro Display","Helvetica Neue",Arial,sans-serif;color:#F5F3EE;">
