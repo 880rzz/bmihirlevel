@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 900" role="img" aria-labelledby="title desc">
+  <title id="title">Narnia nyomában</title>
+  <desc id="desc">Mesés, havas kapu egy gyerekeknek szóló színházi programhoz</desc>
+  <defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#233b52"/><stop offset="1" stop-color="#9fb9c6"/></linearGradient><linearGradient id="door" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#b08a58"/><stop offset="1" stop-color="#513a2a"/></linearGradient></defs>
+  <rect width="900" height="900" fill="url(#sky)"/>
+  <circle cx="690" cy="160" r="70" fill="#f7f0d1" opacity=".9"/>
+  <path d="M0 610 Q180 500 360 600T900 570V900H0Z" fill="#edf4f1"/>
+  <path d="M180 900V360Q450 120 720 360V900Z" fill="url(#door)" stroke="#f2d79b" stroke-width="16"/>
+  <path d="M270 900V410Q450 260 630 410V900Z" fill="#15212b"/>
+  <path d="M450 260V900M270 410H630" stroke="#f2d79b" stroke-width="10" opacity=".7"/>
+  <text x="450" y="110" text-anchor="middle" fill="#fffaf0" font-family="Georgia,serif" font-size="54" font-weight="bold">NARNIA NYOMÁBAN</text>
+  <text x="450" y="790" text-anchor="middle" fill="#fffaf0" font-family="Arial,sans-serif" font-size="28" letter-spacing="3">KICSI SVUNG BEMUTATJA</text>
+</svg>
