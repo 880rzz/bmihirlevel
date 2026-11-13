@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 900" role="img" aria-labelledby="title">
+  <title id="title">Hangolódj önmagadra – zeneterápia</title>
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#6d3140"/><stop offset="1" stop-color="#e1a56f"/></linearGradient></defs>
+  <rect width="900" height="900" fill="url(#bg)"/>
+  <circle cx="450" cy="420" r="210" fill="#fff8ed" opacity=".9"/>
+  <path d="M450 220v400M310 420h280M350 310l200 220M550 310L350 530" stroke="#6d3140" stroke-width="18" stroke-linecap="round" opacity=".8"/>
+  <circle cx="450" cy="420" r="28" fill="#6d3140"/>
+  <text x="450" y="115" text-anchor="middle" fill="#fff8ed" font-family="Georgia,serif" font-size="50" font-weight="bold">HANGOLÓDJ</text>
+  <text x="450" y="175" text-anchor="middle" fill="#fff8ed" font-family="Georgia,serif" font-size="50" font-weight="bold">ÖNMAGADRA!</text>
+  <text x="450" y="770" text-anchor="middle" fill="#fff8ed" font-family="Arial,sans-serif" font-size="28" letter-spacing="3">ZENETERÁPIÁS ÖNISMERETI CSOPORT</text>
+</svg>
