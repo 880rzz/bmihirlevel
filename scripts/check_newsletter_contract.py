@@ -81,7 +81,7 @@ for path, lang in PAGES.items():
         }
         for locale, url in alternates.items():
             assert f'<link rel="alternate" hreflang="{locale}" href="{url}">' in html, prefix + f"hreflang {locale} missing"
-        schema_match = re.search(r'<script type="application/ld\\+json">(.*?)</script>', html, re.S)
+        schema_match = re.search(r'<script type="application/ld\+json">(.*?)</script>', html, re.S)
         assert schema_match, prefix + "JSON-LD script missing"
         schema = json.loads(schema_match.group(1))
         assert schema.get("@type") == "WebPage", prefix + "expected WebPage schema"
