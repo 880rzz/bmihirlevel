@@ -1,20 +1,15 @@
-name: Check deployed BMI newsletter images
+name: Check deployed BMI newsletter pages
 on:
-  push:
+  workflow_run:
+    workflows: ["pages build and deployment"]
+    types: [completed]
     branches: [main]
-    paths:
-      - scripts/check_production_images.py
-      - .github/workflows/check-newsletter-production.yml
-      - assets/**
-      - index.html
-      - de/**
-      - en/**
-      - exports/**
   workflow_dispatch:
 permissions:
   contents: read
 jobs:
   production-image-smoke:
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     timeout-minutes: 7
     steps:
@@ -22,5 +17,5 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Verify live language pages and 40 image URLs
+      - name: Verify published language pages, canonical/hreflang, and Wikidata schema
         run: python scripts/check_production_images.py
