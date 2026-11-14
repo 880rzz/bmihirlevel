@@ -32,7 +32,7 @@ for path, lang in PAGES.items():
     is_export = path.startswith("exports/")
     assert len(html.encode("utf-8")) < 150000, prefix + "HTML exceeds 150 KB"
     assert f'<html lang="{lang}">' in html, prefix + "incorrect locale"
-    assert len(re.findall(r"<h1\\b", html)) == 1, prefix + "expected one H1"
+    assert len(re.findall(r"<h1\b", html)) == 1, prefix + "expected one H1"
     assert ("programajánló" in html.lower()
             or "programmempfehlungen" in html.lower()
             or "events guide" in html.lower()), prefix + "program guide identity missing"
