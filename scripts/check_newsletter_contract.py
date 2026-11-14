@@ -3,6 +3,7 @@
 from pathlib import Path
 import json
 import re
+import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
 PAGES = {
@@ -100,4 +101,16 @@ for path, lang in PAGES.items():
         assert 'href="mailto:' in html, prefix + "unsubscription contact missing"
         assert "csizmas-kandur.webp" in section, prefix + "current Puss in Boots poster missing"
         assert 'class="josda"' in html, prefix + "web Ceridwen experience missing"
+robots = (ROOT / "robots.txt").read_text(encoding="utf-8")
+assert "User-agent: *" in robots and "Allow: /" in robots, "robots.txt must allow public crawling"
+assert "Sitemap: https://hirlevel.magyariskola.at/sitemap.xml" in robots, "robots.txt sitemap declaration missing"
+sitemap = ET.parse(ROOT / "sitemap.xml").getroot()
+namespace = "{http://www.sitemaps.org/schemas/sitemap/0.9}"
+sitemap_urls = {node.text for node in sitemap.findall(f".//{namespace}loc") if node.text}
+expected_sitemap_urls = {
+    "https://hirlevel.magyariskola.at/",
+    "https://hirlevel.magyariskola.at/de/",
+    "https://hirlevel.magyariskola.at/en/",
+}
+assert sitemap_urls == expected_sitemap_urls, "sitemap.xml must list each canonical newsletter URL exactly once"
 print("BMI newsletter identity and current web/export contracts: 6/6 passed.")
