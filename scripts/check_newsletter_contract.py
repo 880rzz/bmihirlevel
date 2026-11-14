@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Regression contract for the current 2026 BMI newsletter web pages and Wix email exports."""
 from pathlib import Path
+import json
 import re
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -66,6 +67,32 @@ for path, lang in PAGES.items():
         assert 'rel="canonical"' in html, prefix + "canonical missing"
         assert 'hreflang="x-default"' in html, prefix + "hreflang missing"
     else:
+        canonical = {
+            "index.html": "https://hirlevel.magyariskola.at/",
+            "de/index.html": "https://hirlevel.magyariskola.at/de/",
+            "en/index.html": "https://hirlevel.magyariskola.at/en/",
+        }[path]
+        assert f'<link rel="canonical" href="{canonical}">' in html, prefix + "canonical URL missing"
+        alternates = {
+            "hu": "https://hirlevel.magyariskola.at/",
+            "de": "https://hirlevel.magyariskola.at/de/",
+            "en": "https://hirlevel.magyariskola.at/en/",
+            "x-default": "https://hirlevel.magyariskola.at/",
+        }
+        for locale, url in alternates.items():
+            assert f'<link rel="alternate" hreflang="{locale}" href="{url}">' in html, prefix + f"hreflang {locale} missing"
+        schema_match = re.search(r'<script type="application/ld\\+json">(.*?)</script>', html, re.S)
+        assert schema_match, prefix + "JSON-LD script missing"
+        schema = json.loads(schema_match.group(1))
+        assert schema.get("@type") == "WebPage", prefix + "expected WebPage schema"
+        assert schema.get("inLanguage") == lang, prefix + "JSON-LD locale mismatch"
+        assert schema.get("publisher", {}).get("sameAs") == "https://www.wikidata.org/wiki/Q141274560", prefix + "school publisher identity mismatch"
+        periodical = schema.get("mentions", {})
+        assert periodical.get("@type") == "Periodical", prefix + "magazine must remain a Periodical mention"
+        assert periodical.get("sameAs") == "https://www.wikidata.org/wiki/Q142154314", prefix + "magazine Wikidata identity mismatch"
+        founder = periodical.get("founder", {})
+        assert founder.get("@type") == "Person" and founder.get("sameAs") == "https://www.wikidata.org/wiki/Q56391118", prefix + "founder identity mismatch"
+        assert all(re.sub(r"[^a-z]", "", value.lower()) in html.lower() for value in (lang,)), prefix + "language marker missing"
         assert "https://www.becsiszelet.at/" in html, prefix + "permanent magazine recommendation missing"
         assert "https://www.wikidata.org/wiki/Q142154314" in html, prefix + "magazine entity JSON-LD missing"
         assert "https://www.wikidata.org/wiki/Q141274560" in html, prefix + "school entity JSON-LD missing"
