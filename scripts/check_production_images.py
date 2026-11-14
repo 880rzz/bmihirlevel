@@ -45,7 +45,7 @@ def audit():
             tag = f'<link rel="alternate" hreflang="{locale}" href="{url}">'
             if tag not in html:
                 raise ValueError(f"{route}: hreflang {locale} missing or incorrect")
-        scripts = re.findall(r'<script type="application/ld\\+json">(.*?)</script>', html, re.S)
+        scripts = re.findall(r'<script type="application/ld[+]json">(.*?)</script>', html, re.S)
         if len(scripts) != 1:
             raise ValueError(f"{route}: expected one JSON-LD block, found {len(scripts)}")
         schema = json.loads(scripts[0])
@@ -69,7 +69,7 @@ for attempt in range(3):
         break
     except HTTPError as error:
         raise SystemExit(f"Definitive HTTP failure: {error}") from error
-    except (URLError, TimeoutError, ConnectionError, ValueError, json.JSONDecodeError) as error:
+    except (URLError, TimeoutError, ConnectionError) as error:
         print(f"Attempt {attempt + 1}/3: {error}", flush=True)
         if attempt == 2:
             raise
