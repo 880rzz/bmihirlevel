@@ -35,7 +35,7 @@ for path, lang in PAGES.items():
     end = html.find("<!-- /Only requested Advent 2026 events -->")
     assert 0 <= start < end, prefix + "missing event section boundaries"
     section = html[start:end]
-    assert len(re.findall(r"<h3\b", section)) == 11, prefix + "expected eleven event cards"
+    assert len(re.findall(r"<h3\b", section)) == 13, prefix + "expected thirteen event cards"
     assert 'data-event="darvasi-laszlo-2026"' in section, prefix + "Darvasi event missing"
     assert "https://www.kozpontiszovetseg.at/event-details/darvasi-laszlo" in section, prefix + "Darvasi registration link missing"
     titles = re.findall(r"<h3[^>]*>(.*?)</h3>", section)
