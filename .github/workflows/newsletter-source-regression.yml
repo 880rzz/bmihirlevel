@@ -19,7 +19,11 @@ on:
       - de/**
       - en/**
       - exports/**
+      - robots.txt
+      - sitemap.xml
       - scripts/check_newsletter_contract.py
+      - scripts/check_production_images.py
+      - .github/workflows/check-newsletter-production.yml
       - .github/workflows/newsletter-source-regression.yml
   workflow_dispatch:
 permissions:
