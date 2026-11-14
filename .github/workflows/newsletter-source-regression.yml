@@ -6,7 +6,11 @@ on:
       - de/**
       - en/**
       - exports/**
+      - robots.txt
+      - sitemap.xml
       - scripts/check_newsletter_contract.py
+      - scripts/check_production_images.py
+      - .github/workflows/check-newsletter-production.yml
       - .github/workflows/newsletter-source-regression.yml
   push:
     branches: [main]
@@ -29,5 +33,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Syntax-check production smoke test
+        run: python -m py_compile scripts/check_production_images.py
       - name: Verify newsletter source contract
         run: python scripts/check_newsletter_contract.py
