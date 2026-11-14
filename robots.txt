@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hirlevel.magyariskola.at/sitemap.xml
