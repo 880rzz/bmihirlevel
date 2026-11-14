@@ -6,6 +6,10 @@ import time
 from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
 
+class DeploymentPending(Exception):
+    """Pages build is complete but its current HTML has not reached the public edge yet."""
+
+
 BASE = "https://hirlevel.magyariskola.at"
 PAGES = {
     "/": ("hu", "https://hirlevel.magyariskola.at/"),
@@ -40,37 +44,45 @@ def audit():
         if final_url != canonical:
             raise ValueError(f"{route}: resolved to unexpected URL {final_url}")
         if f'<link rel="canonical" href="{canonical}">' not in html:
-            raise ValueError(f"{route}: canonical link missing or incorrect")
+            raise DeploymentPending(f"{route}: canonical link missing or incorrect")
         for locale, url in ALTERNATES.items():
             tag = f'<link rel="alternate" hreflang="{locale}" href="{url}">'
             if tag not in html:
-                raise ValueError(f"{route}: hreflang {locale} missing or incorrect")
+                raise DeploymentPending(f"{route}: hreflang {locale} missing or incorrect")
         scripts = re.findall(r'<script type="application/ld[+]json">(.*?)</script>', html, re.S)
         if len(scripts) != 1:
-            raise ValueError(f"{route}: expected one JSON-LD block, found {len(scripts)}")
+            raise DeploymentPending(f"{route}: expected one JSON-LD block, found {len(scripts)}")
         schema = json.loads(scripts[0])
         if schema.get("@type") != "WebPage" or schema.get("inLanguage") != language:
-            raise ValueError(f"{route}: WebPage type or language mismatch")
+            raise DeploymentPending(f"{route}: WebPage type or language mismatch")
         if schema.get("publisher", {}).get("sameAs") != SCHOOL:
-            raise ValueError(f"{route}: WebPage publisher must remain the Bécsi Magyar Iskola")
+            raise DeploymentPending(f"{route}: WebPage publisher must remain the Bécsi Magyar Iskola")
         periodical = schema.get("mentions", {})
         if periodical.get("@type") != "Periodical" or periodical.get("sameAs") != MAGAZINE:
-            raise ValueError(f"{route}: Bécsi Szelet Periodical identity missing")
+            raise DeploymentPending(f"{route}: Bécsi Szelet Periodical identity missing")
         founder = periodical.get("founder", {})
         if founder.get("@type") != "Person" or founder.get("sameAs") != FOUNDER:
-            raise ValueError(f"{route}: Norbert Bánhalmi founder identity missing")
+            raise DeploymentPending(f"{route}: Norbert Bánhalmi founder identity missing")
         results.append({"route": route, "resolvedUrl": final_url, "htmlBytes": len(html.encode("utf-8"))})
     print(json.dumps({"status": "PRODUCTION-VERIFIED", "site": BASE, "pages": results}), flush=True)
 
 
-for attempt in range(3):
+last_error = None
+for attempt in range(12):
     try:
         audit()
         break
+    except DeploymentPending as error:
+        last_error = error
+        print(f"Attempt {attempt + 1}/12: Pages content is still propagating: {error}", flush=True)
     except HTTPError as error:
-        raise SystemExit(f"Definitive HTTP failure: {error}") from error
+        if error.code not in {500, 502, 503, 504}:
+            raise SystemExit(f"Definitive HTTP failure: {error}") from error
+        last_error = error
+        print(f"Attempt {attempt + 1}/12: transient HTTP {error.code}", flush=True)
     except (URLError, TimeoutError, ConnectionError) as error:
-        print(f"Attempt {attempt + 1}/3: {error}", flush=True)
-        if attempt == 2:
-            raise
-        time.sleep(5)
+        last_error = error
+        print(f"Attempt {attempt + 1}/12: transient network error: {error}", flush=True)
+    if attempt == 11:
+        raise SystemExit(f"Production verification did not converge after Pages deployment: {last_error}")
+    time.sleep(5)
