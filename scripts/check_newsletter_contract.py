@@ -95,7 +95,7 @@ for path, lang in PAGES.items():
                 html.index('data-unsubscribe-request="email"')), prefix + "utility bar is not first"
         assert "<script" not in html.lower(), prefix + "email export contains script"
         assert 'data-unsubscribe-request="email"' in html, prefix + "email unsubscribe mechanism missing"
-        community_buttons = re.findall(r'<a href="https://chat\\.whatsapp\\.com/[^"]+" style="([^"]+)"', html)
+        community_buttons = re.findall(r'<a href="https://chat\.whatsapp\.com/[^"]+" style="([^"]+)"', html)
         assert len(community_buttons) == 2, prefix + "two community WhatsApp buttons required"
         assert all("color:#FFFFFF;" in style for style in community_buttons), prefix + "community CTA text must be white on red"
         assert '.newsletter-shell a[href^="https://chat.whatsapp.com/"]{color:#FFFFFF!important' in html, prefix + "community CTA CSS contrast override missing"
