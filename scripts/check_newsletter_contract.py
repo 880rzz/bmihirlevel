@@ -95,6 +95,10 @@ for path, lang in PAGES.items():
                 html.index('data-unsubscribe-request="email"')), prefix + "utility bar is not first"
         assert "<script" not in html.lower(), prefix + "email export contains script"
         assert 'data-unsubscribe-request="email"' in html, prefix + "email unsubscribe mechanism missing"
+        community_buttons = re.findall(r'<a href="https://chat\.whatsapp\.com/[^"]+" style="([^"]+)"', html)
+        assert len(community_buttons) == 2, prefix + "two community WhatsApp buttons required"
+        assert all("color:#FFFFFF;" in style for style in community_buttons), prefix + "community CTA text must be white on red"
+        assert '.newsletter-shell a[href^="https://chat.whatsapp.com/"]{color:#FFFFFF!important' in html, prefix + "community CTA CSS contrast override missing"
         assert html.count('assets/brand/bmi-logo.webp') >= 1, prefix + "working BMI logo asset missing"
         assert 'assets/bmi-logo-272.png' not in html, prefix + "obsolete BMI logo path"
         assert section.count('class="bmi-event-card"') == 10, prefix + "event cards have inconsistent wrappers"
