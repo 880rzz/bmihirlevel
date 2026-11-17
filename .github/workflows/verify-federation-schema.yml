@@ -1,0 +1,27 @@
+name: Verify newsletter federation identity
+on:
+  pull_request:
+    paths:
+      - 'index.html'
+      - 'de/index.html'
+      - 'en/index.html'
+      - 'scripts/check_federation_schema.py'
+      - '.github/workflows/verify-federation-schema.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'index.html'
+      - 'de/index.html'
+      - 'en/index.html'
+      - 'scripts/check_federation_schema.py'
+      - '.github/workflows/verify-federation-schema.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  schema:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Ensure stable cross-site schema relationships in all languages
+        run: python3 scripts/check_federation_schema.py

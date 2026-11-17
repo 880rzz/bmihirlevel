@@ -107,8 +107,13 @@ for path, lang in PAGES.items():
         periodical = schema.get("mentions", {})
         assert periodical.get("@type") == "Periodical", prefix + "magazine must remain a Periodical mention"
         assert periodical.get("sameAs") == "https://www.wikidata.org/wiki/Q142154314", prefix + "magazine Wikidata identity mismatch"
-        founder = periodical.get("founder", {})
-        assert founder.get("@type") == "Person" and founder.get("sameAs") == "https://www.wikidata.org/wiki/Q56391118", prefix + "founder identity mismatch"
+        founders = periodical.get("founder", [])
+        assert isinstance(founders, list) and len(founders) == 2, prefix + "both documented founders required"
+        assert any(p.get("@type") == "Person" and p.get("@id") == "https://www.wikidata.org/wiki/Q56391118"
+                   and p.get("name") == "Bánhalmi Norbert" for p in founders), prefix + "Norbert founder identity mismatch"
+        assert any(p.get("@type") == "Person" and p.get("name") == "Kovács Attila"
+                   for p in founders), prefix + "Kovács founder identity mismatch"
+        assert periodical.get("publisher", {}).get("@id") == "https://www.kozpontiszovetseg.at/#organization", prefix + "magazine publisher mismatch"
         assert all(re.sub(r"[^a-z]", "", value.lower()) in html.lower() for value in (lang,)), prefix + "language marker missing"
         assert "https://www.becsiszelet.at/" in html, prefix + "permanent magazine recommendation missing"
         assert "https://www.wikidata.org/wiki/Q142154314" in html, prefix + "magazine entity JSON-LD missing"
