@@ -44,9 +44,8 @@ for path, lang in PAGES.items():
     assert 0 <= start < end, prefix + "missing event section boundaries"
     section = html[start:end]
     titles = re.findall(r"<h3[^>]*>(.*?)</h3>", section, re.S)
-    assert len(titles) == 11, prefix + "expected eleven current event cards"
+    assert len(titles) == 10, prefix + "expected ten current event cards"
     expected_title_patterns = [
-        r"(?i)(kandúr|gestiefelte|puss in boots)",
         r"(?i)jazz",
         r"(?i)(ruhacsere|kleidertausch|clothes swap)",
         r"(?i)(koncz|world turns|welt dreht)",
@@ -64,7 +63,7 @@ for path, lang in PAGES.items():
         assert "margin:12px 28px" not in section, prefix + "music therapy/Narnia card outside Wix table row"
     assert "SPONTÁN" not in html and "darvasi" not in html.lower(), prefix + "removed events still present"
     assert "telapo-backstage-2025" not in html, prefix + "removed Santa recap still present"
-    assert "https://shop.svung.at/show/8894" in section, prefix + "SVUNG tickets missing"
+    assert "https://shop.svung.at/show/8894" not in section, prefix + "past Puss in Boots event remains"
     for url in EVENT_LINKS:
         assert url in section, prefix + "missing event URL " + url
     assert ("december 9" in section.lower()
@@ -97,14 +96,14 @@ for path, lang in PAGES.items():
         assert 'data-unsubscribe-request="email"' in html, prefix + "email unsubscribe mechanism missing"
         assert html.count('assets/brand/bmi-logo.webp') >= 1, prefix + "working BMI logo asset missing"
         assert 'assets/bmi-logo-272.png' not in html, prefix + "obsolete BMI logo path"
-        assert section.count('class="bmi-event-card"') == 11, prefix + "event cards have inconsistent wrappers"
-        assert section.count('background:#A61920;color:#FFFFFF;font:700 14px/1.4 system-ui') == 11, prefix + "not all program buttons have white-on-red inline styling"
-        assert section.count('aspect-ratio:1/1;object-fit:contain;background:#FFFFFF') == 11, prefix + "event images must share square contain layout"
+        assert section.count('class="bmi-event-card"') == 10, prefix + "event cards have inconsistent wrappers"
+        assert section.count('background:#A61920;color:#FFFFFF;font:700 14px/1.4 system-ui') == 10, prefix + "not all program buttons have white-on-red inline styling"
+        assert section.count('aspect-ratio:1/1;object-fit:contain;background:#FFFFFF') == 10, prefix + "event images must share square contain layout"
         assert 'margin:12px 28px' not in section, prefix + "legacy non-tabular cards remain"
-        assert 'data-event="svung-8894"' in section, prefix + "SVUNG export marker missing"
+        assert 'data-event="svung-8894"' not in section, prefix + "past SVUNG export card remains"
         assert ('UTOLSÓ 50 JEGY' in section or 'LETZTEN 50 TICKETS' in section
                 or 'FINAL 50 TICKETS' in section), prefix + "Santa tickets notice missing"
-        assert "IMG_7001.webp" in section, prefix + "current Santa event image missing"
+        assert "IMG_7001.webp" not in section, prefix + "past puppet event image remains"
         assert 'rel="canonical"' in html, prefix + "canonical missing"
         assert 'hreflang="x-default"' in html, prefix + "hreflang missing"
     else:
@@ -144,7 +143,7 @@ for path, lang in PAGES.items():
         assert "https://www.wikidata.org/wiki/Q141274560" in html, prefix + "school entity JSON-LD missing"
         assert "<script" in html.lower(), prefix + "web page scripts missing"
         assert 'href="mailto:' in html, prefix + "unsubscription contact missing"
-        assert "csizmas-kandur.webp" in section, prefix + "current Puss in Boots poster missing"
+        assert "csizmas-kandur.webp" not in section, prefix + "past Puss in Boots poster remains"
         assert 'class="josda"' in html, prefix + "web Ceridwen experience missing"
 robots = (ROOT / "robots.txt").read_text(encoding="utf-8")
 assert "User-agent: *" in robots and "Allow: /" in robots, "robots.txt must allow public crawling"
