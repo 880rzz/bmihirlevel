@@ -143,7 +143,7 @@ for path, lang in PAGES.items():
         assert "https://www.wikidata.org/wiki/Q141274560" in html, prefix + "school entity JSON-LD missing"
         assert "<script" in html.lower(), prefix + "web page scripts missing"
         assert 'href="mailto:' in html, prefix + "unsubscription contact missing"
-        assert "csizmas-kandur.webp" in section, prefix + "current Puss in Boots poster missing"
+        assert "csizmas-kandur.webp" not in section, prefix + "past Puss in Boots poster remains"
         assert 'class="josda"' in html, prefix + "web Ceridwen experience missing"
 robots = (ROOT / "robots.txt").read_text(encoding="utf-8")
 assert "User-agent: *" in robots and "Allow: /" in robots, "robots.txt must allow public crawling"
