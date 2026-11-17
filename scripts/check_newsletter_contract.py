@@ -20,6 +20,8 @@ EVENT_LINKS = [
     "https://www.kozpontiszovetseg.at/event-details/koncz-zsuzsa-becs",
     "https://www.magyariskola.at/event-details/taltos-dob-es-oromzene-schwedenplatz",
     "https://www.magyariskola.at/event-details/becsi-magyar-mikulas",
+    "https://www.magyariskola.at/event-details/hangolodj-onmagadra",
+    "https://www.magyariskola.at/event-details/kicsi-svung-bemutatja-narnia-nyomaban",
     "https://lilarum.at/veranstaltungsreihe/a-legcsinosabb-orias/",
     "https://www.stadthalle.com/de/events/alle-events/51539/Gospel-Christmas",
     "https://www.magyariskola.at/event-details/adventi-bazar-2026",
@@ -43,7 +45,23 @@ for path, lang in PAGES.items():
     section = html[start:end]
     titles = re.findall(r"<h3[^>]*>(.*?)</h3>", section, re.S)
     assert len(titles) == 11, prefix + "expected eleven current event cards"
-    assert "Jazz" in titles[-2] and "Gospel Christmas" in titles[-1], prefix + "Jazz/Gospel ordering"
+    expected_title_patterns = [
+        r"(?i)(kandúr|gestiefelte|puss in boots)",
+        r"(?i)jazz",
+        r"(?i)(ruhacsere|kleidertausch|clothes swap)",
+        r"(?i)(koncz|world turns|welt dreht)",
+        r"(?i)(táltos|taltos)",
+        r"(?i)hangolódj",
+        r"(?i)(mikulás|nikolaus|hungarian santa)",
+        r"(?i)narnia",
+        r"(?i)(óriás|riese|giant)",
+        r"(?i)gospel",
+        r"(?i)(bazár|basar|bazaar)",
+    ]
+    for position, (title, pattern) in enumerate(zip(titles, expected_title_patterns), start=1):
+        assert re.search(pattern, title), prefix + f"chronological event order incorrect at card {position}: {title}"
+    if is_export:
+        assert "margin:12px 28px" not in section, prefix + "music therapy/Narnia card outside Wix table row"
     assert "SPONTÁN" not in html and "darvasi" not in html.lower(), prefix + "removed events still present"
     assert "telapo-backstage-2025" not in html, prefix + "removed Santa recap still present"
     assert "https://shop.svung.at/show/8894" in section, prefix + "SVUNG tickets missing"
