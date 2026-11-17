@@ -72,7 +72,7 @@ for path, lang in PAGES.items():
         for locale, url in browser_urls.items():
             assert f'data-newsletter-locale="{locale}"' in html, prefix + f"missing {locale} switch"
             assert f'href="{url}"' in html, prefix + f"missing {locale} destination"
-        assert html.count('aria-current="page"') == 1, prefix + "expected one selected language"
+        assert len(re.findall(r'<a[^>]+aria-current="page"', html)) == 1, prefix + "expected one selected language link"
         assert (html.index('data-newsletter-utility="top"') <
                 html.index('data-unsubscribe-request="email"')), prefix + "utility bar is not first"
         assert "<script" not in html.lower(), prefix + "email export contains script"
