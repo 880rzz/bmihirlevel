@@ -11,7 +11,7 @@ person = "https://www.wikidata.org/wiki/Q56391118"
 magazine = "https://www.becsiszelet.at/#periodical"
 for path, lang in (("index.html", "hu"), ("en/index.html", "en"), ("de/index.html", "de")):
     data = (root / path).read_text(encoding="utf-8")
-    blocks = re.findall(r'<script type="application/ld\\+json">([\\s\\S]*?)</script>', data)
+    blocks = re.findall(r'<script type="application/ld\+json">([\s\S]*?)</script>', data)
     assert len(blocks) == 1, f"{path}: expected one structured-data script"
     obj = json.loads(blocks[0])
     assert obj["@type"] == "WebPage" and obj["inLanguage"] == lang
