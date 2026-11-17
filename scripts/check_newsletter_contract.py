@@ -95,6 +95,12 @@ for path, lang in PAGES.items():
                 html.index('data-unsubscribe-request="email"')), prefix + "utility bar is not first"
         assert "<script" not in html.lower(), prefix + "email export contains script"
         assert 'data-unsubscribe-request="email"' in html, prefix + "email unsubscribe mechanism missing"
+        assert html.count('assets/brand/bmi-logo.webp') >= 1, prefix + "working BMI logo asset missing"
+        assert 'assets/bmi-logo-272.png' not in html, prefix + "obsolete BMI logo path"
+        assert section.count('class="bmi-event-card"') == 11, prefix + "event cards have inconsistent wrappers"
+        assert section.count('background:#A61920;color:#FFFFFF;font:700 14px/1.4 system-ui') == 11, prefix + "not all program buttons have white-on-red inline styling"
+        assert section.count('aspect-ratio:1/1;object-fit:contain;background:#FFFFFF') == 11, prefix + "event images must share square contain layout"
+        assert 'margin:12px 28px' not in section, prefix + "legacy non-tabular cards remain"
         assert 'data-event="svung-8894"' in section, prefix + "SVUNG export marker missing"
         assert ('UTOLSÓ 50 JEGY' in section or 'LETZTEN 50 TICKETS' in section
                 or 'FINAL 50 TICKETS' in section), prefix + "Santa tickets notice missing"
