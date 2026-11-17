@@ -56,6 +56,25 @@ for path, lang in PAGES.items():
     assert 'id="kozosseg"' in html, prefix + "community section missing"
     assert '#101F33' not in html.upper(), prefix + "obsolete palette"
     if is_export:
+        browser_urls = {
+            "hu": "https://hirlevel.magyariskola.at/",
+            "de": "https://hirlevel.magyariskola.at/de/",
+            "en": "https://hirlevel.magyariskola.at/en/",
+        }
+        localized_browser_labels = {"hu": "Megnyitás böngészőben",
+                                    "de": "Im Browser öffnen",
+                                    "en": "View in browser"}
+        assert html.count('data-newsletter-utility="top"') == 1, prefix + "missing or duplicate top utility bar"
+        assert html.count('<div data-newsletter-langs') == 1, prefix + "missing or duplicate language selector"
+        assert html.count('data-newsletter-browser="true"') == 1, prefix + "browser link must appear exactly once"
+        assert f'data-newsletter-browser="true" href="{browser_urls[lang]}"' in html, prefix + "incorrect browser URL"
+        assert localized_browser_labels[lang] in html, prefix + "localized browser label missing"
+        for locale, url in browser_urls.items():
+            assert f'data-newsletter-locale="{locale}"' in html, prefix + f"missing {locale} switch"
+            assert f'href="{url}"' in html, prefix + f"missing {locale} destination"
+        assert len(re.findall(r'<a[^>]+aria-current="page"', html)) == 1, prefix + "expected one selected language link"
+        assert (html.index('data-newsletter-utility="top"') <
+                html.index('data-unsubscribe-request="email"')), prefix + "utility bar is not first"
         assert "<script" not in html.lower(), prefix + "email export contains script"
         assert 'data-unsubscribe-request="email"' in html, prefix + "email unsubscribe mechanism missing"
         assert 'data-event="svung-8894"' in section, prefix + "SVUNG export marker missing"
