@@ -64,6 +64,7 @@ for path, lang in PAGES.items():
     assert "SPONTÁN" not in html and "darvasi" not in html.lower(), prefix + "removed events still present"
     assert "telapo-backstage-2025" not in html, prefix + "removed Santa recap still present"
     assert "https://shop.svung.at/show/8894" not in section, prefix + "past Puss in Boots event remains"
+    assert "svung-8894" not in section, prefix + "past Puss event marker remains"
     for url in EVENT_LINKS:
         assert url in section, prefix + "missing event URL " + url
     assert ("december 9" in section.lower()
@@ -98,8 +99,10 @@ for path, lang in PAGES.items():
         assert 'assets/bmi-logo-272.png' not in html, prefix + "obsolete BMI logo path"
         assert section.count('class="bmi-event-card"') == 10, prefix + "event cards have inconsistent wrappers"
         assert section.count('background:#A61920;color:#FFFFFF;font:700 14px/1.4 system-ui') == 10, prefix + "not all program buttons have white-on-red inline styling"
-        assert section.count('aspect-ratio:1/1;object-fit:contain;background:#FFFFFF') == 10, prefix + "event images must share square contain layout"
+        assert section.count('aspect-ratio:auto;object-fit:contain;background:#FFFFFF') == 10, prefix + "event images must keep intrinsic image ratios"
         assert 'margin:12px 28px' not in section, prefix + "legacy non-tabular cards remain"
+        assert 'aspect-ratio:1/1' not in section, prefix + "forced square event image ratio remains"
+        assert 'object-fit:cover' not in section, prefix + "cropped event image remains"
         assert 'data-event="svung-8894"' not in section, prefix + "past SVUNG export card remains"
         assert ('UTOLSÓ 50 JEGY' in section or 'LETZTEN 50 TICKETS' in section
                 or 'FINAL 50 TICKETS' in section), prefix + "Santa tickets notice missing"

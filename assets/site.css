@@ -479,21 +479,21 @@ button:focus-visible {
   align-items: center;
   justify-content: center;
   width: 100%;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: auto;
   background: var(--media-bg);
   border-bottom: 1px solid var(--line-soft);
   overflow: hidden;
 }
 
 .event-media--wide {
-  aspect-ratio: 4 / 3;
+  aspect-ratio: auto;
 }
 
 .event-media img {
   display: block;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  object-fit: contain;
 }
 
 .event-body {
