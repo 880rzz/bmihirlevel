@@ -15,7 +15,6 @@ PAGES = {
     "exports/bmi-hirlevel-wix-en-2026-10-18.html": "en",
 }
 EVENT_LINKS = [
-    "https://exhibition.vipach.at",
     "https://kultpult.eu/jazzjatszoter-becsben-des-andrassal-es-zenesztarsaival/",
     "https://www.magyariskola.at/event-details/ruhacsere-party-2026-osz",
     "https://www.kozpontiszovetseg.at/event-details/koncz-zsuzsa-becs",
@@ -43,9 +42,10 @@ for path, lang in PAGES.items():
     assert 0 <= start < end, prefix + "missing event section boundaries"
     section = html[start:end]
     titles = re.findall(r"<h3[^>]*>(.*?)</h3>", section, re.S)
-    assert len(titles) == 13, prefix + "expected thirteen current event cards"
+    assert len(titles) == 11, prefix + "expected eleven current event cards"
     assert "Jazz" in titles[-2] and "Gospel Christmas" in titles[-1], prefix + "Jazz/Gospel ordering"
-    assert "https://www.kozpontiszovetseg.at/event-details/darvasi-laszlo" in section, prefix + "Darvasi event missing"
+    assert "SPONTÁN" not in html and "darvasi" not in html.lower(), prefix + "removed events still present"
+    assert "telapo-backstage-2025" not in html, prefix + "removed Santa recap still present"
     assert "https://shop.svung.at/show/8894" in section, prefix + "SVUNG tickets missing"
     for url in EVENT_LINKS:
         assert url in section, prefix + "missing event URL " + url
@@ -58,13 +58,10 @@ for path, lang in PAGES.items():
     if is_export:
         assert "<script" not in html.lower(), prefix + "email export contains script"
         assert 'data-unsubscribe-request="email"' in html, prefix + "email unsubscribe mechanism missing"
-        assert 'data-event="darvasi-laszlo-2026"' in section, prefix + "Darvasi export marker missing"
         assert 'data-event="svung-8894"' in section, prefix + "SVUNG export marker missing"
         assert ('UTOLSÓ 50 JEGY' in section or 'LETZTEN 50 TICKETS' in section
                 or 'FINAL 50 TICKETS' in section), prefix + "Santa tickets notice missing"
-        assert 'data-event-recap="telapo-backstage-2025"' in html, prefix + "Santa recap missing"
-        assert 'data-event-recap-image="telapo-backstage-2025"' in html, prefix + "recap image missing"
-        assert "IMG_6998.jpeg" in html and "IMG_7001.webp" in section, prefix + "export images missing"
+        assert "IMG_7001.webp" in section, prefix + "current Santa event image missing"
         assert 'rel="canonical"' in html, prefix + "canonical missing"
         assert 'hreflang="x-default"' in html, prefix + "hreflang missing"
     else:
